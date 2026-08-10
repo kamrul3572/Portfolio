@@ -214,15 +214,12 @@
 
       .nav-logo {
         font-family: var(--font-heading);
-        font-size: 1.15rem;
-        font-weight: 700;
-        color: var(--text-primary);
-        letter-spacing: -0.02em;
-        text-decoration: none;
-      }
-
-      .nav-logo span {
+        font-size: 1.25rem;
+        font-weight: 800;
         color: var(--accent);
+        letter-spacing: 0.05em;
+        text-decoration: none;
+        text-transform: uppercase;
       }
 
       .nav-menu {
@@ -559,7 +556,7 @@
       }
 
       /* ═══════════════════════════════════════════
-         GLASS CARD
+         GLASS CARD & ABOUT SUB GRID
          ═══════════════════════════════════════════ */
       .card {
         background: var(--bg-card);
@@ -577,8 +574,14 @@
         transform: translateY(-3px);
       }
 
+      .about-sub-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+      }
+
       /* ═══════════════════════════════════════════
-         ABOUT
+         ABOUT & TAGS
          ═══════════════════════════════════════════ */
       .about-grid {
         display: grid;
@@ -737,6 +740,115 @@
       .soft-card p {
         font-size: 0.75rem;
         color: var(--text-muted);
+      }
+
+      /* ═══════════════════════════════════════════
+         LANGUAGE PROFICIENCY SECTION (HIGHLIGHTED)
+         ═══════════════════════════════════════════ */
+      .lang-section-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 1.25rem;
+        margin-top: 1.25rem;
+      }
+
+      .lang-card {
+        background: var(--bg-card);
+        border: 1px solid var(--border-color);
+        border-radius: var(--radius);
+        padding: 1.5rem;
+        transition: all var(--transition);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+
+      .lang-card:hover {
+        border-color: var(--border-hover);
+        box-shadow: var(--shadow-glow);
+        transform: translateY(-3px);
+        background: var(--bg-card-hover);
+      }
+
+      .lang-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 1rem;
+        padding-bottom: 0.75rem;
+        border-bottom: 1px solid var(--border-color);
+      }
+
+      .lang-rank {
+        font-size: 0.7rem;
+        font-weight: 700;
+        color: var(--accent);
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+      }
+
+      .lang-name {
+        font-size: 1.15rem;
+        font-weight: 700;
+        color: var(--text-primary);
+        margin-top: 0.15rem;
+      }
+
+      .lang-badge {
+        font-size: 0.72rem;
+        font-weight: 600;
+        padding: 0.25rem 0.7rem;
+        border-radius: 50px;
+      }
+
+      .badge-green {
+        background: rgba(34, 197, 94, 0.12);
+        color: var(--success);
+        border: 1px solid rgba(34, 197, 94, 0.25);
+      }
+
+      .badge-teal {
+        background: var(--accent-secondary-glow);
+        color: var(--accent-secondary);
+        border: 1px solid rgba(94, 234, 212, 0.25);
+      }
+
+      .badge-amber {
+        background: rgba(245, 158, 11, 0.12);
+        color: var(--warning);
+        border: 1px solid rgba(245, 158, 11, 0.25);
+      }
+
+      .lang-skills-matrix {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.5rem;
+        margin-top: 0.5rem;
+      }
+
+      .lang-skill-item {
+        display: flex;
+        align-items: center;
+        gap: 0.4rem;
+        font-size: 0.78rem;
+        font-weight: 500;
+        padding: 0.4rem 0.65rem;
+        border-radius: 8px;
+        background: var(--bg-secondary);
+        border: 1px solid var(--border-color);
+        color: var(--text-primary);
+      }
+
+      .lang-skill-item.yes i {
+        color: var(--success);
+      }
+
+      .lang-skill-item.no i {
+        color: var(--text-muted);
+      }
+
+      .lang-skill-item.no {
+        opacity: 0.5;
       }
 
       /* ═══════════════════════════════════════════
@@ -1117,35 +1229,6 @@
         color: var(--accent);
       }
 
-      /* Language summary in contact */
-      .lang-summary {
-        display: flex;
-        gap: 0.75rem;
-        flex-wrap: wrap;
-        margin-top: 1.5rem;
-        padding-top: 1.5rem;
-        border-top: 1px solid var(--border-color);
-      }
-
-      .lang-pill {
-        display: inline-flex;
-        align-items: center;
-        gap: 0.4rem;
-        font-size: 0.78rem;
-        font-weight: 600;
-        padding: 0.4rem 0.85rem;
-        border-radius: 50px;
-        border: 1px solid var(--border-color);
-        color: var(--text-secondary);
-        background: var(--bg-card);
-      }
-
-      .lang-pill .level {
-        font-size: 0.68rem;
-        color: var(--text-muted);
-        font-weight: 400;
-      }
-
       /* Form */
       .form-group {
         margin-bottom: 1.25rem;
@@ -1243,7 +1326,7 @@
       }
 
       /* ═══════════════════════════════════════════
-         RESPONSIVE
+         RESPONSIVE & MOBILE OPTIMIZATIONS
          ═══════════════════════════════════════════ */
       @media (max-width: 992px) {
         .hero-grid {
@@ -1260,6 +1343,10 @@
         .contact-grid {
           grid-template-columns: 1fr;
         }
+        .about-sub-grid {
+          grid-template-columns: 1fr;
+          gap: 1.5rem;
+        }
         .avatar-ring {
           width: 240px;
           height: 240px;
@@ -1267,7 +1354,7 @@
       }
 
       @media (max-width: 768px) {
-        .section { padding: 5rem 0; }
+        .section { padding: 4.5rem 0; }
 
         .nav-menu {
           position: fixed;
@@ -1309,7 +1396,33 @@
         }
 
         .card {
-          padding: 1.5rem;
+          padding: 1.25rem;
+        }
+
+        /* Mobile specific tag and skill optimizations */
+        .tag-group {
+          gap: 0.4rem;
+        }
+        .tag {
+          font-size: 0.72rem;
+          padding: 0.35rem 0.65rem;
+        }
+        .skill-grid {
+          gap: 0.45rem;
+        }
+        .skill-chip {
+          font-size: 0.76rem;
+          padding: 0.4rem 0.75rem;
+        }
+        .soft-skills-grid {
+          grid-template-columns: repeat(2, 1fr);
+          gap: 0.75rem;
+        }
+        .soft-card {
+          padding: 1rem 0.75rem;
+        }
+        .lang-section-grid {
+          grid-template-columns: 1fr;
         }
       }
 
@@ -1321,6 +1434,9 @@
           width: 100%;
         }
         .btn { width: 100%; justify-content: center; }
+        .soft-skills-grid {
+          grid-template-columns: 1fr;
+        }
       }
 
       /* Utility */
@@ -1341,9 +1457,7 @@
     <!-- Navbar -->
     <nav class="navbar">
       <div class="container nav-inner">
-        <a href="#" class="nav-logo">
-          <span data-i18n="nav_logo_first">KAMRUL</span> ISLAM
-        </a>
+        <a href="#" class="nav-logo" data-i18n="nav_logo">KAMRUL</a>
 
         <ul class="nav-menu" id="navMenu">
           <li><a href="#about" class="nav-link" data-i18n="nav_about">About</a></li>
@@ -1495,7 +1609,7 @@
 
         <!-- Hobbies & FOSS row -->
         <div class="card reveal" style="margin-top: 1.5rem">
-          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem;">
+          <div class="about-sub-grid">
             <div>
               <div class="about-title">
                 <i class="fa-solid fa-heart"></i>
@@ -1535,7 +1649,7 @@
 
     <div class="divider"></div>
 
-    <!-- ════════ SKILLS ════════ -->
+    <!-- ════════ SKILLS & LANGUAGES ════════ -->
     <section class="section" id="skills">
       <div class="container">
         <div class="reveal">
@@ -1624,6 +1738,70 @@
               <i class="fa-solid fa-clock"></i>
               <h4 data-i18n="soft_5_title">Time Management</h4>
               <p data-i18n="soft_5_desc">Balancing studies & projects</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Language Proficiency (Highlighted Section) -->
+        <div class="card reveal" style="margin-top: 3rem;">
+          <div class="about-title mb-1">
+            <i class="fa-solid fa-language"></i>
+            <span data-i18n="lang_section_title">Language Proficiency</span>
+          </div>
+          <p class="text-secondary" style="font-size: 0.85rem; margin-bottom: 1rem;" data-i18n="lang_section_desc">
+            Communication skills and language capabilities across reading, writing, listening, and speaking.
+          </p>
+
+          <div class="lang-section-grid">
+            <!-- 1st Language: Bangla -->
+            <div class="lang-card">
+              <div class="lang-header">
+                <div class="lang-title-group">
+                  <span class="lang-rank" data-i18n="lang_1_rank">1st Language</span>
+                  <div class="lang-name" data-i18n="lang_1_name">Bangla (বাংলা)</div>
+                </div>
+                <span class="lang-badge badge-green" data-i18n="lang_1_badge">Native / মাতৃভাষা</span>
+              </div>
+              <div class="lang-skills-matrix">
+                <div class="lang-skill-item yes"><i class="fa-solid fa-check"></i> <span data-i18n="sk_read">Reading</span></div>
+                <div class="lang-skill-item yes"><i class="fa-solid fa-check"></i> <span data-i18n="sk_write">Writing</span></div>
+                <div class="lang-skill-item yes"><i class="fa-solid fa-check"></i> <span data-i18n="sk_listen">Listening</span></div>
+                <div class="lang-skill-item yes"><i class="fa-solid fa-check"></i> <span data-i18n="sk_speak">Speaking</span></div>
+              </div>
+            </div>
+
+            <!-- 2nd Language: English -->
+            <div class="lang-card">
+              <div class="lang-header">
+                <div class="lang-title-group">
+                  <span class="lang-rank" data-i18n="lang_2_rank">2nd Language</span>
+                  <div class="lang-name" data-i18n="lang_2_name">English</div>
+                </div>
+                <span class="lang-badge badge-teal" data-i18n="lang_2_badge">Fluent / সাবলীল</span>
+              </div>
+              <div class="lang-skills-matrix">
+                <div class="lang-skill-item yes"><i class="fa-solid fa-check"></i> <span data-i18n="sk_read">Reading</span></div>
+                <div class="lang-skill-item yes"><i class="fa-solid fa-check"></i> <span data-i18n="sk_write">Writing</span></div>
+                <div class="lang-skill-item yes"><i class="fa-solid fa-check"></i> <span data-i18n="sk_listen">Listening</span></div>
+                <div class="lang-skill-item yes"><i class="fa-solid fa-check"></i> <span data-i18n="sk_speak">Speaking</span></div>
+              </div>
+            </div>
+
+            <!-- 3rd Language: Hindi -->
+            <div class="lang-card">
+              <div class="lang-header">
+                <div class="lang-title-group">
+                  <span class="lang-rank" data-i18n="lang_3_rank">3rd Language</span>
+                  <div class="lang-name" data-i18n="lang_3_name">Hindi (হিন্দি)</div>
+                </div>
+                <span class="lang-badge badge-amber" data-i18n="lang_3_badge">Spoken / মৌখিক</span>
+              </div>
+              <div class="lang-skills-matrix">
+                <div class="lang-skill-item no"><i class="fa-solid fa-xmark"></i> <span data-i18n="sk_read">Reading</span></div>
+                <div class="lang-skill-item no"><i class="fa-solid fa-xmark"></i> <span data-i18n="sk_write">Writing</span></div>
+                <div class="lang-skill-item yes"><i class="fa-solid fa-check"></i> <span data-i18n="sk_listen">Listening</span></div>
+                <div class="lang-skill-item yes"><i class="fa-solid fa-check"></i> <span data-i18n="sk_speak">Speaking</span></div>
+              </div>
             </div>
           </div>
         </div>
@@ -1801,10 +1979,10 @@
             <div class="timeline-item">
               <div class="timeline-dot future"></div>
               <div class="timeline-date" style="color: var(--accent-secondary)" data-i18n="edu_5_date">Future Aspirations</div>
-              <div class="timeline-title" data-i18n="edu_5_degree">Bachelor's Degree in Engineering (Abroad)</div>
+              <div class="timeline-title" data-i18n="edu_5_degree">Bachelor's Degree in Engineering (Local & Abroad)</div>
               <div class="timeline-org">
                 <i class="fa-solid fa-globe"></i>
-                <span data-i18n="edu_5_inst">International University Candidate</span>
+                <span data-i18n="edu_5_inst">Local & International University Candidate</span>
               </div>
             </div>
           </div>
@@ -1955,19 +2133,6 @@
                 </div>
               </div>
             </div>
-
-            <!-- Languages Summary -->
-            <div class="lang-summary">
-              <div class="lang-pill" data-i18n="lang_bn_short">
-                <i class="fa-solid fa-language"></i> Bangla <span class="level">· Native</span>
-              </div>
-              <div class="lang-pill" data-i18n="lang_en_short">
-                <i class="fa-solid fa-globe"></i> English <span class="level">· Fluent</span>
-              </div>
-              <div class="lang-pill" data-i18n="lang_hi_short">
-                <i class="fa-solid fa-comments"></i> Hindi <span class="level">· Spoken</span>
-              </div>
-            </div>
           </div>
 
           <!-- Contact Form -->
@@ -2022,7 +2187,7 @@
       /* ── i18n DICTIONARY ── */
       const i18n = {
         en: {
-          nav_logo_first: "KAMRUL",
+          nav_logo: "KAMRUL",
           nav_about: "About",
           nav_skills: "Skills",
           nav_projects: "Projects",
@@ -2060,6 +2225,12 @@
           soft_3_title: "Teamwork & Leadership", soft_3_desc: "Leading engineering teams",
           soft_4_title: "Communication", soft_4_desc: "Clear project demos & talks",
           soft_5_title: "Time Management", soft_5_desc: "Balancing studies & projects",
+          lang_section_title: "Language Proficiency",
+          lang_section_desc: "Communication skills and language capabilities across reading, writing, listening, and speaking.",
+          lang_1_rank: "1st Language", lang_1_name: "Bangla (বাংলা)", lang_1_badge: "Native / মাতৃভাষা",
+          lang_2_rank: "2nd Language", lang_2_name: "English", lang_2_badge: "Fluent / সাবলীল",
+          lang_3_rank: "3rd Language", lang_3_name: "Hindi (হিন্দি)", lang_3_badge: "Spoken / মৌখিক",
+          sk_read: "Reading", sk_write: "Writing", sk_listen: "Listening", sk_speak: "Speaking",
           projects_eyebrow: "Innovative Work",
           projects_heading: "Featured Projects",
           p1_cat: "IoT / Home Automation", p1_title: "Smart Home Ecosystem",
@@ -2085,8 +2256,8 @@
           edu_3_inst: "Brahmanbaria Govt Technical School & College", edu_3_gpa: "⭐ GPA 5.00 / 5.00",
           edu_2_degree: "Secondary Schooling (Classes 6–8)", edu_2_inst: "Dhautpur Government High School",
           edu_1_degree: "Primary Education", edu_1_inst: "Royal Free Cadet School",
-          edu_5_date: "Future Aspirations", edu_5_degree: "Bachelor's Degree in Engineering (Abroad)",
-          edu_5_inst: "International University Candidate",
+          edu_5_date: "Future Aspirations", edu_5_degree: "Bachelor's Degree in Engineering (Local & Abroad)",
+          edu_5_inst: "Local & International University Candidate",
           achieve_eyebrow: "Recognition & Awards",
           achieve_heading: "Achievements & Certifications",
           cert_1_title: "Refrigeration and Air Conditioning, Level-1 (360 Hours)",
@@ -2096,14 +2267,13 @@
           contact_desc: "Feel free to reach out for research opportunities, university admissions, or engineering projects.",
           contact_email_label: "Email Address", contact_wa_label: "WhatsApp Chat",
           contact_wa_btn: "Chat on WhatsApp",
-          lang_bn_short: "Bangla · Native", lang_en_short: "English · Fluent", lang_hi_short: "Hindi · Spoken",
           form_name: "Your Name", form_email: "Your Email", form_subject: "Subject",
           form_message: "Message", form_btn: "Send Email Message",
           footer_copy: "© 2026 MD Kamrul Islam. All rights reserved.",
           footer_loc: "Sylhet, Bangladesh · Brahmanbaria, Bangladesh",
         },
         bn: {
-          nav_logo_first: "কামরুল",
+          nav_logo: "কামরুল",
           nav_about: "পরিচিতি",
           nav_skills: "দক্ষতা",
           nav_projects: "প্রজেক্ট",
@@ -2141,6 +2311,12 @@
           soft_3_title: "টিমওয়ার্ক ও নেতৃত্ব", soft_3_desc: "প্রকৌশল দলে নেতৃত্ব",
           soft_4_title: "যোগাযোগ", soft_4_desc: "প্রজেক্ট ডেমো ও উপস্থাপন",
           soft_5_title: "সময় ব্যবস্থাপনা", soft_5_desc: "পড়াশোনা ও প্রজেক্টের ভারসাম্য",
+          lang_section_title: "ভাষাগত দক্ষতা",
+          lang_section_desc: "পড়া, লেখা, শোনা এবং বলায় ভাষাগত দক্ষতা ও যোগাযোগের সক্ষমতা।",
+          lang_1_rank: "১ম ভাষা", lang_1_name: "বাংলা (Bangla)", lang_1_badge: "মাতৃভাষা / Native",
+          lang_2_rank: "২য় ভাষা", lang_2_name: "ইংরেজি (English)", lang_2_badge: "সাবলীল / Fluent",
+          lang_3_rank: "৩য় ভাষা", lang_3_name: "হিন্দি (Hindi)", lang_3_badge: "মৌখিক / Spoken",
+          sk_read: "পড়া (Reading)", sk_write: "লেখা (Writing)", sk_listen: "শোনা (Listening)", sk_speak: "বলা (Speaking)",
           projects_eyebrow: "উদ্ভাবনী প্রকল্প",
           projects_heading: "বিশেষ প্রজেক্ট",
           p1_cat: "আইওটি / হোম অটোমেশন", p1_title: "স্মার্ট হোম ইকোসিস্টেম",
@@ -2166,8 +2342,8 @@
           edu_3_inst: "ব্রাহ্মণবাড়িয়া সরকারি টেকনিক্যাল স্কুল ও কলেজ", edu_3_gpa: "⭐ জিপিএ ৫.০০ / ৫.০০",
           edu_2_degree: "মাধ্যমিক পর্যায় (৬ষ্ঠ – ৮ম)", edu_2_inst: "ধাউতপুর সরকারি উচ্চ বিদ্যালয়",
           edu_1_degree: "প্রাথমিক শিক্ষা", edu_1_inst: "রয়েল ফ্রি ক্যাডেট স্কুল",
-          edu_5_date: "ভবিষ্যৎ লক্ষ্য", edu_5_degree: "বিএসসি ইন ইঞ্জিনিয়ারিং (বিদেশে)",
-          edu_5_inst: "আন্তর্জাতিক বিশ্ববিদ্যালয়",
+          edu_5_date: "ভবিষ্যৎ লক্ষ্য", edu_5_degree: "বিএসসি ইন ইঞ্জিনিয়ারিং (দেশ ও বিদেশে)",
+          edu_5_inst: "দেশি ও বিদেশী বিশ্ববিদ্যালয়ে আবেদনকারী",
           achieve_eyebrow: "স্বীকৃতি ও সম্মাননা",
           achieve_heading: "অর্জন ও সনদপত্র",
           cert_1_title: "রেফ্রিজারেশন এন্ড এয়ার কন্ডিশনিং, লেভেল-১ (৩৬০ ঘণ্টা)",
@@ -2178,7 +2354,6 @@
           contact_desc: "উচ্চশিক্ষা, গবেষণা বা কারিগরি আলোচনার জন্য নির্দ্বিধায় বার্তা পাঠান।",
           contact_email_label: "ইমেইল ঠিকানা", contact_wa_label: "হোয়াটসঅ্যাপ চ্যাট",
           contact_wa_btn: "হোয়াটসঅ্যাপে মেসেজ দিন",
-          lang_bn_short: "বাংলা · মাতৃভাষা", lang_en_short: "ইংরেজি · সাবলীল", lang_hi_short: "হিন্দি · মৌখিক",
           form_name: "আপনার নাম", form_email: "আপনার ইমেইল", form_subject: "বিষয়",
           form_message: "বার্তা", form_btn: "ইমেইল পাঠান",
           footer_copy: "© ২০২৬ মোঃ কামরুল ইসলাম। সর্বস্বত্ব সংরক্ষিত।",
