@@ -1507,7 +1507,7 @@
     <section class="section-padding" id="about">
       <div class="container">
         <span class="eyebrow" data-i18n="about_eyebrow">WHO IS KAMRUL?</span>
-        <h2 class="section-title gradient-text" data-i18n="about_title">
+        <h2 class="section-title" data-i18n="about_title">
           About Me & Career Objective
         </h2>
 
@@ -1531,14 +1531,7 @@
               problems by combining engineering and artificial intelligence.
             </p>
 
-            <h4
-              style="
-                margin-top: 1.5rem;
-                font-size: var(--font-size-base);
-                color: var(--text-primary);
-              "
-              data-i18n="about_fav_subj"
-            >
+            <h4 class="mt-3 text-primary" data-i18n="about_fav_subj">
               Favorite Subjects
             </h4>
             <div class="tag-cloud">
@@ -1576,14 +1569,7 @@
               as a researcher and innovator to his country and the world.
             </p>
 
-            <h4
-              style="
-                margin-top: 1.5rem;
-                font-size: var(--font-size-base);
-                color: var(--text-primary);
-              "
-              data-i18n="about_interests"
-            >
+            <h4 class="mt-3 text-primary" data-i18n="about_interests">
               Career Interests
             </h4>
             <div class="tag-cloud">
@@ -1597,23 +1583,10 @@
         </div>
 
         <!-- Hobbies & FOSS Preference Bar -->
-        <div class="glass-card" style="margin-top: 2rem">
-          <div
-            style="
-              display: grid;
-              grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-              gap: 1.5rem;
-            "
-          >
+        <div class="about-sub-card">
+          <div class="about-sub-grid">
             <div>
-              <h4
-                style="
-                  font-size: var(--font-size-base);
-                  color: var(--accent-electric);
-                  margin-bottom: 0.75rem;
-                "
-                data-i18n="about_hobbies"
-              >
+              <h4 class="text-accent mb-2" data-i18n="about_hobbies">
                 Hobbies & Passions
               </h4>
               <div class="tag-cloud">
@@ -1644,27 +1617,14 @@
               </div>
             </div>
             <div>
-              <h4
-                style="
-                  font-size: var(--font-size-base);
-                  color: var(--accent-electric);
-                  margin-bottom: 0.75rem;
-                "
-                data-i18n="about_foss"
-              >
+              <h4 class="text-accent mb-2" data-i18n="about_foss">
                 Open Source & OS Preference
               </h4>
-              <p
-                style="
-                  font-size: var(--font-size-sm);
-                  color: var(--text-secondary);
-                "
-                data-i18n="about_foss_desc"
-              >
+              <p class="text-secondary" data-i18n="about_foss_desc">
                 Strong advocate for Free & Open Source Software (FOSS). Primary
                 OS: Ubuntu (25.10).
               </p>
-              <div class="tag-cloud" style="margin-top: 0.75rem">
+              <div class="tag-cloud mt-2">
                 <span
                   class="badge-tag"
                   style="
@@ -1675,14 +1635,7 @@
                 >
                   <i class="fa-brands fa-ubuntu"></i> Ubuntu 25.10
                 </span>
-                <span
-                  class="badge-tag"
-                  style="
-                    background: rgba(16, 185, 129, 0.15);
-                    color: #10b981;
-                    border-color: rgba(16, 185, 129, 0.3);
-                  "
-                >
+                <span class="badge-tag badge-success">
                   <i class="fa-brands fa-linux"></i> FOSS Enthusiast
                 </span>
               </div>
@@ -1700,7 +1653,7 @@
     >
       <div class="container">
         <span class="eyebrow" data-i18n="edu_eyebrow">ACADEMIC JOURNEY</span>
-        <h2 class="section-title gradient-text" data-i18n="edu_title">
+        <h2 class="section-title" data-i18n="edu_title">
           Education Timeline
         </h2>
 
@@ -1719,14 +1672,7 @@
                 <i class="fa-solid fa-university"></i> Sylhet Polytechnic
                 Institute
               </div>
-              <p
-                style="
-                  font-size: var(--font-size-sm);
-                  color: var(--text-secondary);
-                  margin-bottom: 0.5rem;
-                "
-                data-i18n="edu_4_cgpa_label"
-              >
+              <p class="text-secondary mb-1" data-i18n="edu_4_cgpa_label">
                 Semester CGPA Progression:
               </p>
               <div class="tag-cloud">
@@ -1735,11 +1681,7 @@
                 <span class="badge-tag">S3: 3.58</span>
                 <span class="badge-tag">S4: 3.69</span>
                 <span class="badge-tag">S5: 3.61</span>
-                <span
-                  class="badge-tag"
-                  style="background: rgba(16, 185, 129, 0.2); color: #10b981"
-                  >S6: 3.76</span
-                >
+                <span class="badge-tag badge-success">S6: 3.76</span>
               </div>
             </div>
 
@@ -1754,15 +1696,7 @@
                 <i class="fa-solid fa-school"></i> Brahmanbaria Govt Technical
                 School & College
               </div>
-              <span
-                class="badge-tag"
-                style="
-                  background: rgba(245, 158, 11, 0.2);
-                  color: #f59e0b;
-                  border-color: rgba(245, 158, 11, 0.4);
-                "
-                data-i18n="edu_3_gpa"
-              >
+              <span class="badge-pill badge-warning" data-i18n="edu_3_gpa">
                 ⭐ GPA 5.00 / 5.00
               </span>
             </div>
@@ -1802,8 +1736,7 @@
                 "
               ></div>
               <div
-                class="timeline-date"
-                style="color: var(--accent-purple)"
+                class="timeline-date text-purple"
                 data-i18n="edu_5_date"
               >
                 Future Aspirations
@@ -1827,20 +1760,20 @@
         <span class="eyebrow" data-i18n="skills_eyebrow"
           >TECHNICAL & SOFT SKILLS</span
         >
-        <h2 class="section-title gradient-text" data-i18n="skills_title">
+        <h2 class="section-title" data-i18n="skills_title">
           My Expertise & Competencies
         </h2>
 
         <!-- High Level Skills -->
         <div class="skills-category">
-          <div class="category-label" style="color: #10b981">
+          <div class="category-label text-success">
             <div
               class="card-icon-badge"
               style="
                 width: 36px;
                 height: 36px;
                 font-size: 1rem;
-                color: #10b981;
+                color: var(--accent-emerald);
                 background: rgba(16, 185, 129, 0.12);
               "
             >
@@ -1882,14 +1815,14 @@
 
         <!-- Medium Level Skills -->
         <div class="skills-category">
-          <div class="category-label" style="color: #3b82f6">
+          <div class="category-label text-blue">
             <div
               class="card-icon-badge"
               style="
                 width: 36px;
                 height: 36px;
                 font-size: 1rem;
-                color: #3b82f6;
+                color: var(--accent-blue);
                 background: rgba(59, 130, 246, 0.12);
               "
             >
@@ -1916,14 +1849,14 @@
 
         <!-- Basic Level Skills -->
         <div class="skills-category">
-          <div class="category-label" style="color: #f59e0b">
+          <div class="category-label text-warning">
             <div
               class="card-icon-badge"
               style="
                 width: 36px;
                 height: 36px;
                 font-size: 1rem;
-                color: #f59e0b;
+                color: var(--accent-amber);
                 background: rgba(245, 158, 11, 0.12);
               "
             >
@@ -1951,110 +1884,62 @@
         </div>
 
         <!-- Soft Skills Grid -->
-        <h3
-          style="margin-top: 3rem; font-size: var(--font-size-xl)"
-          data-i18n="skills_soft_title"
-        >
+        <h3 class="mt-5 mb-2" data-i18n="skills_soft_title">
           Soft Skills & Professional Traits
         </h3>
         <div class="soft-skills-grid">
           <div class="soft-card">
-            <div class="card-icon-badge" style="margin: 0 auto 0.85rem auto">
+            <div class="card-icon-badge mb-2">
               <i class="fa-solid fa-puzzle-piece"></i>
             </div>
-            <h4
-              style="font-size: var(--font-size-base); margin-bottom: 0.35rem"
-              data-i18n="soft_1_title"
-            >
+            <h4 class="mb-1" data-i18n="soft_1_title">
               Problem Solving
             </h4>
-            <p
-              style="
-                font-size: var(--font-size-xs);
-                color: var(--text-secondary);
-              "
-              data-i18n="soft_1_desc"
-            >
+            <p class="text-secondary" data-i18n="soft_1_desc">
               Troubleshooting hardware & circuit logic efficiently
             </p>
           </div>
           <div class="soft-card">
-            <div class="card-icon-badge" style="margin: 0 auto 0.85rem auto">
+            <div class="card-icon-badge mb-2">
               <i class="fa-solid fa-book-open-reader"></i>
             </div>
-            <h4
-              style="font-size: var(--font-size-base); margin-bottom: 0.35rem"
-              data-i18n="soft_2_title"
-            >
+            <h4 class="mb-1" data-i18n="soft_2_title">
               Self-Learning
             </h4>
-            <p
-              style="
-                font-size: var(--font-size-xs);
-                color: var(--text-secondary);
-              "
-              data-i18n="soft_2_desc"
-            >
+            <p class="text-secondary" data-i18n="soft_2_desc">
               Learning on your own from online resources
             </p>
           </div>
           <div class="soft-card">
-            <div class="card-icon-badge" style="margin: 0 auto 0.85rem auto">
+            <div class="card-icon-badge mb-2">
               <i class="fa-solid fa-people-group"></i>
             </div>
-            <h4
-              style="font-size: var(--font-size-base); margin-bottom: 0.35rem"
-              data-i18n="soft_3_title"
-            >
+            <h4 class="mb-1" data-i18n="soft_3_title">
               Teamwork & Leadership
             </h4>
-            <p
-              style="
-                font-size: var(--font-size-xs);
-                color: var(--text-secondary);
-              "
-              data-i18n="soft_3_desc"
-            >
+            <p class="text-secondary" data-i18n="soft_3_desc">
               Collaborating seamlessly and leading engineering teams
             </p>
           </div>
           <div class="soft-card">
-            <div class="card-icon-badge" style="margin: 0 auto 0.85rem auto">
+            <div class="card-icon-badge mb-2">
               <i class="fa-solid fa-comments"></i>
             </div>
-            <h4
-              style="font-size: var(--font-size-base); margin-bottom: 0.35rem"
-              data-i18n="soft_4_title"
-            >
+            <h4 class="mb-1" data-i18n="soft_4_title">
               Communication
             </h4>
-            <p
-              style="
-                font-size: var(--font-size-xs);
-                color: var(--text-secondary);
-              "
-              data-i18n="soft_4_desc"
-            >
+            <p class="text-secondary" data-i18n="soft_4_desc">
               Delivering clear project demos and seminar talks
             </p>
           </div>
           <div class="soft-card">
-            <div class="card-icon-badge" style="margin: 0 auto 0.85rem auto">
+            <div class="card-icon-badge mb-2">
               <i class="fa-solid fa-clock"></i>
             </div>
-            <h4
-              style="font-size: var(--font-size-base); margin-bottom: 0.35rem"
-              data-i18n="soft_5_title"
-            >
+            <h4 class="mb-1" data-i18n="soft_5_title">
               Time Management
             </h4>
-            <p
-              style="
-                font-size: var(--font-size-xs);
-                color: var(--text-secondary);
-              "
-              data-i18n="soft_5_desc"
-            >
+            <p class="text-secondary" data-i18n="soft_5_desc">
               Balancing studies, DIY projects & competitions
             </p>
           </div>
@@ -2072,7 +1957,7 @@
         <span class="eyebrow" data-i18n="projects_eyebrow"
           >INNOVATIVE WORK</span
         >
-        <h2 class="section-title gradient-text" data-i18n="projects_title">
+        <h2 class="section-title" data-i18n="projects_title">
           Featured Projects
         </h2>
 
@@ -2109,11 +1994,8 @@
             </div>
             <div class="project-footer">
               <span
-                style="
-                  font-size: var(--font-size-xs);
-                  color: #10b981;
-                  font-weight: 600;
-                "
+                class="text-success"
+                style="font-size: var(--font-size-xs); font-weight: 600"
                 data-i18n="p1_result"
                 >✓ Smooth real-time device control</span
               >
@@ -2159,11 +2041,8 @@
             </div>
             <div class="project-footer">
               <span
-                style="
-                  font-size: var(--font-size-xs);
-                  color: #10b981;
-                  font-weight: 600;
-                "
+                class="text-success"
+                style="font-size: var(--font-size-xs); font-weight: 600"
                 data-i18n="p2_result"
                 >✓ Stable 12V low-ripple output</span
               >
@@ -2209,11 +2088,8 @@
             </div>
             <div class="project-footer">
               <span
-                style="
-                  font-size: var(--font-size-xs);
-                  color: #10b981;
-                  font-weight: 600;
-                "
+                class="text-success"
+                style="font-size: var(--font-size-xs); font-weight: 600"
                 data-i18n="p3_result"
                 >✓ Improved panel efficiency</span
               >
@@ -2236,11 +2112,11 @@
     <section class="section-padding" id="experience">
       <div class="container">
         <span class="eyebrow" data-i18n="exp_eyebrow">PRACTICAL TRAINING</span>
-        <h2 class="section-title gradient-text" data-i18n="exp_title">
+        <h2 class="section-title" data-i18n="exp_title">
           Work Experience & Internship
         </h2>
 
-        <div class="glass-card">
+        <div class="glass-card centered-container">
           <div class="timeline">
             <div class="timeline-item">
               <div class="timeline-dot"></div>
@@ -2276,7 +2152,7 @@
       </div>
     </section>
 
-    <!-- SECTION 7: Achievements & Competitions Section (Streamlined - No Duplicate SSC Box) -->
+    <!-- SECTION 7: Achievements & Competitions Section -->
     <section
       class="section-padding"
       id="achievements"
@@ -2286,7 +2162,7 @@
         <span class="eyebrow" data-i18n="achieve_eyebrow"
           >RECOGNITION & AWARDS</span
         >
-        <h2 class="section-title gradient-text" data-i18n="achieve_title">
+        <h2 class="section-title" data-i18n="achieve_title">
           Achievements & Competitions
         </h2>
 
@@ -2302,116 +2178,64 @@
         <!-- Competitions Grid (5 Clean Unique Cards) -->
         <div class="achievements-grid">
           <div class="glass-card achieve-card">
-            <span class="achieve-badge" style="background: #3b82f6"
-              >4th Place</span
-            >
-            <h4
-              style="font-size: var(--font-size-base); margin-bottom: 0.45rem"
-            >
-              Inter-Department Innovation & Skill Competition 2024
-            </h4>
-            <p
-              style="
-                font-size: var(--font-size-xs);
-                color: var(--text-secondary);
-              "
-            >
+            <div>
+              <span class="badge-pill badge-neutral mb-2">4th Place</span>
+              <h4 class="mb-1">
+                Inter-Department Innovation & Skill Competition 2024
+              </h4>
+            </div>
+            <p class="text-secondary" style="font-size: var(--font-size-xs);">
               <i class="fa-regular fa-calendar"></i> 25 Sep 2024
             </p>
           </div>
 
-          <div
-            class="glass-card achieve-card"
-            style="border-top: 3px solid #10b981"
-          >
-            <span class="achieve-badge" style="background: #10b981"
-              >🏆 1st Place Champion</span
-            >
-            <h4
-              style="font-size: var(--font-size-base); margin-bottom: 0.45rem"
-            >
-              Skill Competition 2025
-            </h4>
-            <p
-              style="
-                font-size: var(--font-size-xs);
-                color: var(--text-secondary);
-              "
-            >
+          <div class="glass-card achieve-card">
+            <div>
+              <span class="badge-pill badge-warning mb-2">🏆 1st Place Champion</span>
+              <h4 class="mb-1">
+                Skill Competition 2025
+              </h4>
+            </div>
+            <p class="text-secondary" style="font-size: var(--font-size-xs);">
               <i class="fa-regular fa-calendar"></i> 27 Feb 2025
             </p>
           </div>
 
           <div class="glass-card achieve-card">
-            <span class="achieve-badge" style="background: #8b5cf6"
-              >🥈 2nd Place</span
-            >
-            <h4
-              style="font-size: var(--font-size-base); margin-bottom: 0.45rem"
-            >
-              Skill & Innovation Competition 2025
-            </h4>
-            <p
-              style="
-                font-size: var(--font-size-xs);
-                color: var(--text-secondary);
-              "
-            >
+            <div>
+              <span class="badge-pill badge-blue mb-2">🥈 2nd Place</span>
+              <h4 class="mb-1">
+                Skill & Innovation Competition 2025
+              </h4>
+            </div>
+            <p class="text-secondary" style="font-size: var(--font-size-xs);">
               <i class="fa-regular fa-calendar"></i> 27 Sep 2025
             </p>
           </div>
 
-          <div
-            class="glass-card achieve-card"
-            style="border-top: 3px solid #06b6d4"
-          >
-            <span class="achieve-badge" style="background: #06b6d4"
-              >🥇 1st Place (Sylhet Division)</span
-            >
-            <h4
-              style="font-size: var(--font-size-base); margin-bottom: 0.45rem"
-            >
-              Regional Level Skill & Innovation Competition 2026
-            </h4>
-            <p
-              style="
-                font-size: var(--font-size-xs);
-                color: var(--accent-electric);
-                font-weight: 600;
-              "
-            >
-              <i class="fa-solid fa-paper-plane"></i> Qualified for National
-              Level
-            </p>
-            <p
-              style="
-                font-size: var(--font-size-xs);
-                color: var(--text-secondary);
-                margin-top: 0.25rem;
-              "
-            >
+          <div class="glass-card achieve-card achieve-hero-card">
+            <div>
+              <span class="badge-pill badge-cyan mb-2">🥇 1st Place (Sylhet Division)</span>
+              <h4 class="mb-1">
+                Regional Level Skill & Innovation Competition 2026
+              </h4>
+              <p class="text-accent mt-1" style="font-size: var(--font-size-xs); font-weight: 600;">
+                <i class="fa-solid fa-paper-plane"></i> Qualified for National Level
+              </p>
+            </div>
+            <p class="text-secondary mt-1" style="font-size: var(--font-size-xs);">
               <i class="fa-regular fa-calendar"></i> 17 Apr 2026
             </p>
           </div>
 
-          <div
-            class="glass-card achieve-card"
-            style="border-top: 3px solid #ec4899"
-          >
-            <span class="achieve-badge" style="background: #ec4899"
-              >🚀 Aspiring Champion</span
-            >
-            <h4
-              style="font-size: var(--font-size-base); margin-bottom: 0.45rem"
-            >
-              National Level Skill & Innovation Competition
-            </h4>
-            <p
-              style="
-                font-size: var(--font-size-xs);
-                color: var(--text-secondary);
-              "
-            >
+          <div class="glass-card achieve-card">
+            <div>
+              <span class="badge-pill badge-neutral mb-2">🚀 Aspiring Champion</span>
+              <h4 class="mb-1">
+                National Level Skill & Innovation Competition
+              </h4>
+            </div>
+            <p class="text-secondary" style="font-size: var(--font-size-xs);">
               <i class="fa-regular fa-clock"></i> Upcoming Event
             </p>
           </div>
@@ -2423,11 +2247,11 @@
     <section class="section-padding" id="certificates">
       <div class="container">
         <span class="eyebrow" data-i18n="cert_eyebrow">CREDENTIALS</span>
-        <h2 class="section-title gradient-text" data-i18n="cert_title">
+        <h2 class="section-title" data-i18n="cert_title">
           Professional Certifications
         </h2>
 
-        <div class="cert-card-enhanced" style="max-width: 800px">
+        <div class="cert-card-enhanced centered-container">
           <div class="cert-top-bar">
             <div class="cert-nsda-badge">
               <i class="fa-solid fa-shield-halved"></i>
@@ -2438,40 +2262,19 @@
             </div>
           </div>
 
-          <h3
-            style="
-              font-size: var(--font-size-xl);
-              margin-bottom: 0.65rem;
-              color: var(--text-primary);
-            "
-            data-i18n="cert_1_title"
-          >
+          <h3 class="mb-2" style="font-size: var(--font-size-xl); color: var(--text-primary);" data-i18n="cert_1_title">
             Refrigeration and Air Conditioning, Level-1 (360 Hours)
           </h3>
 
-          <p
-            style="
-              font-size: var(--font-size-base);
-              color: var(--accent-electric);
-              margin-bottom: 1rem;
-              font-weight: 600;
-            "
-            data-i18n="cert_1_issuer"
-          >
-            <strong>Issuer:</strong> National Skills Development Authority
-            (NSDA)
+          <p class="text-accent mb-3" style="font-size: var(--font-size-base); font-weight: 600;" data-i18n="cert_1_issuer">
+            <strong>Issuer:</strong> National Skills Development Authority (NSDA)
           </p>
 
           <div class="cert-details-grid">
             <div class="cert-detail-item">
               <i class="fa-regular fa-clock"></i>
               <div>
-                <div
-                  style="
-                    font-size: var(--font-size-xs);
-                    color: var(--text-muted);
-                  "
-                >
+                <div class="text-muted" style="font-size: var(--font-size-xs);">
                   Duration
                 </div>
                 <div style="font-size: var(--font-size-sm); font-weight: 600">
@@ -2483,12 +2286,7 @@
             <div class="cert-detail-item">
               <i class="fa-solid fa-hourglass-half"></i>
               <div>
-                <div
-                  style="
-                    font-size: var(--font-size-xs);
-                    color: var(--text-muted);
-                  "
-                >
+                <div class="text-muted" style="font-size: var(--font-size-xs);">
                   Total Hours
                 </div>
                 <div style="font-size: var(--font-size-sm); font-weight: 600">
@@ -2498,23 +2296,12 @@
             </div>
 
             <div class="cert-detail-item">
-              <i class="fa-solid fa-circle-check" style="color: #10b981"></i>
+              <i class="fa-solid fa-circle-check text-success"></i>
               <div>
-                <div
-                  style="
-                    font-size: var(--font-size-xs);
-                    color: var(--text-muted);
-                  "
-                >
+                <div class="text-muted" style="font-size: var(--font-size-xs);">
                   Skill Qualification
                 </div>
-                <div
-                  style="
-                    font-size: var(--font-size-sm);
-                    font-weight: 600;
-                    color: #10b981;
-                  "
-                >
+                <div class="text-success" style="font-size: var(--font-size-sm); font-weight: 600;">
                   Level-1 Certified
                 </div>
               </div>
@@ -2535,7 +2322,7 @@
     >
       <div class="container">
         <span class="eyebrow" data-i18n="lang_eyebrow">COMMUNICATION</span>
-        <h2 class="section-title gradient-text" data-i18n="lang_title">
+        <h2 class="section-title" data-i18n="lang_title">
           Language Proficiency
         </h2>
 
@@ -2547,57 +2334,33 @@
                 <div class="card-icon-badge">
                   <i class="fa-solid fa-language"></i>
                 </div>
-                <span
-                  class="lang-badge-pill"
-                  style="
-                    background: rgba(16, 185, 129, 0.15);
-                    color: #10b981;
-                    border-color: rgba(16, 185, 129, 0.3);
-                  "
-                >
+                <span class="badge-pill badge-success">
                   Native / 100%
                 </span>
               </div>
-              <h3 style="font-size: var(--font-size-lg); margin-bottom: 0.5rem">
+              <h3 class="mb-1" style="font-size: var(--font-size-lg)">
                 Bangla
               </h3>
-              <p
-                style="
-                  font-size: var(--font-size-xs);
-                  color: var(--text-secondary);
-                "
-                data-i18n="lang_bn"
-              >
-                Bangla (Native) — Reading ✓ | Writing ✓ | Listening ✓ | Speaking
-                ✓
+              <p class="text-secondary" style="font-size: var(--font-size-xs)" data-i18n="lang_bn">
+                Bangla (Native) — Reading ✓ | Writing ✓ | Listening ✓ | Speaking ✓
               </p>
             </div>
             <div class="lang-progress-visual">
               <div class="lang-bar-track">
-                <div
-                  class="lang-bar-fill"
-                  style="
-                    width: 100%;
-                    background: linear-gradient(90deg, #10b981, #06b6d4);
-                  "
-                ></div>
+                <div class="lang-bar-fill" style="width: 100%;"></div>
               </div>
               <div class="lang-skills-matrix">
                 <span class="lang-skill-pill"
-                  ><i class="fa-solid fa-check" style="color: #10b981"></i>
-                  Read</span
+                  ><i class="fa-solid fa-check text-success"></i> Read</span
                 >
                 <span class="lang-skill-pill"
-                  ><i class="fa-solid fa-check" style="color: #10b981"></i>
-                  Write</span
+                  ><i class="fa-solid fa-check text-success"></i> Write</span
                 >
                 <span class="lang-skill-pill"
-                  ><i class="fa-solid fa-check" style="color: #10b981"></i>
-                  Listen</span
+                  ><i class="fa-solid fa-check text-success"></i> Listen</span
                 >
                 <span class="lang-skill-pill"
-                  ><i class="fa-solid fa-check" style="color: #10b981"></i>
-                  Speak</span
+                  ><i class="fa-solid fa-check text-success"></i> Speak</span
                 >
               </div>
             </div>
@@ -2610,57 +2373,33 @@
                 <div class="card-icon-badge">
                   <i class="fa-solid fa-globe"></i>
                 </div>
-                <span
-                  class="lang-badge-pill"
-                  style="
-                    background: rgba(56, 189, 248, 0.15);
-                    color: #38bdf8;
-                    border-color: rgba(56, 189, 248, 0.3);
-                  "
-                >
+                <span class="badge-pill badge-cyan">
                   Fluent / 90%
                 </span>
               </div>
-              <h3 style="font-size: var(--font-size-lg); margin-bottom: 0.5rem">
+              <h3 class="mb-1" style="font-size: var(--font-size-lg)">
                 English
               </h3>
-              <p
-                style="
-                  font-size: var(--font-size-xs);
-                  color: var(--text-secondary);
-                "
-                data-i18n="lang_en"
-              >
-                English (Fluent) — Reading ✓ | Writing ✓ | Listening ✓ |
-                Speaking ✓
+              <p class="text-secondary" style="font-size: var(--font-size-xs)" data-i18n="lang_en">
+                English (Fluent) — Reading ✓ | Writing ✓ | Listening ✓ | Speaking ✓
               </p>
             </div>
             <div class="lang-progress-visual">
               <div class="lang-bar-track">
-                <div
-                  class="lang-bar-fill"
-                  style="
-                    width: 90%;
-                    background: linear-gradient(90deg, #38bdf8, #818cf8);
-                  "
-                ></div>
+                <div class="lang-bar-fill" style="width: 90%;"></div>
               </div>
               <div class="lang-skills-matrix">
                 <span class="lang-skill-pill"
-                  ><i class="fa-solid fa-check" style="color: #38bdf8"></i>
-                  Read</span
+                  ><i class="fa-solid fa-check text-accent"></i> Read</span
                 >
                 <span class="lang-skill-pill"
-                  ><i class="fa-solid fa-check" style="color: #38bdf8"></i>
-                  Write</span
+                  ><i class="fa-solid fa-check text-accent"></i> Write</span
                 >
                 <span class="lang-skill-pill"
-                  ><i class="fa-solid fa-check" style="color: #38bdf8"></i>
-                  Listen</span
+                  ><i class="fa-solid fa-check text-accent"></i> Listen</span
                 >
                 <span class="lang-skill-pill"
-                  ><i class="fa-solid fa-check" style="color: #38bdf8"></i>
-                  Speak</span
+                  ><i class="fa-solid fa-check text-accent"></i> Speak</span
                 >
               </div>
             </div>
@@ -2673,57 +2412,33 @@
                 <div class="card-icon-badge">
                   <i class="fa-solid fa-comments"></i>
                 </div>
-                <span
-                  class="lang-badge-pill"
-                  style="
-                    background: rgba(245, 158, 11, 0.15);
-                    color: #f59e0b;
-                    border-color: rgba(245, 158, 11, 0.3);
-                  "
-                >
+                <span class="badge-pill badge-warning">
                   Spoken / 60%
                 </span>
               </div>
-              <h3 style="font-size: var(--font-size-lg); margin-bottom: 0.5rem">
+              <h3 class="mb-1" style="font-size: var(--font-size-lg)">
                 Hindi
               </h3>
-              <p
-                style="
-                  font-size: var(--font-size-xs);
-                  color: var(--text-secondary);
-                "
-                data-i18n="lang_hi"
-              >
-                Hindi (Spoken) — Reading ✗ | Writing ✗ | Listening ✓ | Speaking
-                ✓
+              <p class="text-secondary" style="font-size: var(--font-size-xs)" data-i18n="lang_hi">
+                Hindi (Spoken) — Reading ✗ | Writing ✗ | Listening ✓ | Speaking ✓
               </p>
             </div>
             <div class="lang-progress-visual">
               <div class="lang-bar-track">
-                <div
-                  class="lang-bar-fill"
-                  style="
-                    width: 60%;
-                    background: linear-gradient(90deg, #f59e0b, #ec4899);
-                  "
-                ></div>
+                <div class="lang-bar-fill" style="width: 60%;"></div>
               </div>
               <div class="lang-skills-matrix">
                 <span class="lang-skill-pill" style="opacity: 0.6"
-                  ><i class="fa-solid fa-xmark" style="color: #ef4444"></i>
-                  Read</span
+                  ><i class="fa-solid fa-xmark text-muted"></i> Read</span
                 >
                 <span class="lang-skill-pill" style="opacity: 0.6"
-                  ><i class="fa-solid fa-xmark" style="color: #ef4444"></i>
-                  Write</span
+                  ><i class="fa-solid fa-xmark text-muted"></i> Write</span
                 >
                 <span class="lang-skill-pill"
-                  ><i class="fa-solid fa-check" style="color: #f59e0b"></i>
-                  Listen</span
+                  ><i class="fa-solid fa-check text-warning"></i> Listen</span
                 >
                 <span class="lang-skill-pill"
-                  ><i class="fa-solid fa-check" style="color: #f59e0b"></i>
-                  Speak</span
+                  ><i class="fa-solid fa-check text-warning"></i> Speak</span
                 >
               </div>
             </div>
@@ -2736,21 +2451,14 @@
     <section class="section-padding" id="contact">
       <div class="container">
         <span class="eyebrow" data-i18n="contact_eyebrow">GET IN TOUCH</span>
-        <h2 class="section-title gradient-text" data-i18n="contact_title">
+        <h2 class="section-title" data-i18n="contact_title">
           Let's Connect & Collaborate
         </h2>
 
         <div class="contact-grid">
           <!-- Contact Info -->
           <div>
-            <p
-              style="
-                color: var(--text-secondary);
-                margin-bottom: 1.5rem;
-                font-size: var(--font-size-base);
-              "
-              data-i18n="contact_desc"
-            >
+            <p class="text-secondary mb-3" style="font-size: var(--font-size-base);" data-i18n="contact_desc">
               Feel free to reach out for research opportunities, university
               admissions, or engineering projects.
             </p>
@@ -2762,20 +2470,12 @@
                   <i class="fa-solid fa-envelope"></i>
                 </div>
                 <div>
-                  <div
-                    style="
-                      font-size: var(--font-size-xs);
-                      color: var(--text-muted);
-                    "
-                    data-i18n="contact_email_label"
-                  >
+                  <div class="text-muted" style="font-size: var(--font-size-xs)" data-i18n="contact_email_label">
                     Email Address
                   </div>
-                  <a
-                    href="mailto:mkkamrulislam2004@gmail.com"
-                    style="font-weight: 600; font-size: var(--font-size-base)"
-                    >mkkamrulislam2004@gmail.com</a
-                  >
+                  <a href="mailto:mkkamrulislam2004@gmail.com" style="font-weight: 600; font-size: var(--font-size-base)">
+                    mkkamrulislam2004@gmail.com
+                  </a>
                 </div>
               </div>
 
@@ -2792,21 +2492,14 @@
                   <i class="fa-brands fa-whatsapp"></i>
                 </div>
                 <div>
-                  <div
-                    style="
-                      font-size: var(--font-size-xs);
-                      color: var(--text-muted);
-                    "
-                    data-i18n="contact_wa_label"
-                  >
+                  <div class="text-muted" style="font-size: var(--font-size-xs)" data-i18n="contact_wa_label">
                     WhatsApp Chat
                   </div>
                   <a
                     href="https://wa.me/8801734793492"
                     target="_blank"
                     rel="noopener noreferrer"
-                    class="btn btn-secondary btn-sm"
-                    style="margin-top: 0.4rem"
+                    class="btn btn-secondary btn-sm mt-1"
                   >
                     <i class="fa-brands fa-whatsapp"></i>
                     <span data-i18n="contact_wa_btn">Chat on WhatsApp</span>
@@ -2814,25 +2507,13 @@
                 </div>
               </div>
 
-              <!-- Address with Interactive Google Maps Links for Sylhet & Brahmanbaria -->
+              <!-- Address with Interactive Google Maps Links -->
               <div class="contact-item">
                 <div class="card-icon-badge">
                   <i class="fa-solid fa-map-location-dot"></i>
                 </div>
-                <div
-                  style="
-                    display: flex;
-                    flex-direction: column;
-                    gap: 0.5rem;
-                    width: 100%;
-                  "
-                >
-                  <div
-                    style="
-                      font-size: var(--font-size-xs);
-                      color: var(--text-muted);
-                    "
-                  >
+                <div style="display: flex; flex-direction: column; gap: 0.5rem; width: 100%;">
+                  <div class="text-muted" style="font-size: var(--font-size-xs)">
                     Location (Click to view Google Maps)
                   </div>
                   <!-- Present Address -> Sylhet Google Maps -->
@@ -2843,36 +2524,16 @@
                     class="location-map-link"
                     title="Open Sylhet Division on Google Maps"
                   >
-                    <i
-                      class="fa-solid fa-location-dot"
-                      style="color: var(--accent-cyan)"
-                    ></i>
+                    <i class="fa-solid fa-location-dot text-accent"></i>
                     <div>
-                      <div
-                        style="
-                          font-weight: 600;
-                          font-size: var(--font-size-base);
-                        "
-                      >
+                      <div style="font-weight: 600; font-size: var(--font-size-base)">
                         Sylhet, Bangladesh
                       </div>
-                      <div
-                        style="
-                          font-size: var(--font-size-xs);
-                          color: var(--text-muted);
-                        "
-                      >
+                      <div class="text-muted" style="font-size: var(--font-size-xs)">
                         Present Address (Click for Map)
                       </div>
                     </div>
-                    <i
-                      class="fa-solid fa-arrow-up-right-from-square"
-                      style="
-                        margin-left: auto;
-                        font-size: 0.85rem;
-                        color: var(--accent-electric);
-                      "
-                    ></i>
+                    <i class="fa-solid fa-arrow-up-right-from-square text-accent" style="margin-left: auto; font-size: 0.85rem;"></i>
                   </a>
 
                   <!-- Permanent Address -> Brahmanbaria Google Maps -->
@@ -2883,36 +2544,16 @@
                     class="location-map-link"
                     title="Open Brahmanbaria District on Google Maps"
                   >
-                    <i
-                      class="fa-solid fa-location-dot"
-                      style="color: var(--accent-purple)"
-                    ></i>
+                    <i class="fa-solid fa-location-dot text-purple"></i>
                     <div>
-                      <div
-                        style="
-                          font-weight: 600;
-                          font-size: var(--font-size-base);
-                        "
-                      >
+                      <div style="font-weight: 600; font-size: var(--font-size-base)">
                         Brahmanbaria, Bangladesh
                       </div>
-                      <div
-                        style="
-                          font-size: var(--font-size-xs);
-                          color: var(--text-muted);
-                        "
-                      >
+                      <div class="text-muted" style="font-size: var(--font-size-xs)">
                         Permanent Address (Click for Map)
                       </div>
                     </div>
-                    <i
-                      class="fa-solid fa-arrow-up-right-from-square"
-                      style="
-                        margin-left: auto;
-                        font-size: 0.85rem;
-                        color: var(--text-muted);
-                      "
-                    ></i>
+                    <i class="fa-solid fa-arrow-up-right-from-square text-muted" style="margin-left: auto; font-size: 0.85rem;"></i>
                   </a>
                 </div>
               </div>
@@ -2923,9 +2564,7 @@
           <div class="glass-card">
             <form id="contactForm" onsubmit="handleFormSubmit(event)">
               <div class="form-group">
-                <label class="form-label" data-i18n="form_name"
-                  >Your Name</label
-                >
+                <label class="form-label" data-i18n="form_name">Your Name</label>
                 <input
                   type="text"
                   id="senderName"
@@ -2936,9 +2575,7 @@
               </div>
 
               <div class="form-group">
-                <label class="form-label" data-i18n="form_email"
-                  >Your Email</label
-                >
+                <label class="form-label" data-i18n="form_email">Your Email</label>
                 <input
                   type="email"
                   id="senderEmail"
@@ -2949,9 +2586,7 @@
               </div>
 
               <div class="form-group">
-                <label class="form-label" data-i18n="form_subject"
-                  >Subject</label
-                >
+                <label class="form-label" data-i18n="form_subject">Subject</label>
                 <input
                   type="text"
                   id="emailSubject"
@@ -2962,9 +2597,7 @@
               </div>
 
               <div class="form-group">
-                <label class="form-label" data-i18n="form_message"
-                  >Message</label
-                >
+                <label class="form-label" data-i18n="form_message">Message</label>
                 <textarea
                   id="emailBody"
                   class="form-textarea"
@@ -3043,16 +2676,10 @@
             ><i class="fa-brands fa-whatsapp"></i
           ></a>
         </div>
-        <p
-          style="font-size: var(--font-size-sm); color: var(--text-secondary)"
-          data-i18n="footer_copy"
-        >
+        <p class="text-secondary" style="font-size: var(--font-size-sm);" data-i18n="footer_copy">
           © 2026 MD KAMRUL ISLAM. All rights reserved.
         </p>
-        <p
-          style="font-size: var(--font-size-xs); color: var(--text-muted)"
-          data-i18n="footer_loc"
-        >
+        <p class="text-muted" style="font-size: var(--font-size-xs);" data-i18n="footer_loc">
           Sylhet, Bangladesh · Brahmanbaria, Bangladesh
         </p>
       </div>
