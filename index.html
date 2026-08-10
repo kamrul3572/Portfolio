@@ -1,0 +1,3092 @@
+<!--
+  PORTFOLIO — MD KAMRUL ISLAM
+  Full WhatsApp number not provided (masked). Replace __WHATSAPP_NUMBER__ (wa.me) with the real number.
+  Social links (LinkedIn/GitHub/Facebook/Instagram/X) set to default platform homepages until user updates with personal URLs.
+  Profile image expected at images/profile.jpg.
+-->
+<!doctype html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MD KAMRUL ISLAM | Portfolio — Electrical & IoT Engineer</title>
+    <meta
+      name="description"
+      content="Personal Portfolio & Educational CV of MD Kamrul Islam — Diploma Electrical Engineer specializing in IoT, Embedded Systems, and Renewable Energy."
+    />
+
+    <!-- Google Fonts Preconnect & Display Swap for Instant Speed -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&family=Outfit:wght@500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- FontAwesome 6 Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <style>
+      /* CSS RESET & HARMONIZED DESIGN SYSTEM */
+      :root {
+        /* Dark Theme Tokens (Default) */
+        --bg-primary: #070a12;
+        --bg-secondary: #0d1322;
+        --bg-card: rgba(15, 23, 42, 0.78);
+        --bg-card-hover: rgba(30, 41, 59, 0.9);
+        --border-color: rgba(56, 189, 248, 0.16);
+        --border-glow: rgba(6, 182, 212, 0.5);
+        --text-primary: #f8fafc;
+        --text-secondary: #94a3b8;
+        --text-muted: #64748b;
+        --accent-cyan: #06b6d4;
+        --accent-electric: #38bdf8;
+        --accent-purple: #8b5cf6;
+        --accent-amber: #f59e0b;
+        --accent-emerald: #10b981;
+        --accent-glow: rgba(6, 182, 212, 0.16);
+        --gradient-accent: linear-gradient(
+          135deg,
+          #06b6d4 0%,
+          #3b82f6 50%,
+          #8b5cf6 100%
+        );
+        --gradient-gold: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+        --gradient-text: linear-gradient(135deg, #38bdf8 0%, #818cf8 50%, #c084fc 100%);
+        --shadow-card: 0 12px 35px -10px rgba(0, 0, 0, 0.55);
+        --shadow-glow: 0 0 30px rgba(6, 182, 212, 0.25);
+        --nav-bg: rgba(7, 10, 18, 0.88);
+        --chip-bg: rgba(56, 189, 248, 0.12);
+        --chip-text: #38bdf8;
+        --transition-speed: 0.25s;
+        --font-heading: "Outfit", "Hind Siliguri", sans-serif;
+        --font-body: "Inter", "Hind Siliguri", sans-serif;
+
+        /* Fluid Typography Clamps */
+        --font-size-xs: clamp(0.75rem, 0.7rem + 0.2vw, 0.82rem);
+        --font-size-sm: clamp(0.85rem, 0.82rem + 0.2vw, 0.92rem);
+        --font-size-base: clamp(0.95rem, 0.92rem + 0.2vw, 1rem);
+        --font-size-lg: clamp(1.1rem, 1.05rem + 0.3vw, 1.25rem);
+        --font-size-xl: clamp(1.35rem, 1.25rem + 0.5vw, 1.65rem);
+        --font-size-2xl: clamp(1.75rem, 1.5rem + 1.25vw, 2.25rem);
+        --font-size-3xl: clamp(2.2rem, 1.8rem + 2vw, 3.25rem);
+      }
+
+      [data-theme="light"] {
+        --bg-primary: #f8fafc;
+        --bg-secondary: #f1f5f9;
+        --bg-card: #ffffff;
+        --bg-card-hover: #ffffff;
+        --border-color: rgba(14, 165, 233, 0.22);
+        --border-glow: rgba(14, 165, 233, 0.55);
+        --text-primary: #0f172a;
+        --text-secondary: #334155;
+        --text-muted: #64748b;
+        --accent-cyan: #0284c7;
+        --accent-electric: #0284c7;
+        --accent-purple: #7c3aed;
+        --accent-amber: #d97706;
+        --accent-emerald: #059669;
+        --accent-glow: rgba(2, 132, 199, 0.1);
+        --gradient-accent: linear-gradient(
+          135deg,
+          #0284c7 0%,
+          #2563eb 50%,
+          #7c3aed 100%
+        );
+        --gradient-text: linear-gradient(135deg, #0284c7 0%, #4f46e5 100%);
+        --shadow-card: 0 10px 30px -10px rgba(0, 0, 0, 0.08);
+        --shadow-glow: 0 0 20px rgba(2, 132, 199, 0.18);
+        --nav-bg: rgba(248, 250, 252, 0.94);
+        --chip-bg: rgba(2, 132, 199, 0.12);
+        --chip-text: #0284c7;
+      }
+
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      html {
+        scroll-behavior: smooth;
+        font-size: 16px;
+      }
+
+      body {
+        background-color: var(--bg-primary);
+        color: var(--text-primary);
+        font-family: var(--font-body);
+        line-height: 1.6;
+        transition:
+          background-color var(--transition-speed) ease,
+          color var(--transition-speed) ease;
+        overflow-x: hidden;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+      }
+
+      body.menu-open {
+        overflow: hidden;
+      }
+
+      /* TYPOGRAPHY & LAYOUT STABILITY */
+      h1, h2, h3, h4, h5, h6 {
+        font-family: var(--font-heading);
+        color: var(--text-primary);
+        line-height: 1.3;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+      }
+
+      body, p, span, a, li, input, textarea, button {
+        line-height: 1.6;
+      }
+
+      a {
+        color: var(--accent-electric);
+        text-decoration: none;
+        transition: color var(--transition-speed) ease;
+      }
+
+      a:hover {
+        color: var(--accent-cyan);
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 1.5rem;
+        width: 100%;
+      }
+
+      .section-padding {
+        padding: 5rem 0;
+        position: relative;
+      }
+
+      .eyebrow {
+        display: inline-block;
+        font-size: var(--font-size-xs);
+        font-weight: 700;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: var(--accent-electric);
+        margin-bottom: 0.5rem;
+      }
+
+      .section-title {
+        font-size: var(--font-size-2xl);
+        font-weight: 800;
+        margin-bottom: 2.5rem;
+        position: relative;
+        word-wrap: break-word;
+      }
+
+      .gradient-text {
+        background: var(--gradient-text);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        display: inline-block;
+      }
+
+      /* HARMONIZED CARD PRIMITIVES */
+      .glass-card {
+        background: var(--bg-card);
+        backdrop-filter: blur(16px);
+        -webkit-backdrop-filter: blur(16px);
+        border: 1px solid var(--border-color);
+        border-radius: 20px;
+        padding: 2.25rem;
+        box-shadow: var(--shadow-card);
+        transition:
+          transform var(--transition-speed) ease,
+          border-color var(--transition-speed) ease,
+          box-shadow var(--transition-speed) ease;
+      }
+
+      .glass-card:hover {
+        border-color: var(--border-glow);
+        box-shadow: var(--shadow-glow);
+        transform: translateY(-4px);
+      }
+
+      /* UNIFIED ICON BADGE */
+      .card-icon-badge {
+        width: 46px;
+        height: 46px;
+        border-radius: 14px;
+        background: var(--accent-glow);
+        border: 1px solid var(--border-color);
+        color: var(--accent-electric);
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.25rem;
+        flex-shrink: 0;
+      }
+
+      /* BUTTONS */
+      .btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.6rem;
+        padding: 0.85rem 1.6rem;
+        border-radius: 50px;
+        font-weight: 600;
+        font-size: var(--font-size-base);
+        cursor: pointer;
+        border: none;
+        transition:
+          transform var(--transition-speed) ease,
+          box-shadow var(--transition-speed) ease,
+          background var(--transition-speed) ease,
+          border-color var(--transition-speed) ease;
+        text-decoration: none;
+        white-space: nowrap;
+        min-height: 48px;
+        box-sizing: border-box;
+      }
+
+      .btn-primary {
+        background: var(--gradient-accent);
+        color: #ffffff !important;
+        box-shadow: 0 4px 18px rgba(6, 182, 212, 0.35);
+      }
+
+      .btn-primary:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 6px 24px rgba(6, 182, 212, 0.5);
+      }
+
+      .btn-secondary {
+        background: var(--bg-card);
+        color: var(--text-primary) !important;
+        border: 1px solid var(--border-color);
+      }
+
+      .btn-secondary:hover {
+        border-color: var(--accent-electric);
+        background: var(--accent-glow);
+        color: var(--accent-electric) !important;
+        transform: translateY(-2px);
+      }
+
+      .btn-sm {
+        padding: 0.5rem 1.1rem;
+        font-size: var(--font-size-sm);
+        min-height: 40px;
+      }
+
+      /* CONTROL TOGGLES (Theme & Language) */
+      .controls-group {
+        display: flex;
+        align-items: center;
+        gap: 0.6rem;
+        flex-shrink: 0;
+      }
+
+      .toggle-btn {
+        background: var(--bg-card);
+        border: 1px solid var(--border-color);
+        color: var(--text-primary);
+        padding: 0.45rem 0.9rem;
+        border-radius: 30px;
+        font-size: var(--font-size-sm);
+        font-weight: 600;
+        cursor: pointer;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.4rem;
+        transition:
+          border-color var(--transition-speed) ease,
+          background var(--transition-speed) ease;
+        min-height: 40px;
+      }
+
+      .toggle-btn:hover {
+        border-color: var(--accent-electric);
+        background: var(--accent-glow);
+      }
+
+      /* NAVBAR */
+      .navbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
+        background: var(--nav-bg);
+        backdrop-filter: blur(16px);
+        -webkit-backdrop-filter: blur(16px);
+        border-bottom: 1px solid var(--border-color);
+        transition: background var(--transition-speed) ease, border-color var(--transition-speed) ease;
+      }
+
+      .nav-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 75px;
+        gap: 1rem;
+      }
+
+      .nav-logo {
+        font-family: var(--font-heading);
+        font-size: 1.25rem;
+        font-weight: 800;
+        letter-spacing: -0.01em;
+        color: var(--text-primary);
+        display: flex;
+        align-items: center;
+        gap: 0.65rem;
+        white-space: nowrap;
+        flex-shrink: 0;
+      }
+
+      .nav-logo-icon {
+        width: 38px;
+        height: 38px;
+        background: var(--gradient-accent);
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        font-size: 1.05rem;
+        flex-shrink: 0;
+        box-shadow: 0 4px 12px rgba(6, 182, 212, 0.3);
+      }
+
+      .nav-menu {
+        display: flex;
+        align-items: center;
+        gap: 1.1rem;
+        list-style: none;
+      }
+
+      .nav-link {
+        color: var(--text-secondary);
+        font-weight: 500;
+        font-size: var(--font-size-sm);
+        transition: color var(--transition-speed) ease;
+        padding: 0.4rem 0;
+        position: relative;
+        white-space: nowrap;
+      }
+
+      .nav-link:hover,
+      .nav-link.active {
+        color: var(--accent-electric);
+      }
+
+      .nav-link::after {
+        content: "";
+        position: absolute;
+        bottom: -2px;
+        left: 0;
+        width: 0;
+        height: 2px;
+        background: var(--accent-electric);
+        transition: width var(--transition-speed) ease;
+        border-radius: 2px;
+      }
+
+      .nav-link:hover::after,
+      .nav-link.active::after {
+        width: 100%;
+      }
+
+      .hamburger {
+        display: none;
+        background: var(--bg-card);
+        border: 1px solid var(--border-color);
+        border-radius: 10px;
+        color: var(--text-primary);
+        width: 42px;
+        height: 42px;
+        font-size: 1.2rem;
+        cursor: pointer;
+        align-items: center;
+        justify-content: center;
+        transition: all var(--transition-speed) ease;
+      }
+
+      .hamburger:hover {
+        border-color: var(--accent-electric);
+        color: var(--accent-electric);
+      }
+
+      /* NAV OVERLAY FOR MOBILE */
+      .nav-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.6);
+        backdrop-filter: blur(4px);
+        z-index: 998;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity var(--transition-speed) ease, visibility var(--transition-speed) ease;
+      }
+
+      .nav-overlay.active {
+        opacity: 1;
+        visibility: visible;
+      }
+
+      /* HERO SECTION */
+      .hero {
+        padding-top: 9.5rem;
+        padding-bottom: 5.5rem;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        position: relative;
+      }
+
+      .hero-grid {
+        display: grid;
+        grid-template-columns: 1.2fr 0.8fr;
+        gap: 3.5rem;
+        align-items: center;
+      }
+
+      .hero-badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        background: var(--chip-bg);
+        color: var(--chip-text);
+        border: 1px solid var(--border-color);
+        padding: 0.5rem 1.2rem;
+        border-radius: 50px;
+        font-size: var(--font-size-sm);
+        font-weight: 600;
+        margin-bottom: 1.25rem;
+        max-width: 100%;
+        flex-wrap: wrap;
+      }
+
+      .hero-title {
+        font-size: var(--font-size-3xl);
+        font-weight: 800;
+        line-height: 1.2;
+        margin-bottom: 1rem;
+      }
+
+      .hero-subtitle {
+        font-size: var(--font-size-lg);
+        color: var(--text-secondary);
+        margin-bottom: 1.75rem;
+        font-weight: 400;
+      }
+
+      .hero-meta-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.75rem;
+        margin-bottom: 2.25rem;
+      }
+
+      .meta-chip {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        font-size: var(--font-size-sm);
+        color: var(--text-secondary);
+        background: var(--bg-card);
+        border: 1px solid var(--border-color);
+        padding: 0.45rem 0.95rem;
+        border-radius: 10px;
+        transition: all var(--transition-speed) ease;
+      }
+
+      .location-chip-link:hover {
+        border-color: var(--accent-electric);
+        background: var(--accent-glow);
+        color: var(--accent-electric);
+        transform: translateY(-2px);
+      }
+
+      .hero-actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        margin-bottom: 2.25rem;
+      }
+
+      .social-row {
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+        flex-wrap: wrap;
+      }
+
+      .social-icon-btn {
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        background: var(--bg-card);
+        border: 1px solid var(--border-color);
+        color: var(--text-primary);
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.15rem;
+        transition: all var(--transition-speed) ease;
+        text-decoration: none;
+        flex-shrink: 0;
+      }
+
+      .social-icon-btn:hover {
+        border-color: var(--accent-electric);
+        background: var(--accent-glow);
+        color: var(--accent-electric);
+        transform: translateY(-3px);
+      }
+
+      .whatsapp-active:hover {
+        border-color: #25d366;
+        background: rgba(37, 211, 102, 0.18);
+        color: #25d366;
+      }
+
+      .hero-avatar-wrapper {
+        position: relative;
+        display: flex;
+        justify-content: center;
+      }
+
+      .avatar-glow-ring {
+        position: relative;
+        width: 320px;
+        height: 320px;
+        border-radius: 50%;
+        padding: 8px;
+        background: var(--gradient-accent);
+        box-shadow: 0 0 45px rgba(6, 182, 212, 0.35);
+        flex-shrink: 0;
+      }
+
+      .avatar-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 50%;
+        background: var(--bg-secondary);
+        border: 4px solid var(--bg-primary);
+      }
+
+      /* ABOUT SECTION */
+      .about-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+      }
+
+      .about-box-title {
+        font-size: var(--font-size-lg);
+        margin-bottom: 1rem;
+        display: flex;
+        align-items: center;
+        gap: 0.65rem;
+        color: var(--accent-electric);
+      }
+
+      .tag-cloud {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.65rem;
+        margin-top: 1rem;
+      }
+
+      .badge-tag {
+        background: var(--chip-bg);
+        color: var(--chip-text);
+        border: 1px solid var(--border-color);
+        padding: 0.4rem 0.9rem;
+        border-radius: 30px;
+        font-size: var(--font-size-xs);
+        font-weight: 600;
+        display: inline-flex;
+        align-items: center;
+        gap: 0.45rem;
+      }
+
+      /* SKILLS SECTION */
+      .skills-category {
+        margin-bottom: 2rem;
+      }
+
+      .category-label {
+        font-size: var(--font-size-lg);
+        font-weight: 700;
+        margin-bottom: 1.25rem;
+        display: flex;
+        align-items: center;
+        gap: 0.6rem;
+      }
+
+      .skill-tags-grid {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.85rem;
+      }
+
+      .skill-chip {
+        background: var(--bg-card);
+        border: 1px solid var(--border-color);
+        padding: 0.65rem 1.15rem;
+        border-radius: 14px;
+        font-size: var(--font-size-sm);
+        font-weight: 600;
+        display: inline-flex;
+        align-items: center;
+        gap: 0.65rem;
+        transition: all var(--transition-speed) ease;
+      }
+
+      .skill-chip:hover {
+        border-color: var(--accent-electric);
+        background: var(--accent-glow);
+        transform: translateY(-3px);
+      }
+
+      .skill-high {
+        border-left: 3px solid #10b981;
+      }
+      .skill-medium {
+        border-left: 3px solid #3b82f6;
+      }
+      .skill-basic {
+        border-left: 3px solid #f59e0b;
+      }
+
+      .soft-skills-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 1.25rem;
+        margin-top: 1.5rem;
+      }
+
+      .soft-card {
+        background: var(--bg-card);
+        border: 1px solid var(--border-color);
+        padding: 1.5rem;
+        border-radius: 20px;
+        text-align: center;
+        transition: transform var(--transition-speed) ease, border-color var(--transition-speed) ease;
+      }
+
+      .soft-card:hover {
+        transform: translateY(-3px);
+        border-color: var(--accent-electric);
+      }
+
+      .soft-card i {
+        font-size: 2rem;
+        color: var(--accent-electric);
+        margin-bottom: 0.85rem;
+      }
+
+      /* PROJECTS SECTION */
+      .projects-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        gap: 2rem;
+      }
+
+      .project-card {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        border-radius: 20px;
+      }
+
+      .project-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-bottom: 1rem;
+        gap: 0.5rem;
+      }
+
+      .project-cat {
+        font-size: var(--font-size-xs);
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        color: var(--accent-electric);
+        font-weight: 700;
+      }
+
+      .project-title {
+        font-size: var(--font-size-xl);
+        margin-bottom: 0.85rem;
+      }
+
+      .project-desc {
+        color: var(--text-secondary);
+        font-size: var(--font-size-sm);
+        margin-bottom: 1.5rem;
+        flex-grow: 1;
+      }
+
+      .project-tech {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.45rem;
+        margin-bottom: 1.5rem;
+      }
+
+      .tech-pill {
+        font-size: var(--font-size-xs);
+        background: var(--bg-primary);
+        border: 1px solid var(--border-color);
+        padding: 0.3rem 0.75rem;
+        border-radius: 6px;
+        color: var(--text-secondary);
+        font-weight: 500;
+      }
+
+      .project-footer {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-top: 1px solid var(--border-color);
+        padding-top: 1.1rem;
+        margin-top: auto;
+        gap: 0.75rem;
+        flex-wrap: wrap;
+      }
+
+      /* EXPERIENCE & TIMELINE */
+      .timeline {
+        position: relative;
+        padding-left: 2.25rem;
+        border-left: 2px solid var(--border-color);
+      }
+
+      .timeline-item {
+        position: relative;
+        margin-bottom: 2.5rem;
+      }
+
+      .timeline-item:last-child {
+        margin-bottom: 0;
+      }
+
+      .timeline-dot {
+        position: absolute;
+        left: calc(-2.25rem - 9px);
+        top: 2px;
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        background: var(--accent-cyan);
+        border: 3px solid var(--bg-primary);
+        box-shadow: 0 0 12px var(--accent-cyan);
+      }
+
+      .timeline-date {
+        font-size: var(--font-size-xs);
+        font-weight: 700;
+        color: var(--accent-electric);
+        margin-bottom: 0.35rem;
+      }
+
+      .timeline-role {
+        font-size: var(--font-size-lg);
+        font-weight: 700;
+      }
+
+      .timeline-org {
+        font-size: var(--font-size-base);
+        color: var(--text-secondary);
+        margin-bottom: 0.85rem;
+      }
+
+      .bullet-list {
+        list-style-type: none;
+        padding-left: 0;
+      }
+
+      .bullet-list li {
+        position: relative;
+        padding-left: 1.35rem;
+        margin-bottom: 0.55rem;
+        font-size: var(--font-size-sm);
+        color: var(--text-secondary);
+      }
+
+      .bullet-list li::before {
+        content: "▹";
+        position: absolute;
+        left: 0;
+        color: var(--accent-electric);
+        font-weight: bold;
+      }
+
+      /* ACHIEVEMENTS GRID */
+      .achievements-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 1.5rem;
+      }
+
+      .achieve-card {
+        position: relative;
+        overflow: hidden;
+        border-radius: 20px;
+      }
+
+      .achieve-badge {
+        display: inline-block;
+        padding: 0.3rem 0.85rem;
+        border-radius: 20px;
+        font-size: var(--font-size-xs);
+        font-weight: 700;
+        margin-bottom: 0.85rem;
+        background: var(--gradient-accent);
+        color: #fff;
+      }
+
+      /* CERTIFICATE SHOWCASE CARD REDESIGN */
+      .cert-card-enhanced {
+        position: relative;
+        border-radius: 20px;
+        overflow: hidden;
+        border: 1px solid var(--border-color);
+        background: var(--bg-card);
+        backdrop-filter: blur(16px);
+        box-shadow: var(--shadow-card);
+        transition: all var(--transition-speed) ease;
+        padding: 2.25rem;
+      }
+
+      .cert-card-enhanced:hover {
+        border-color: var(--accent-emerald);
+        box-shadow: 0 0 30px rgba(16, 185, 129, 0.25);
+        transform: translateY(-4px);
+      }
+
+      .cert-top-bar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 1.5rem;
+        flex-wrap: wrap;
+        gap: 0.75rem;
+      }
+
+      .cert-nsda-badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        background: rgba(16, 185, 129, 0.15);
+        color: #10b981;
+        border: 1px solid rgba(16, 185, 129, 0.3);
+        padding: 0.4rem 1rem;
+        border-radius: 50px;
+        font-size: var(--font-size-xs);
+        font-weight: 700;
+        letter-spacing: 0.05em;
+      }
+
+      .cert-seal-icon {
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        background: rgba(16, 185, 129, 0.15);
+        border: 2px dashed rgba(16, 185, 129, 0.5);
+        color: #10b981;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.35rem;
+        flex-shrink: 0;
+      }
+
+      .cert-details-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        gap: 1rem;
+        margin-top: 1.5rem;
+        padding-top: 1.25rem;
+        border-top: 1px dashed var(--border-color);
+      }
+
+      .cert-detail-item {
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+        background: var(--bg-primary);
+        padding: 0.75rem 1rem;
+        border-radius: 14px;
+        border: 1px solid var(--border-color);
+      }
+
+      .cert-detail-item i {
+        font-size: 1.2rem;
+        color: var(--accent-electric);
+      }
+
+      /* LANGUAGE PROFICIENCY CARDS REDESIGN */
+      .language-grid-redesigned {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 1.75rem;
+      }
+
+      .lang-card-redesigned {
+        position: relative;
+        background: var(--bg-card);
+        backdrop-filter: blur(16px);
+        -webkit-backdrop-filter: blur(16px);
+        border: 1px solid var(--border-color);
+        border-radius: 20px;
+        padding: 1.75rem;
+        box-shadow: var(--shadow-card);
+        transition: all var(--transition-speed) ease;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+
+      .lang-card-redesigned:hover {
+        border-color: var(--accent-electric);
+        box-shadow: var(--shadow-glow);
+        transform: translateY(-4px);
+      }
+
+      .lang-card-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 1.25rem;
+      }
+
+      .lang-badge-pill {
+        font-size: var(--font-size-xs);
+        font-weight: 700;
+        padding: 0.3rem 0.85rem;
+        border-radius: 30px;
+        background: var(--chip-bg);
+        color: var(--chip-text);
+        border: 1px solid var(--border-color);
+      }
+
+      .lang-progress-visual {
+        margin: 1rem 0;
+      }
+
+      .lang-bar-track {
+        height: 10px;
+        background: var(--bg-primary);
+        border-radius: 10px;
+        overflow: hidden;
+        border: 1px solid var(--border-color);
+        margin-top: 0.5rem;
+      }
+
+      .lang-bar-fill {
+        height: 100%;
+        background: var(--gradient-accent);
+        border-radius: 10px;
+        transition: width 0.8s ease-in-out;
+      }
+
+      .lang-skills-matrix {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.4rem;
+        margin-top: 1rem;
+        padding-top: 1rem;
+        border-top: 1px solid var(--border-color);
+      }
+
+      .lang-skill-pill {
+        font-size: 0.78rem;
+        padding: 0.25rem 0.65rem;
+        border-radius: 6px;
+        background: var(--bg-primary);
+        border: 1px solid var(--border-color);
+        color: var(--text-secondary);
+        font-weight: 500;
+      }
+
+      /* CONTACT LOCATION MAP LINKS */
+      .location-map-link {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.6rem;
+        padding: 0.65rem 1rem;
+        border-radius: 14px;
+        background: var(--bg-primary);
+        border: 1px solid var(--border-color);
+        color: var(--text-primary);
+        transition: all var(--transition-speed) ease;
+        text-decoration: none;
+      }
+
+      .location-map-link:hover {
+        border-color: var(--accent-electric);
+        background: var(--accent-glow);
+        color: var(--accent-electric);
+        transform: translateX(4px);
+      }
+
+      /* CONTACT FORM */
+      .contact-grid {
+        display: grid;
+        grid-template-columns: 0.95fr 1.05fr;
+        gap: 3.5rem;
+      }
+
+      .contact-info-list {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        margin-top: 1.5rem;
+      }
+
+      .contact-item {
+        display: flex;
+        align-items: flex-start;
+        gap: 1.1rem;
+      }
+
+      .form-group {
+        margin-bottom: 1.35rem;
+      }
+
+      .form-label {
+        display: block;
+        font-size: var(--font-size-sm);
+        font-weight: 600;
+        margin-bottom: 0.45rem;
+        color: var(--text-primary);
+      }
+
+      .form-input,
+      .form-textarea {
+        width: 100%;
+        padding: 0.9rem 1.1rem;
+        background: var(--bg-secondary);
+        border: 1px solid var(--border-color);
+        border-radius: 14px;
+        color: var(--text-primary);
+        font-family: inherit;
+        font-size: var(--font-size-base);
+        transition: border-color var(--transition-speed) ease, box-shadow var(--transition-speed) ease;
+      }
+
+      .form-input:focus,
+      .form-textarea:focus {
+        outline: none;
+        border-color: var(--accent-electric);
+        box-shadow: 0 0 15px rgba(56, 189, 248, 0.2);
+      }
+
+      /* FOOTER */
+      footer {
+        background: var(--bg-secondary);
+        border-top: 1px solid var(--border-color);
+        padding: 3rem 0;
+        text-align: center;
+        margin-top: 4rem;
+      }
+
+      .footer-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.35rem;
+      }
+
+      /* RESPONSIVE BREAKPOINTS & MOBILE OPTIMIZATIONS */
+      @media (max-width: 992px) {
+        .hero-grid,
+        .about-grid,
+        .contact-grid {
+          grid-template-columns: 1fr;
+          gap: 3rem;
+        }
+        .avatar-glow-ring {
+          width: 270px;
+          height: 270px;
+        }
+      }
+
+      @media (max-width: 768px) {
+        .navbar {
+          height: 70px;
+        }
+        .nav-container {
+          height: 70px;
+        }
+
+        .nav-menu {
+          position: fixed;
+          top: 0;
+          right: -100%;
+          width: 280px;
+          height: 100vh;
+          background: var(--nav-bg);
+          backdrop-filter: blur(24px);
+          -webkit-backdrop-filter: blur(24px);
+          flex-direction: column;
+          justify-content: center;
+          gap: 1.75rem;
+          transition: right var(--transition-speed) ease-in-out;
+          overflow-y: auto;
+          padding: 3rem 2rem;
+          z-index: 999;
+          box-shadow: -10px 0 30px rgba(0, 0, 0, 0.5);
+          border-left: 1px solid var(--border-color);
+        }
+
+        .nav-menu.active {
+          right: 0;
+        }
+
+        .hamburger {
+          display: flex;
+          z-index: 1001;
+        }
+
+        .hero {
+          padding-top: 7.5rem;
+          padding-bottom: 4rem;
+          min-height: auto;
+        }
+
+        .glass-card {
+          padding: 1.6rem;
+        }
+
+        .projects-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .hero-actions {
+          width: 100%;
+        }
+
+        .btn {
+          width: 100%;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .container {
+          padding: 0 1.1rem;
+        }
+        .avatar-glow-ring {
+          width: 220px;
+          height: 220px;
+        }
+        .toggle-btn {
+          padding: 0.4rem 0.75rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Mobile Drawer Background Overlay -->
+    <div class="nav-overlay" id="navOverlay"></div>
+
+    <!-- Sticky Glassmorphism Navbar with Logical Section Order -->
+    <nav class="navbar">
+      <div class="container nav-container">
+        <a href="#" class="nav-logo">
+          <div class="nav-logo-icon"><i class="fa-solid fa-microchip"></i></div>
+          <span data-i18n="nav_logo">MD KAMRUL ISLAM</span>
+        </a>
+
+        <!-- Logical Nav Order: About -> Education -> Skills -> Projects -> Experience -> Achievements -> Certificates -> Languages -> Contact -->
+        <ul class="nav-menu" id="navMenu">
+          <li>
+            <a href="#about" class="nav-link" data-i18n="nav_about">About</a>
+          </li>
+          <li>
+            <a href="#education" class="nav-link" data-i18n="nav_education"
+              >Education</a
+            >
+          </li>
+          <li>
+            <a href="#skills" class="nav-link" data-i18n="nav_skills">Skills</a>
+          </li>
+          <li>
+            <a href="#projects" class="nav-link" data-i18n="nav_projects"
+              >Projects</a
+            >
+          </li>
+          <li>
+            <a href="#experience" class="nav-link" data-i18n="nav_experience"
+              >Experience</a
+            >
+          </li>
+          <li>
+            <a
+              href="#achievements"
+              class="nav-link"
+              data-i18n="nav_achievements"
+              >Achievements</a
+            >
+          </li>
+          <li>
+            <a
+              href="#certificates"
+              class="nav-link"
+              data-i18n="nav_certificates"
+              >Certificates</a
+            >
+          </li>
+          <li>
+            <a href="#languages" class="nav-link" data-i18n="nav_languages"
+              >Languages</a
+            >
+          </li>
+          <li>
+            <a href="#contact" class="nav-link" data-i18n="nav_contact"
+              >Contact</a
+            >
+          </li>
+        </ul>
+
+        <div class="controls-group">
+          <!-- Language Switcher -->
+          <button class="toggle-btn" id="langToggleBtn" title="Switch Language">
+            <i class="fa-solid fa-globe"></i> <span id="langBtnText">BN</span>
+          </button>
+
+          <!-- Dark / Light Theme Switcher -->
+          <button class="toggle-btn" id="themeToggleBtn" title="Toggle Theme">
+            <i class="fa-solid fa-moon" id="themeIcon"></i>
+          </button>
+
+          <!-- Mobile Drawer Toggle -->
+          <button class="hamburger" id="hamburgerBtn" aria-label="Toggle Menu">
+            <i class="fa-solid fa-bars" id="hamburgerIcon"></i>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- SECTION 1: Hero Section -->
+    <section class="hero" id="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="hero-badge">
+            <i class="fa-solid fa-bolt gradient-text"></i>
+            <span data-i18n="hero_badge"
+              >⚡ Electrical Engineering Student</span
+            >
+          </div>
+          <h1 class="hero-title">
+            <span data-i18n="hero_greeting">Hello, I'm</span><br />
+            <span class="gradient-text" data-i18n="hero_name"
+              >MD KAMRUL ISLAM</span
+            >
+          </h1>
+          <p class="hero-subtitle" data-i18n="hero_tagline">
+            Future Electrical Engineer | Tech Innovator & Physics Enthusiast
+          </p>
+
+          <div class="hero-meta-row">
+            <!-- Clickable Sylhet Location Link (Google Maps) -->
+            <a
+              href="https://www.google.com/maps/search/?api=1&query=Sylhet,+Bangladesh"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="meta-chip location-chip-link"
+              title="View Sylhet Division on Google Maps"
+            >
+              <i class="fa-solid fa-map-location-dot" style="color: var(--accent-cyan)"></i>
+              <span data-i18n="hero_loc">Sylhet, Bangladesh</span>
+              <i class="fa-solid fa-arrow-up-right-from-square" style="font-size: 0.75em; opacity: 0.7;"></i>
+            </a>
+            <div class="meta-chip">
+              <i class="fa-solid fa-flag"></i>
+              <span data-i18n="hero_nat">Bangladeshi</span>
+            </div>
+            <div class="meta-chip">
+              <i class="fa-solid fa-graduation-cap"></i>
+              <span data-i18n="hero_status"
+                >Seeking International Bachelor's Admission</span
+              >
+            </div>
+          </div>
+
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">
+              <i class="fa-solid fa-diagram-project"></i>
+              <span data-i18n="hero_cta_projects">View Projects</span>
+            </a>
+            <a href="#contact" class="btn btn-secondary">
+              <i class="fa-solid fa-paper-plane"></i>
+              <span data-i18n="hero_cta_contact">Contact Me</span>
+            </a>
+          </div>
+
+          <!-- Social Icons (Navigates to platform homepages) -->
+          <div class="social-row">
+            <a
+              href="https://linkedin.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="social-icon-btn"
+              aria-label="LinkedIn"
+              title="LinkedIn"
+              ><i class="fa-brands fa-linkedin-in"></i
+            ></a>
+            <a
+              href="https://github.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="social-icon-btn"
+              aria-label="GitHub"
+              title="GitHub"
+              ><i class="fa-brands fa-github"></i
+            ></a>
+            <a
+              href="https://facebook.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="social-icon-btn"
+              aria-label="Facebook"
+              title="Facebook"
+              ><i class="fa-brands fa-facebook-f"></i
+            ></a>
+            <a
+              href="https://instagram.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="social-icon-btn"
+              aria-label="Instagram"
+              title="Instagram"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+            <a
+              href="https://x.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="social-icon-btn"
+              aria-label="X (Twitter)"
+              title="X"
+              ><i class="fa-brands fa-x-twitter"></i
+            ></a>
+            <!-- WhatsApp Active Icon -->
+            <a
+              href="https://wa.me/__WHATSAPP_NUMBER__"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="social-icon-btn whatsapp-active"
+              aria-label="WhatsApp"
+              title="WhatsApp Chat"
+            >
+              <i class="fa-brands fa-whatsapp"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Profile Avatar Container -->
+        <div class="hero-avatar-wrapper">
+          <div class="avatar-glow-ring">
+            <img
+              src="images/profile.jpg"
+              alt="MD Kamrul Islam"
+              class="avatar-img"
+              onerror="
+                this.onerror = null;
+                this.src =
+                  'https://ui-avatars.com/api/?name=MD+Kamrul+Islam&background=0284c7&color=fff&size=300';
+              "
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2: About Section -->
+    <section class="section-padding" id="about">
+      <div class="container">
+        <span class="eyebrow" data-i18n="about_eyebrow">WHO IS KAMRUL?</span>
+        <h2 class="section-title gradient-text" data-i18n="about_title">
+          About Me & Career Objective
+        </h2>
+
+        <div class="about-grid">
+          <!-- Professional Summary -->
+          <div class="glass-card">
+            <h3 class="about-box-title">
+              <div class="card-icon-badge"><i class="fa-solid fa-user-gear"></i></div>
+              <span data-i18n="about_summary_title">Professional Summary</span>
+            </h3>
+            <p data-i18n="about_summary_text">
+              Kamrul Islam is a final-year Diploma in Electrical Engineering
+              student at Sylhet Polytechnic Institute with a strong passion for
+              IoT, electronics, and renewable energy. He has designed and built
+              smart-home and embedded systems projects using ESP32 and MQTT, and
+              completed an internship at BREB (Bangladesh Rural Electrification
+              Board). He loves physics, astronomy, and open-source software, and
+              aspires to become a researcher and innovator who solves real-world
+              problems by combining engineering and artificial intelligence.
+            </p>
+
+            <h4
+              style="
+                margin-top: 1.5rem;
+                font-size: var(--font-size-base);
+                color: var(--text-primary);
+              "
+              data-i18n="about_fav_subj"
+            >
+              Favorite Subjects
+            </h4>
+            <div class="tag-cloud">
+              <span class="badge-tag"
+                ><i class="fa-solid fa-atom"></i> Physics</span
+              >
+              <span class="badge-tag"
+                ><i class="fa-solid fa-vial"></i> Chemistry</span
+              >
+              <span class="badge-tag"
+                ><i class="fa-solid fa-calculator"></i> Mathematics</span
+              >
+            </div>
+          </div>
+
+          <!-- Career Objective -->
+          <div class="glass-card">
+            <h3 class="about-box-title">
+              <div class="card-icon-badge"><i class="fa-solid fa-bullseye"></i></div>
+              <span data-i18n="about_obj_title">Career Objective</span>
+            </h3>
+            <p data-i18n="about_obj_text">
+              Kamrul Islam is a final-year Diploma in Electrical Engineering
+              student at Sylhet Polytechnic Institute who wants to earn a
+              bachelor's degree in engineering abroad. Deeply interested in
+              electrical, electronics, computer, nuclear and telecommunication
+              engineering, as well as mathematics, chemistry and especially
+              physics. He loves learning about astronomy, cosmology and rocket
+              science. He enjoys working with hardware and software,
+              understanding how technology works, and learning modern fields
+              like artificial intelligence. His goal is to combine science and
+              engineering knowledge to solve real-world problems and contribute
+              as a researcher and innovator to his country and the world.
+            </p>
+
+            <h4
+              style="
+                margin-top: 1.5rem;
+                font-size: var(--font-size-base);
+                color: var(--text-primary);
+              "
+              data-i18n="about_interests"
+            >
+              Career Interests
+            </h4>
+            <div class="tag-cloud">
+              <span class="badge-tag">Hardware & Software</span>
+              <span class="badge-tag">Industrial Automation</span>
+              <span class="badge-tag">Renewable Energy</span>
+              <span class="badge-tag">Telecommunications</span>
+              <span class="badge-tag">Space Industry</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hobbies & FOSS Preference Bar -->
+        <div class="glass-card" style="margin-top: 2rem">
+          <div
+            style="
+              display: grid;
+              grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+              gap: 1.5rem;
+            "
+          >
+            <div>
+              <h4
+                style="
+                  font-size: var(--font-size-base);
+                  color: var(--accent-electric);
+                  margin-bottom: 0.75rem;
+                "
+                data-i18n="about_hobbies"
+              >
+                Hobbies & Passions
+              </h4>
+              <div class="tag-cloud">
+                <span class="badge-tag"
+                  ><i class="fa-solid fa-plane"></i> Travelling</span
+                >
+                <span class="badge-tag"
+                  ><i class="fa-solid fa-screwdriver-wrench"></i> DIY
+                  Projects</span
+                >
+                <span class="badge-tag"
+                  ><i class="fa-solid fa-user-astronaut"></i> Astronomy &
+                  Astrophysics</span
+                >
+                <span class="badge-tag"
+                  ><i class="fa-solid fa-rocket"></i> Rocket Science</span
+                >
+                <span class="badge-tag"
+                  ><i class="fa-solid fa-brain"></i> Artificial
+                  Intelligence</span
+                >
+                <span class="badge-tag"
+                  ><i class="fa-solid fa-infinity"></i> Cosmology</span
+                >
+                <span class="badge-tag"
+                  ><i class="fa-solid fa-lightbulb"></i> Deep Thinking</span
+                >
+              </div>
+            </div>
+            <div>
+              <h4
+                style="
+                  font-size: var(--font-size-base);
+                  color: var(--accent-electric);
+                  margin-bottom: 0.75rem;
+                "
+                data-i18n="about_foss"
+              >
+                Open Source & OS Preference
+              </h4>
+              <p
+                style="font-size: var(--font-size-sm); color: var(--text-secondary)"
+                data-i18n="about_foss_desc"
+              >
+                Strong advocate for Free & Open Source Software (FOSS). Primary
+                OS: Ubuntu (25.10).
+              </p>
+              <div class="tag-cloud" style="margin-top: 0.75rem">
+                <span
+                  class="badge-tag"
+                  style="
+                    background: rgba(233, 84, 32, 0.15);
+                    color: #e95420;
+                    border-color: rgba(233, 84, 32, 0.3);
+                  "
+                >
+                  <i class="fa-brands fa-ubuntu"></i> Ubuntu 25.10
+                </span>
+                <span
+                  class="badge-tag"
+                  style="
+                    background: rgba(16, 185, 129, 0.15);
+                    color: #10b981;
+                    border-color: rgba(16, 185, 129, 0.3);
+                  "
+                >
+                  <i class="fa-brands fa-linux"></i> FOSS Enthusiast
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: Education Section (Placed before Skills to build academic context) -->
+    <section
+      class="section-padding"
+      id="education"
+      style="background: var(--bg-secondary)"
+    >
+      <div class="container">
+        <span class="eyebrow" data-i18n="edu_eyebrow">ACADEMIC JOURNEY</span>
+        <h2 class="section-title gradient-text" data-i18n="edu_title">
+          Education Timeline
+        </h2>
+
+        <div class="glass-card">
+          <div class="timeline">
+            <!-- Diploma -->
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-date" data-i18n="edu_4_date">
+                2023 – Near Completion
+              </div>
+              <h3 class="timeline-role" data-i18n="edu_4_degree">
+                Diploma in Engineering (Electrical)
+              </h3>
+              <div class="timeline-org" data-i18n="edu_4_inst">
+                <i class="fa-solid fa-university"></i> Sylhet Polytechnic
+                Institute
+              </div>
+              <p
+                style="
+                  font-size: var(--font-size-sm);
+                  color: var(--text-secondary);
+                  margin-bottom: 0.5rem;
+                "
+                data-i18n="edu_4_cgpa_label"
+              >
+                Semester CGPA Progression:
+              </p>
+              <div class="tag-cloud">
+                <span class="badge-tag">S1: 3.57</span>
+                <span class="badge-tag">S2: 3.72</span>
+                <span class="badge-tag">S3: 3.58</span>
+                <span class="badge-tag">S4: 3.69</span>
+                <span class="badge-tag">S5: 3.61</span>
+                <span
+                  class="badge-tag"
+                  style="background: rgba(16, 185, 129, 0.2); color: #10b981"
+                  >S6: 3.76</span
+                >
+              </div>
+            </div>
+
+            <!-- SSC  -->
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-date">2020 – 2022</div>
+              <h3 class="timeline-role" data-i18n="edu_3_degree">
+                SSC  — Machine Tools Operation
+              </h3>
+              <div class="timeline-org" data-i18n="edu_3_inst">
+                <i class="fa-solid fa-school"></i> Brahmanbaria Govt Technical
+                School & College
+              </div>
+              <span
+                class="badge-tag"
+                style="
+                  background: rgba(245, 158, 11, 0.2);
+                  color: #f59e0b;
+                  border-color: rgba(245, 158, 11, 0.4);
+                "
+                data-i18n="edu_3_gpa"
+              >
+                ⭐ GPA 5.00 / 5.00
+              </span>
+            </div>
+
+            <!-- Classes 6-8 -->
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-date">2016 – 2019</div>
+              <h3 class="timeline-role" data-i18n="edu_2_degree">
+                Secondary Schooling (Classes 6–8)
+              </h3>
+              <div class="timeline-org" data-i18n="edu_2_inst">
+                <i class="fa-solid fa-school"></i> Dhautpur Government High
+                School
+              </div>
+            </div>
+
+            <!-- Primary -->
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-date">2008 – 2015</div>
+              <h3 class="timeline-role" data-i18n="edu_1_degree">
+                Primary Education
+              </h3>
+              <div class="timeline-org" data-i18n="edu_1_inst">
+                <i class="fa-solid fa-school"></i> Royal Free Cadet School
+              </div>
+            </div>
+
+            <!-- Bachelor Goal -->
+            <div class="timeline-item">
+              <div
+                class="timeline-dot"
+                style="
+                  background: var(--accent-purple);
+                  box-shadow: 0 0 12px var(--accent-purple);
+                "
+              ></div>
+              <div
+                class="timeline-date"
+                style="color: var(--accent-purple)"
+                data-i18n="edu_5_date"
+              >
+                Future Aspirations
+              </div>
+              <h3 class="timeline-role" data-i18n="edu_5_degree">
+                Bachelor's Degree in Engineering (Abroad)
+              </h3>
+              <div class="timeline-org" data-i18n="edu_5_inst">
+                <i class="fa-solid fa-globe"></i> International University
+                Candidate
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 4: Skills Section -->
+    <section class="section-padding" id="skills">
+      <div class="container">
+        <span class="eyebrow" data-i18n="skills_eyebrow"
+          >TECHNICAL & SOFT SKILLS</span
+        >
+        <h2 class="section-title gradient-text" data-i18n="skills_title">
+          My Expertise & Competencies
+        </h2>
+
+        <!-- High Level Skills -->
+        <div class="skills-category">
+          <div class="category-label" style="color: #10b981">
+            <div class="card-icon-badge" style="width: 36px; height: 36px; font-size: 1rem; color: #10b981; background: rgba(16,185,129,0.12);">
+              <i class="fa-solid fa-circle-check"></i>
+            </div>
+            <span data-i18n="skills_high">High Proficiency</span>
+          </div>
+          <div class="skill-tags-grid">
+            <div class="skill-chip skill-high">
+              <i class="fa-solid fa-plug-circle-bolt"></i> House Wiring
+            </div>
+            <div class="skill-chip skill-high">
+              <i class="fa-solid fa-charging-station"></i> Three-Phase System
+            </div>
+            <div class="skill-chip skill-high">
+              <i class="fa-solid fa-microchip"></i> Microcontroller
+            </div>
+            <div class="skill-chip skill-high">
+              <i class="fa-solid fa-wrench"></i> Hardware Troubleshooting
+            </div>
+            <div class="skill-chip skill-high">
+              <i class="fa-solid fa-snowflake"></i> Cooling System
+            </div>
+            <div class="skill-chip skill-high">
+              <i class="fa-solid fa-temperature-arrow-down"></i> Fridge
+              Repairing
+            </div>
+            <div class="skill-chip skill-high">
+              <i class="fa-solid fa-file-lines"></i> LibreOffice
+            </div>
+            <div class="skill-chip skill-high">
+              <i class="fa-solid fa-robot"></i> Prompt Engineering
+            </div>
+            <div class="skill-chip skill-high">
+              <i class="fa-solid fa-code"></i> Vibe Coding
+            </div>
+          </div>
+        </div>
+
+        <!-- Medium Level Skills -->
+        <div class="skills-category">
+          <div class="category-label" style="color: #3b82f6">
+            <div class="card-icon-badge" style="width: 36px; height: 36px; font-size: 1rem; color: #3b82f6; background: rgba(59,130,246,0.12);">
+              <i class="fa-solid fa-sliders"></i>
+            </div>
+            <span data-i18n="skills_medium">Intermediate Proficiency</span>
+          </div>
+          <div class="skill-tags-grid">
+            <div class="skill-chip skill-medium">
+              <i class="fa-solid fa-diagram-next"></i> n8n Automation
+            </div>
+            <div class="skill-chip skill-medium">
+              <i class="fa-solid fa-draw-polygon"></i> PCB Design (KiCad)
+            </div>
+            <div class="skill-chip skill-medium">
+              <i class="fa-solid fa-industry"></i> PLC (Programmable Logic
+              Control)
+            </div>
+            <div class="skill-chip skill-medium">
+              <i class="fa-solid fa-code"></i> C / C++ Programming
+            </div>
+          </div>
+        </div>
+
+        <!-- Basic Level Skills -->
+        <div class="skills-category">
+          <div class="category-label" style="color: #f59e0b">
+            <div class="card-icon-badge" style="width: 36px; height: 36px; font-size: 1rem; color: #f59e0b; background: rgba(245,158,11,0.12);">
+              <i class="fa-solid fa-seedling"></i>
+            </div>
+            <span data-i18n="skills_basic">Foundational Knowledge</span>
+          </div>
+          <div class="skill-tags-grid">
+            <div class="skill-chip skill-basic">
+              <i class="fa-solid fa-globe"></i> Web Development (HTML/CSS/JS)
+            </div>
+            <div class="skill-chip skill-basic">
+              <i class="fa-brands fa-git-alt"></i> Git
+            </div>
+            <div class="skill-chip skill-basic">
+              <i class="fa-brands fa-github"></i> GitHub
+            </div>
+            <div class="skill-chip skill-basic">
+              <i class="fa-brands fa-docker"></i> Docker
+            </div>
+            <div class="skill-chip skill-basic">
+              <i class="fa-solid fa-network-wired"></i> System Design
+            </div>
+          </div>
+        </div>
+
+        <!-- Soft Skills Grid -->
+        <h3
+          style="margin-top: 3rem; font-size: var(--font-size-xl)"
+          data-i18n="skills_soft_title"
+        >
+          Soft Skills & Professional Traits
+        </h3>
+        <div class="soft-skills-grid">
+          <div class="soft-card">
+            <div class="card-icon-badge" style="margin: 0 auto 0.85rem auto;">
+              <i class="fa-solid fa-puzzle-piece"></i>
+            </div>
+            <h4
+              style="font-size: var(--font-size-base); margin-bottom: 0.35rem"
+              data-i18n="soft_1_title"
+            >
+              Problem Solving
+            </h4>
+            <p
+              style="font-size: var(--font-size-xs); color: var(--text-secondary)"
+              data-i18n="soft_1_desc"
+            >
+              Troubleshooting hardware & circuit logic efficiently
+            </p>
+          </div>
+          <div class="soft-card">
+            <div class="card-icon-badge" style="margin: 0 auto 0.85rem auto;">
+              <i class="fa-solid fa-book-open-reader"></i>
+            </div>
+            <h4
+              style="font-size: var(--font-size-base); margin-bottom: 0.35rem"
+              data-i18n="soft_2_title"
+            >
+              Self-Learning
+            </h4>
+            <p
+              style="font-size: var(--font-size-xs); color: var(--text-secondary)"
+              data-i18n="soft_2_desc"
+            >
+              Learning on your own from online resources
+            </p>
+          </div>
+          <div class="soft-card">
+            <div class="card-icon-badge" style="margin: 0 auto 0.85rem auto;">
+              <i class="fa-solid fa-people-group"></i>
+            </div>
+            <h4
+              style="font-size: var(--font-size-base); margin-bottom: 0.35rem"
+              data-i18n="soft_3_title"
+            >
+              Teamwork & Leadership
+            </h4>
+            <p
+              style="font-size: var(--font-size-xs); color: var(--text-secondary)"
+              data-i18n="soft_3_desc"
+            >
+              Collaborating seamlessly and leading engineering teams
+            </p>
+          </div>
+          <div class="soft-card">
+            <div class="card-icon-badge" style="margin: 0 auto 0.85rem auto;">
+              <i class="fa-solid fa-comments"></i>
+            </div>
+            <h4
+              style="font-size: var(--font-size-base); margin-bottom: 0.35rem"
+              data-i18n="soft_4_title"
+            >
+              Communication
+            </h4>
+            <p
+              style="font-size: var(--font-size-xs); color: var(--text-secondary)"
+              data-i18n="soft_4_desc"
+            >
+              Delivering clear project demos and seminar talks
+            </p>
+          </div>
+          <div class="soft-card">
+            <div class="card-icon-badge" style="margin: 0 auto 0.85rem auto;">
+              <i class="fa-solid fa-clock"></i>
+            </div>
+            <h4
+              style="font-size: var(--font-size-base); margin-bottom: 0.35rem"
+              data-i18n="soft_5_title"
+            >
+              Time Management
+            </h4>
+            <p
+              style="font-size: var(--font-size-xs); color: var(--text-secondary)"
+              data-i18n="soft_5_desc"
+            >
+              Balancing studies, DIY projects & competitions
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 5: Projects Section -->
+    <section
+      class="section-padding"
+      id="projects"
+      style="background: var(--bg-secondary)"
+    >
+      <div class="container">
+        <span class="eyebrow" data-i18n="projects_eyebrow"
+          >INNOVATIVE WORK</span
+        >
+        <h2 class="section-title gradient-text" data-i18n="projects_title">
+          Featured Projects
+        </h2>
+
+        <div class="projects-grid">
+          <!-- Project 1 -->
+          <div class="glass-card project-card">
+            <div class="project-header">
+              <span class="project-cat" data-i18n="p1_cat"
+                >IoT / Home Automation</span
+              >
+              <div class="card-icon-badge" style="width: 38px; height: 38px; font-size: 1.1rem;">
+                <i class="fa-solid fa-house-signal"></i>
+              </div>
+            </div>
+            <h3 class="project-title" data-i18n="p1_title">
+              Smart Home Ecosystem
+            </h3>
+            <p class="project-desc" data-i18n="p1_desc">
+              Remote control of lights and appliances with real-time feedback
+              and n8n workflows. Built solo handling circuit design, PCB layout,
+              code, and Android interface.
+            </p>
+            <div class="project-tech">
+              <span class="tech-pill">ESP32</span>
+              <span class="tech-pill">Touch Display</span>
+              <span class="tech-pill">MQTT</span>
+              <span class="tech-pill">n8n</span>
+              <span class="tech-pill">Relay</span>
+              <span class="tech-pill">Sensors</span>
+              <span class="tech-pill">Android</span>
+            </div>
+            <div class="project-footer">
+              <span
+                style="font-size: var(--font-size-xs); color: #10b981; font-weight: 600"
+                data-i18n="p1_result"
+                >✓ Smooth real-time device control</span
+              >
+              <a
+                href="https://kamrul.bd"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn btn-secondary btn-sm"
+              >
+                <span data-i18n="btn_visit">Visit</span>
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div class="glass-card project-card">
+            <div class="project-header">
+              <span class="project-cat" data-i18n="p2_cat"
+                >Electronics / Hardware</span
+              >
+              <div class="card-icon-badge" style="width: 38px; height: 38px; font-size: 1.1rem;">
+                <i class="fa-solid fa-car-battery"></i>
+              </div>
+            </div>
+            <h3 class="project-title" data-i18n="p2_title">
+              Regulated DC Power Supply PCB
+            </h3>
+            <p class="project-desc" data-i18n="p2_desc">
+              Design and fabrication of a stable 12V DC regulated power supply
+              PCB equipped with short-circuit protection and low ripple noise
+              under high load.
+            </p>
+            <div class="project-tech">
+              <span class="tech-pill">KiCad</span>
+              <span class="tech-pill">Transformer</span>
+              <span class="tech-pill">Bridge Rectifier</span>
+              <span class="tech-pill">LM7812</span>
+              <span class="tech-pill">Capacitors</span>
+            </div>
+            <div class="project-footer">
+              <span
+                style="font-size: var(--font-size-xs); color: #10b981; font-weight: 600"
+                data-i18n="p2_result"
+                >✓ Stable 12V low-ripple output</span
+              >
+              <a
+                href="https://psu.kamrul.bd"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn btn-secondary btn-sm"
+              >
+                <span data-i18n="btn_visit">Visit</span>
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Project 3 -->
+          <div class="glass-card project-card">
+            <div class="project-header">
+              <span class="project-cat" data-i18n="p3_cat"
+                >Renewable Energy / Embedded</span
+              >
+              <div class="card-icon-badge" style="width: 38px; height: 38px; font-size: 1.1rem;">
+                <i class="fa-solid fa-solar-panel"></i>
+              </div>
+            </div>
+            <h3 class="project-title" data-i18n="p3_title">
+              Solar Panel Cooling System
+            </h3>
+            <p class="project-desc" data-i18n="p3_desc">
+              Automated water-cooling system for photovoltaic panels using ESP32
+              and temperature sensors to prevent thermal efficiency drop during
+              peak sunlight.
+            </p>
+            <div class="project-tech">
+              <span class="tech-pill">ESP32</span>
+              <span class="tech-pill">Temp Sensors</span>
+              <span class="tech-pill">Water Pump</span>
+              <span class="tech-pill">Relay Module</span>
+              <span class="tech-pill">Automation</span>
+            </div>
+            <div class="project-footer">
+              <span
+                style="font-size: var(--font-size-xs); color: #10b981; font-weight: 600"
+                data-i18n="p3_result"
+                >✓ Improved panel efficiency</span
+              >
+              <a
+                href="https://spcs.kamrul.bd"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn btn-secondary btn-sm"
+              >
+                <span data-i18n="btn_visit">Visit</span>
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 6: Experience Section -->
+    <section class="section-padding" id="experience">
+      <div class="container">
+        <span class="eyebrow" data-i18n="exp_eyebrow">PRACTICAL TRAINING</span>
+        <h2 class="section-title gradient-text" data-i18n="exp_title">
+          Work Experience & Internship
+        </h2>
+
+        <div class="glass-card">
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-date" data-i18n="exp_duration">
+                Jan – Mar 2026 (3 Months)
+              </div>
+              <h3 class="timeline-role" data-i18n="exp_role">
+                Electrical Engineering Intern
+              </h3>
+              <div class="timeline-org" data-i18n="exp_org">
+                <i class="fa-solid fa-building"></i> Bangladesh Rural
+                Electrification Board (BREB)
+              </div>
+
+              <ul class="bullet-list">
+                <li data-i18n="exp_t1">
+                  Assisted senior engineers in power load flow analysis, field
+                  distribution surveys, and grid data digitization.
+                </li>
+                <li data-i18n="exp_t2">
+                  Designed a digital reporting format that reduced manual data
+                  entry errors by approximately 15%.
+                </li>
+                <li data-i18n="exp_t3">
+                  Spot-identified faulty distribution transformers during
+                  routine field inspection, earning high appreciation from
+                  supervisors.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 7: Achievements & Competitions Section (Streamlined - No Duplicate SSC Box) -->
+    <section
+      class="section-padding"
+      id="achievements"
+      style="background: var(--bg-secondary)"
+    >
+      <div class="container">
+        <span class="eyebrow" data-i18n="achieve_eyebrow"
+          >RECOGNITION & AWARDS</span
+        >
+        <h2 class="section-title gradient-text" data-i18n="achieve_title">
+          Achievements & Competitions
+        </h2>
+
+        <!-- Hidden elements preserving i18n text binding for ssc items to maintain full dictionary capability -->
+        <div style="display: none;">
+          <span data-i18n="achieve_ssc_title">Academic Excellence: SSC </span>
+          <span data-i18n="achieve_ssc_desc">Secured Perfect GPA 5.00 / 5.00 ⭐ in Machine Tools Operation (2020 – 2022).</span>
+        </div>
+
+        <!-- Competitions Grid (5 Clean Unique Cards) -->
+        <div class="achievements-grid">
+          <div class="glass-card achieve-card">
+            <span class="achieve-badge" style="background: #3b82f6"
+              >4th Place</span
+            >
+            <h4 style="font-size: var(--font-size-base); margin-bottom: 0.45rem">
+              Inter-Department Innovation & Skill Competition 2024
+            </h4>
+            <p style="font-size: var(--font-size-xs); color: var(--text-secondary)">
+              <i class="fa-regular fa-calendar"></i> 25 Sep 2024
+            </p>
+          </div>
+
+          <div
+            class="glass-card achieve-card"
+            style="border-top: 3px solid #10b981"
+          >
+            <span class="achieve-badge" style="background: #10b981"
+              >🏆 1st Place Champion</span
+            >
+            <h4 style="font-size: var(--font-size-base); margin-bottom: 0.45rem">
+              Skill Competition 2025
+            </h4>
+            <p style="font-size: var(--font-size-xs); color: var(--text-secondary)">
+              <i class="fa-regular fa-calendar"></i> 27 Feb 2025
+            </p>
+          </div>
+
+          <div class="glass-card achieve-card">
+            <span class="achieve-badge" style="background: #8b5cf6"
+              >🥈 2nd Place</span
+            >
+            <h4 style="font-size: var(--font-size-base); margin-bottom: 0.45rem">
+              Skill & Innovation Competition 2025
+            </h4>
+            <p style="font-size: var(--font-size-xs); color: var(--text-secondary)">
+              <i class="fa-regular fa-calendar"></i> 27 Sep 2025
+            </p>
+          </div>
+
+          <div
+            class="glass-card achieve-card"
+            style="border-top: 3px solid #06b6d4"
+          >
+            <span class="achieve-badge" style="background: #06b6d4"
+              >🥇 1st Place (Sylhet Division)</span
+            >
+            <h4 style="font-size: var(--font-size-base); margin-bottom: 0.45rem">
+              Regional Level Skill & Innovation Competition 2026
+            </h4>
+            <p
+              style="
+                font-size: var(--font-size-xs);
+                color: var(--accent-electric);
+                font-weight: 600;
+              "
+            >
+              <i class="fa-solid fa-paper-plane"></i> Qualified for National
+              Level
+            </p>
+            <p
+              style="
+                font-size: var(--font-size-xs);
+                color: var(--text-secondary);
+                margin-top: 0.25rem;
+              "
+            >
+              <i class="fa-regular fa-calendar"></i> 17 Apr 2026
+            </p>
+          </div>
+
+          <div
+            class="glass-card achieve-card"
+            style="border-top: 3px solid #ec4899"
+          >
+            <span class="achieve-badge" style="background: #ec4899"
+              >🚀 Aspiring Champion</span
+            >
+            <h4 style="font-size: var(--font-size-base); margin-bottom: 0.45rem">
+              National Level Skill & Innovation Competition
+            </h4>
+            <p style="font-size: var(--font-size-xs); color: var(--text-secondary)">
+              <i class="fa-regular fa-clock"></i> Upcoming Event
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 8: Certificates Section -->
+    <section class="section-padding" id="certificates">
+      <div class="container">
+        <span class="eyebrow" data-i18n="cert_eyebrow">CREDENTIALS</span>
+        <h2 class="section-title gradient-text" data-i18n="cert_title">
+          Professional Certifications
+        </h2>
+
+        <div class="cert-card-enhanced" style="max-width: 800px">
+          <div class="cert-top-bar">
+            <div class="cert-nsda-badge">
+              <i class="fa-solid fa-shield-halved"></i>
+              <span>VERIFIED NATIONAL CREDENTIAL</span>
+            </div>
+            <div class="cert-seal-icon" title="Verified Skill Certification">
+              <i class="fa-solid fa-award"></i>
+            </div>
+          </div>
+
+          <h3
+            style="font-size: var(--font-size-xl); margin-bottom: 0.65rem; color: var(--text-primary)"
+            data-i18n="cert_1_title"
+          >
+            Refrigeration and Air Conditioning, Level-1 (360 Hours)
+          </h3>
+
+          <p
+            style="
+              font-size: var(--font-size-base);
+              color: var(--accent-electric);
+              margin-bottom: 1rem;
+              font-weight: 600;
+            "
+            data-i18n="cert_1_issuer"
+          >
+            <strong>Issuer:</strong> National Skills Development Authority (NSDA)
+          </p>
+
+          <div class="cert-details-grid">
+            <div class="cert-detail-item">
+              <i class="fa-regular fa-clock"></i>
+              <div>
+                <div style="font-size: var(--font-size-xs); color: var(--text-muted);">Duration</div>
+                <div style="font-size: var(--font-size-sm); font-weight: 600;">4 Months Course</div>
+              </div>
+            </div>
+
+            <div class="cert-detail-item">
+              <i class="fa-solid fa-hourglass-half"></i>
+              <div>
+                <div style="font-size: var(--font-size-xs); color: var(--text-muted);">Total Hours</div>
+                <div style="font-size: var(--font-size-sm); font-weight: 600;">360 Hours Practical</div>
+              </div>
+            </div>
+
+            <div class="cert-detail-item">
+              <i class="fa-solid fa-circle-check" style="color: #10b981;"></i>
+              <div>
+                <div style="font-size: var(--font-size-xs); color: var(--text-muted);">Skill Qualification</div>
+                <div style="font-size: var(--font-size-sm); font-weight: 600; color: #10b981;">Level-1 Certified</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hidden paragraph to preserve exact i18n text element binding for cert_1_duration -->
+          <p data-i18n="cert_1_duration" style="display: none;"></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 9: Languages Section -->
+    <section
+      class="section-padding"
+      id="languages"
+      style="background: var(--bg-secondary)"
+    >
+      <div class="container">
+        <span class="eyebrow" data-i18n="lang_eyebrow">COMMUNICATION</span>
+        <h2 class="section-title gradient-text" data-i18n="lang_title">
+          Language Proficiency
+        </h2>
+
+        <div class="language-grid-redesigned">
+          <!-- Bangla Card -->
+          <div class="lang-card-redesigned">
+            <div>
+              <div class="lang-card-header">
+                <div class="card-icon-badge">
+                  <i class="fa-solid fa-language"></i>
+                </div>
+                <span class="lang-badge-pill" style="background: rgba(16, 185, 129, 0.15); color: #10b981; border-color: rgba(16, 185, 129, 0.3);">
+                  Native / 100%
+                </span>
+              </div>
+              <h3 style="font-size: var(--font-size-lg); margin-bottom: 0.5rem;">Bangla</h3>
+              <p style="font-size: var(--font-size-xs); color: var(--text-secondary);" data-i18n="lang_bn">
+                Bangla (Native) — Reading ✓ | Writing ✓ | Listening ✓ | Speaking ✓
+              </p>
+            </div>
+            <div class="lang-progress-visual">
+              <div class="lang-bar-track">
+                <div class="lang-bar-fill" style="width: 100%; background: linear-gradient(90deg, #10b981, #06b6d4);"></div>
+              </div>
+              <div class="lang-skills-matrix">
+                <span class="lang-skill-pill"><i class="fa-solid fa-check" style="color: #10b981"></i> Read</span>
+                <span class="lang-skill-pill"><i class="fa-solid fa-check" style="color: #10b981"></i> Write</span>
+                <span class="lang-skill-pill"><i class="fa-solid fa-check" style="color: #10b981"></i> Listen</span>
+                <span class="lang-skill-pill"><i class="fa-solid fa-check" style="color: #10b981"></i> Speak</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- English Card -->
+          <div class="lang-card-redesigned">
+            <div>
+              <div class="lang-card-header">
+                <div class="card-icon-badge">
+                  <i class="fa-solid fa-globe"></i>
+                </div>
+                <span class="lang-badge-pill" style="background: rgba(56, 189, 248, 0.15); color: #38bdf8; border-color: rgba(56, 189, 248, 0.3);">
+                  Fluent / 90%
+                </span>
+              </div>
+              <h3 style="font-size: var(--font-size-lg); margin-bottom: 0.5rem;">English</h3>
+              <p style="font-size: var(--font-size-xs); color: var(--text-secondary);" data-i18n="lang_en">
+                English (Fluent) — Reading ✓ | Writing ✓ | Listening ✓ | Speaking ✓
+              </p>
+            </div>
+            <div class="lang-progress-visual">
+              <div class="lang-bar-track">
+                <div class="lang-bar-fill" style="width: 90%; background: linear-gradient(90deg, #38bdf8, #818cf8);"></div>
+              </div>
+              <div class="lang-skills-matrix">
+                <span class="lang-skill-pill"><i class="fa-solid fa-check" style="color: #38bdf8"></i> Read</span>
+                <span class="lang-skill-pill"><i class="fa-solid fa-check" style="color: #38bdf8"></i> Write</span>
+                <span class="lang-skill-pill"><i class="fa-solid fa-check" style="color: #38bdf8"></i> Listen</span>
+                <span class="lang-skill-pill"><i class="fa-solid fa-check" style="color: #38bdf8"></i> Speak</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hindi Card -->
+          <div class="lang-card-redesigned">
+            <div>
+              <div class="lang-card-header">
+                <div class="card-icon-badge">
+                  <i class="fa-solid fa-comments"></i>
+                </div>
+                <span class="lang-badge-pill" style="background: rgba(245, 158, 11, 0.15); color: #f59e0b; border-color: rgba(245, 158, 11, 0.3);">
+                  Spoken / 60%
+                </span>
+              </div>
+              <h3 style="font-size: var(--font-size-lg); margin-bottom: 0.5rem;">Hindi</h3>
+              <p style="font-size: var(--font-size-xs); color: var(--text-secondary);" data-i18n="lang_hi">
+                Hindi (Spoken) — Reading ✗ | Writing ✗ | Listening ✓ | Speaking ✓
+              </p>
+            </div>
+            <div class="lang-progress-visual">
+              <div class="lang-bar-track">
+                <div class="lang-bar-fill" style="width: 60%; background: linear-gradient(90deg, #f59e0b, #ec4899);"></div>
+              </div>
+              <div class="lang-skills-matrix">
+                <span class="lang-skill-pill" style="opacity: 0.6;"><i class="fa-solid fa-xmark" style="color: #ef4444"></i> Read</span>
+                <span class="lang-skill-pill" style="opacity: 0.6;"><i class="fa-solid fa-xmark" style="color: #ef4444"></i> Write</span>
+                <span class="lang-skill-pill"><i class="fa-solid fa-check" style="color: #f59e0b"></i> Listen</span>
+                <span class="lang-skill-pill"><i class="fa-solid fa-check" style="color: #f59e0b"></i> Speak</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 10: Contact Section -->
+    <section class="section-padding" id="contact">
+      <div class="container">
+        <span class="eyebrow" data-i18n="contact_eyebrow">GET IN TOUCH</span>
+        <h2 class="section-title gradient-text" data-i18n="contact_title">
+          Let's Connect & Collaborate
+        </h2>
+
+        <div class="contact-grid">
+          <!-- Contact Info -->
+          <div>
+            <p
+              style="color: var(--text-secondary); margin-bottom: 1.5rem; font-size: var(--font-size-base)"
+              data-i18n="contact_desc"
+            >
+              Feel free to reach out for research opportunities, university
+              admissions, or engineering projects.
+            </p>
+
+            <div class="contact-info-list">
+              <!-- Email -->
+              <div class="contact-item">
+                <div class="card-icon-badge">
+                  <i class="fa-solid fa-envelope"></i>
+                </div>
+                <div>
+                  <div
+                    style="font-size: var(--font-size-xs); color: var(--text-muted)"
+                    data-i18n="contact_email_label"
+                  >
+                    Email Address
+                  </div>
+                  <a
+                    href="mailto:mkkamrulislam2004@gmail.com"
+                    style="font-weight: 600; font-size: var(--font-size-base)"
+                    >mkkamrulislam2004@gmail.com</a
+                  >
+                </div>
+              </div>
+
+              <!-- WhatsApp -->
+              <div class="contact-item">
+                <div
+                  class="card-icon-badge"
+                  style="background: rgba(37, 211, 102, 0.15); color: #25d366; border-color: rgba(37,211,102,0.3);"
+                >
+                  <i class="fa-brands fa-whatsapp"></i>
+                </div>
+                <div>
+                  <div
+                    style="font-size: var(--font-size-xs); color: var(--text-muted)"
+                    data-i18n="contact_wa_label"
+                  >
+                    WhatsApp Chat
+                  </div>
+                  <a
+                    href="https://wa.me/__WHATSAPP_NUMBER__"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn btn-secondary btn-sm"
+                    style="margin-top: 0.35rem"
+                  >
+                    <i class="fa-brands fa-whatsapp"></i>
+                    <span data-i18n="contact_wa_btn">Chat on WhatsApp</span>
+                  </a>
+                </div>
+              </div>
+
+              <!-- Address with Interactive Google Maps Links for Sylhet & Brahmanbaria -->
+              <div class="contact-item">
+                <div class="card-icon-badge">
+                  <i class="fa-solid fa-map-location-dot"></i>
+                </div>
+                <div style="display: flex; flex-direction: column; gap: 0.5rem; width: 100%;">
+                  <div style="font-size: var(--font-size-xs); color: var(--text-muted)">
+                    Location (Click to view Google Maps)
+                  </div>
+                  <!-- Present Address -> Sylhet Google Maps -->
+                  <a
+                    href="https://www.google.com/maps/search/?api=1&query=Sylhet,+Bangladesh"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="location-map-link"
+                    title="Open Sylhet Division on Google Maps"
+                  >
+                    <i class="fa-solid fa-location-dot" style="color: var(--accent-cyan)"></i>
+                    <div>
+                      <div style="font-weight: 600; font-size: var(--font-size-base)">Sylhet, Bangladesh</div>
+                      <div style="font-size: var(--font-size-xs); color: var(--text-muted)">Present Address (Click for Map)</div>
+                    </div>
+                    <i class="fa-solid fa-arrow-up-right-from-square" style="margin-left: auto; font-size: 0.85rem; color: var(--accent-electric)"></i>
+                  </a>
+
+                  <!-- Permanent Address -> Brahmanbaria Google Maps -->
+                  <a
+                    href="https://www.google.com/maps/search/?api=1&query=Brahmanbaria,+Bangladesh"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="location-map-link"
+                    title="Open Brahmanbaria District on Google Maps"
+                  >
+                    <i class="fa-solid fa-location-dot" style="color: var(--accent-purple)"></i>
+                    <div>
+                      <div style="font-weight: 600; font-size: var(--font-size-base)">Brahmanbaria, Bangladesh</div>
+                      <div style="font-size: var(--font-size-xs); color: var(--text-muted)">Permanent Address (Click for Map)</div>
+                    </div>
+                    <i class="fa-solid fa-arrow-up-right-from-square" style="margin-left: auto; font-size: 0.85rem; color: var(--text-muted)"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Mailto Form -->
+          <div class="glass-card">
+            <form id="contactForm" onsubmit="handleFormSubmit(event)">
+              <div class="form-group">
+                <label class="form-label" data-i18n="form_name"
+                  >Your Name</label
+                >
+                <input
+                  type="text"
+                  id="senderName"
+                  class="form-input"
+                  required
+                  placeholder="John Doe"
+                />
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" data-i18n="form_email"
+                  >Your Email</label
+                >
+                <input
+                  type="email"
+                  id="senderEmail"
+                  class="form-input"
+                  required
+                  placeholder="john@example.com"
+                />
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" data-i18n="form_subject"
+                  >Subject</label
+                >
+                <input
+                  type="text"
+                  id="emailSubject"
+                  class="form-input"
+                  required
+                  placeholder="University Admission / IoT Collaboration"
+                />
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" data-i18n="form_message"
+                  >Message</label
+                >
+                <textarea
+                  id="emailBody"
+                  class="form-textarea"
+                  rows="4"
+                  required
+                  placeholder="Write your message here..."
+                ></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary" style="width: 100%">
+                <i class="fa-solid fa-paper-plane"></i>
+                <span data-i18n="form_btn">Send Email Message</span>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container footer-content">
+        <div class="social-row">
+          <a
+            href="https://linkedin.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="social-icon-btn"
+            aria-label="LinkedIn"
+            title="LinkedIn"
+            ><i class="fa-brands fa-linkedin-in"></i
+          ></a>
+          <a
+            href="https://github.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="social-icon-btn"
+            aria-label="GitHub"
+            title="GitHub"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+          <a
+            href="https://facebook.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="social-icon-btn"
+            aria-label="Facebook"
+            title="Facebook"
+            ><i class="fa-brands fa-facebook-f"></i
+          ></a>
+          <a
+            href="https://instagram.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="social-icon-btn"
+            aria-label="Instagram"
+            title="Instagram"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+          <a
+            href="https://x.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="social-icon-btn"
+            aria-label="X (Twitter)"
+            title="X"
+            ><i class="fa-brands fa-x-twitter"></i
+          ></a>
+          <a
+            href="https://wa.me/__WHATSAPP_NUMBER__"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="social-icon-btn whatsapp-active"
+            aria-label="WhatsApp"
+            title="WhatsApp Chat"
+            ><i class="fa-brands fa-whatsapp"></i
+          ></a>
+        </div>
+        <p
+          style="font-size: var(--font-size-sm); color: var(--text-secondary)"
+          data-i18n="footer_copy"
+        >
+          © 2026 MD KAMRUL ISLAM. All rights reserved.
+        </p>
+        <p
+          style="font-size: var(--font-size-xs); color: var(--text-muted)"
+          data-i18n="footer_loc"
+        >
+          Sylhet, Bangladesh · Brahmanbaria, Bangladesh
+        </p>
+      </div>
+    </footer>
+
+    <!-- Inline JavaScript Logic (Language & Theme Switching + Interactivity) -->
+    <script>
+      // TRANSLATION DICTIONARY (EN & BN)
+      const i18n = {
+        en: {
+          nav_logo: "MD KAMRUL ISLAM",
+          nav_about: "About",
+          nav_skills: "Skills",
+          nav_projects: "Projects",
+          nav_experience: "Experience",
+          nav_achievements: "Achievements",
+          nav_education: "Education",
+          nav_certificates: "Certificates",
+          nav_languages: "Languages",
+          nav_contact: "Contact",
+
+          hero_badge: "⚡ Electrical Engineering Student",
+          hero_greeting: "Hello, I'm",
+          hero_name: "MD KAMRUL ISLAM",
+          hero_tagline:
+            "Future Electrical Engineer | Tech Innovator & Physics Enthusiast",
+          hero_loc: "Sylhet, Bangladesh",
+          hero_nat: "Bangladeshi",
+          hero_status: "Preparing to pursue undergraduate studies.",
+          hero_cta_projects: "View Projects",
+          hero_cta_contact: "Contact Me",
+
+          about_eyebrow: "WHO IS KAMRUL?",
+          about_title: "About Me & Career Objective",
+          about_summary_title: "Professional Summary",
+          about_summary_text:
+          "A dedicated Electrical Technology student, almost finishing a four-year diploma at Sylhet Polytechnic Institute. Has strong knowledge in electrical, electronics, computer, nuclear, and telecommunication engineering, along with math, chemistry, and physics. Deeply interested in astronomy, cosmology, and rocket science, showing a great love for the universe. Has practical experience in hardware and software, and is currently learning modern technologies like artificial intelligence. Highly motivated to combine different science and engineering skills to solve real-world problems.",
+          about_fav_subj: "Favorite Subjects",
+          about_obj_title: "Career Objective",
+          about_obj_text:
+          "My goal is to get a Bachelor's degree in Engineering from a recognized local or foreign university, using the strong basics I learned in my Electrical Technology diploma. I want to combine different science and engineering skills to create effective and lasting solutions to real-world problems. My long-term dream is to become a researcher and inventor. I want to help advance technology for the benefit of my country and the whole world.",
+          about_interests: "Career Interests",
+          about_hobbies: "Hobbies & Passions",
+          about_foss: "Open Source & OS Preference",
+          about_foss_desc:
+            "Strong advocate for Free & Open Source Software (FOSS). Primary OS: Ubuntu (25.10).",
+
+          skills_eyebrow: "TECHNICAL & SOFT SKILLS",
+          skills_title: "My Expertise & Competencies",
+          skills_high: "High Proficiency",
+          skills_medium: "Intermediate Proficiency",
+          skills_basic: "Foundational Knowledge",
+          skills_soft_title: "Soft Skills & Professional Traits",
+          soft_1_title: "Problem Solving",
+          soft_1_desc: "Troubleshooting hardware & circuit logic efficiently",
+          soft_2_title: "Self-Learning",
+          soft_2_desc: "Learning on your own from online resources",
+          soft_3_title: "Teamwork & Leadership",
+          soft_3_desc: "Collaborating seamlessly and leading engineering teams",
+          soft_4_title: "Communication",
+          soft_4_desc: "Delivering clear project demos and seminar talks",
+          soft_5_title: "Time Management",
+          soft_5_desc: "Balancing studies, DIY projects & competitions",
+
+          projects_eyebrow: "INNOVATIVE WORK",
+          projects_title: "Featured Projects",
+          p1_cat: "IoT / Home Automation",
+          p1_title: "Smart Home Ecosystem",
+          p1_desc:
+            "Remote control of lights and appliances with real-time feedback and n8n workflows. Built solo handling circuit design, PCB layout, code, and Android interface.",
+          p1_result: "✓ Smooth real-time device control",
+          p2_cat: "Electronics / Hardware",
+          p2_title: "Regulated DC Power Supply PCB",
+          p2_desc:
+            "Design and fabrication of a stable 12V DC regulated power supply PCB equipped with short-circuit protection and low ripple noise under high load.",
+          p2_result: "✓ Stable 12V low-ripple output",
+          p3_cat: "Renewable Energy / Embedded",
+          p3_title: "Solar Panel Cooling System",
+          p3_desc:
+            "Automated water-cooling system for photovoltaic panels using ESP32 and temperature sensors to prevent thermal efficiency drop during peak sunlight.",
+          p3_result: "✓ Improved panel efficiency",
+          btn_visit: "Visit",
+
+          exp_eyebrow: "PRACTICAL TRAINING",
+          exp_title: "Work Experience & Internship",
+          exp_duration: "Jan – Mar 2026 (3 Months)",
+          exp_role: "Electrical Engineering Intern",
+          exp_org: "Bangladesh Rural Electrification Board (BREB)",
+          exp_t1:
+            "Assisted senior engineers in power load flow analysis, field distribution surveys, and grid data digitization.",
+          exp_t2:
+            "Designed a digital reporting format that reduced manual data entry errors by approximately 15%.",
+          exp_t3:
+            "Spot-identified faulty distribution transformers during routine field inspection, earning high appreciation from supervisors.",
+
+          achieve_eyebrow: "RECOGNITION & AWARDS",
+          achieve_title: "Achievements & Competitions",
+          achieve_ssc_title: "Academic Excellence: SSC ",
+          achieve_ssc_desc:
+            "Secured Perfect GPA 5.00 / 5.00 ⭐ in Machine Tools Operation (2020 – 2022).",
+
+          edu_eyebrow: "ACADEMIC JOURNEY",
+          edu_title: "Education Timeline",
+          edu_4_date: "2023 – Near Completion",
+          edu_4_degree: "Diploma in Engineering (Electrical)",
+          edu_4_inst: "Sylhet Polytechnic Institute",
+          edu_4_cgpa_label: "Semester CGPA Progression:",
+          edu_3_degree: "SSC  — Machine Tools Operation",
+          edu_3_inst: "Brahmanbaria Govt Technical School & College",
+          edu_3_gpa: "⭐ GPA 5.00 / 5.00",
+          edu_2_degree: "Secondary Schooling (Classes 6–8)",
+          edu_2_inst: "Dhautpur Government High School",
+          edu_1_degree: "Primary Education",
+          edu_1_inst: "Royal Free Cadet School",
+          edu_5_date: "Future Aspirations",
+          edu_5_degree: "Bachelor's Degree in Engineering (Abroad)",
+          edu_5_inst: "International University Candidate",
+
+          cert_eyebrow: "CREDENTIALS",
+          cert_title: "Professional Certifications",
+          cert_1_title:
+            "Refrigeration and Air Conditioning, Level-1 (360 Hours)",
+          cert_1_issuer: "Issuer: National Skills Development Authority (NSDA)",
+          cert_1_duration: "Duration: 4 Months Professional Course",
+
+          lang_eyebrow: "COMMUNICATION",
+          lang_title: "Language Proficiency",
+          lang_bn:
+            "Bangla (Native) — Reading ✓ | Writing ✓ | Listening ✓ | Speaking ✓",
+          lang_en:
+            "English (Fluent) — Reading ✓ | Writing ✓ | Listening ✓ | Speaking ✓",
+          lang_hi:
+            "Hindi (Spoken) — Reading ✗ | Writing ✗ | Listening ✓ | Speaking ✓",
+
+          contact_eyebrow: "GET IN TOUCH",
+          contact_title: "Let's Connect & Collaborate",
+          contact_desc:
+            "Feel free to reach out for research opportunities, university admissions, or engineering projects.",
+          contact_email_label: "Email Address",
+          contact_wa_label: "WhatsApp Chat",
+          contact_wa_btn: "Chat on WhatsApp",
+          form_name: "Your Name",
+          form_email: "Your Email",
+          form_subject: "Subject",
+          form_message: "Message",
+          form_btn: "Send Email Message",
+
+          footer_copy: "© 2026 MD KAMRUL ISLAM. All rights reserved.",
+          footer_loc: "Sylhet, Bangladesh · Brahmanbaria, Bangladesh",
+        },
+        bn: {
+          nav_logo: "মোঃ কামরুল ইসলাম",
+          nav_about: "পরিচিতি",
+          nav_skills: "দক্ষতা",
+          nav_projects: "প্রজেক্ট",
+          nav_experience: "অভিজ্ঞতা",
+          nav_achievements: "অর্জন",
+          nav_education: "শিক্ষা",
+          nav_certificates: "সনদপত্র",
+          nav_languages: "ভাষা",
+          nav_contact: "যোগাযোগ",
+
+          hero_badge: "⚡ তড়িৎ প্রকৌশলের শিক্ষার্থী",
+          hero_greeting: "হ্যালো, আমি",
+          hero_name: "মোঃ কামরুল ইসলাম",
+          hero_tagline:
+            "ভবিষ্যৎ তড়িৎ প্রকৌশলী | প্রযুক্তি উদ্ভাবক ও পদার্থবিজ্ঞান অনুরাগী",
+          hero_loc: "সিলেট, বাংলাদেশ",
+          hero_nat: "বাংলাদেশী",
+          hero_status: "স্নাতক পর্যায়ে উচ্চশিক্ষার লক্ষ্যে প্রস্তুতি নিচ্ছি।",
+          hero_cta_projects: "প্রজেক্ট সমূহ",
+          hero_cta_contact: "যোগাযোগ করুন",
+
+          about_eyebrow: "কামরুল সম্পর্কে",
+          about_title: "পরিচিতি ও ক্যারিয়ার উদ্দেশ্য",
+          about_summary_title: "পেশাদার সারসংক্ষেপ",
+          about_summary_text:
+          "সিলেট পলিটেকনিক ইনস্টিটিউটের ইলেকট্রিক্যাল টেকনোলজির একজন উদ্যমী শিক্ষার্থী, যার চার বছর মেয়াদি ডিপ্লোমা কোর্সটি প্রায় শেষের দিকে। গণিত, রসায়ন এবং পদার্থবিজ্ঞানের পাশাপাশি ইলেকট্রিক্যাল, ইলেকট্রনিক্স, কম্পিউটার, নিউক্লিয়ার এবং টেলিকমিউনিকেশন ইঞ্জিনিয়ারিংয়ে তার ভালো জ্ঞান রয়েছে। মহাবিশ্ব নিয়ে জানার অনেক শখ থাকায়, তিনি অ্যাস্ট্রোনমি, কসমোলজি এবং রকেট সায়েন্সের প্রতি গভীর আগ্রহ রাখেন। হার্ডওয়্যার ও সফটওয়্যারে তার ব্যবহারিক (প্র্যাকটিক্যাল) অভিজ্ঞতা আছে এবং বর্তমানে তিনি আর্টিফিশিয়াল ইন্টেলিজেন্স বা কৃত্রিম বুদ্ধিমত্তার মতো নতুন প্রযুক্তি শিখছেন। তার প্রধান লক্ষ্য হলো বিজ্ঞান ও ইঞ্জিনিয়ারিংয়ের নানা জ্ঞান একসঙ্গে কাজে লাগিয়ে বাস্তব জীবনের সমস্যাগুলো সমাধান করা।",
+          about_fav_subj: "পছন্দের বিষয়সমূহ",
+          about_obj_title: "ক্যারিয়ার উদ্দেশ্য",
+          about_obj_text:
+          "আমার লক্ষ্য হলো ইলেকট্রিক্যাল টেকনোলজি ডিপ্লোমার শিক্ষাকে কাজে লাগিয়ে দেশের অথবা বিদেশের কোনো পরিচিত বিশ্ববিদ্যালয় থেকে ইঞ্জিনিয়ারিংয়ে ব্যাচেলর (স্নাতক) ডিগ্রি অর্জন করা। আমি বিজ্ঞান ও ইঞ্জিনিয়ারিংয়ের বিভিন্ন জ্ঞানকে একসাথে মিলিয়ে বাস্তব জীবনের সমস্যাগুলোর জন্য ভালো এবং দীর্ঘস্থায়ী সমাধান তৈরি করতে চাই। ভবিষ্যতে আমি একজন গবেষক ও আবিষ্কারক হতে চাই, যাতে নতুন প্রযুক্তির মাধ্যমে আমি আমার দেশ এবং পুরো বিশ্বের মানুষের উপকারে আসতে পারি।",
+          about_interests: "ক্যারিয়ার আগ্রহ",
+          about_hobbies: "শখ ও পছন্দ",
+          about_foss: "ওপেন সোর্স ও অপারেটিং সিস্টেম",
+          about_foss_desc:
+            "ফ্রি অ্যান্ড ওপেন সোর্স সফটওয়্যারের (FOSS) দৃঢ় সমর্থক। ব্যবহৃত প্রধান ওএস: উবুন্টু (২৫.১০)।",
+
+          skills_eyebrow: "কারিগরি ও সফট স্কিল",
+          skills_title: "আমার দক্ষতা ও অভিজ্ঞতা",
+          skills_high: "উচ্চ দক্ষতা (High)",
+          skills_medium: "মাঝারি দক্ষতা (Medium)",
+          skills_basic: "মৌলিক জ্ঞান (Basic)",
+          skills_soft_title: "সফট স্কিল ও পেশাদার গুণাবলী",
+          soft_1_title: "প্রবলেম সলভিং",
+          soft_1_desc: "কারিগরি সমস্যা ও সার্কিট লজিক দ্রুত সমাধান",
+          soft_2_title: "স্বশিক্ষিত (Self-Learning)",
+          soft_2_desc: "অনলাইন রিসোর্স থেকে নিজে নিজে শেখা",
+          soft_3_title: "টিমওয়ার্ক ও নেতৃত্ব",
+          soft_3_desc: "দলগত কাজ ও প্রকৌশল প্রকল্পে নেতৃত্ব প্রদান",
+          soft_4_title: "যোগাযোগ দক্ষতা",
+          soft_4_desc: "প্রজেক্ট ডেমো ও সেমিনারে সাবলীল উপস্থাপন",
+          soft_5_title: "সময় ব্যবস্থাপনা",
+          soft_5_desc: "পড়াশোনা, প্রজেক্ট ও প্রতিযোগিতার ভারসাম্য রক্ষা",
+
+          projects_eyebrow: "উদ্ভাবনী প্রকল্প",
+          projects_title: "বিশেষ প্রজেক্ট সমূহ",
+          p1_cat: "আইওটি / হোম অটোমেশন",
+          p1_title: "স্মার্ট হোম ইকোসিস্টেম",
+          p1_desc:
+            "আইওটি, ESP32 ও n8n অটোমেশন দিয়ে লাইট ও অ্যাপ্লায়েন্স রিমোট কন্ট্রোল করা। এককভাবে সার্কিট ডিজাইন, পিসিবি, কোড ও অ্যান্ড্রয়েড কানেক্টিভিটি সম্পন্ন।",
+          p1_result: "✓ লাইভ স্ট্যাটাস সহ মসৃণ রিমোট কন্ট্রোল",
+          p2_cat: "ইলেকট্রনিক্স / হার্ডওয়্যার",
+          p2_title: "রেগুলেটেড ডিসি পাওয়ার সাপ্লাই পিসিবি",
+          p2_desc:
+            "শর্ট সার্কিট প্রটেকশন ও ন্যূনতম রিপল সহ একটি স্থিতিশীল ১২ ভোল্ট ডিসি রেগুলেটেড পাওয়ার সাপ্লাই পিসিবি ডিজাইন ও টেস্টিং।",
+          p2_result: "✓ স্থিতিশীল ১২ ভোল্ট আউটপুট অর্জিত",
+          p3_cat: "নবায়নযোগ্য শক্তি / এমবেডেড",
+          p3_title: "সোলার প্যানেল কুলিং সিস্টেম",
+          p3_desc:
+            "তাপমাত্রা সেন্সর ও ওয়াটার পাম্পের মাধ্যমে সোলার প্যানেলের তাপমাত্রা নিয়ন্ত্রণ করে সর্বোচ্চ দক্ষতা বজায় রাখার স্বয়ংক্রিয় ব্যবস্থা।",
+          p3_result: "✓ প্যানেলের দক্ষতা বৃদ্ধি করা হয়েছে",
+          btn_visit: "ভিজিট করুন",
+
+          exp_eyebrow: "ব্যবহারিক অভিজ্ঞতা",
+          exp_title: "কর্মসংস্থান ও ইন্টার্নশিপ",
+          exp_duration: "জানুয়ারি – মার্চ ২০২৬ (৩ মাস)",
+          exp_role: "ইলেকট্রিক্যাল ইঞ্জিনিয়ারিং ইন্টার্ন",
+          exp_org: "বাংলাদেশ পল্লী বিদ্যুতায়ন বোর্ড (BREB)",
+          exp_t1:
+            "সিনিয়র প্রকৌশলীদের লোড ফ্লো অ্যানালাইসিস, ফিল্ড সার্ভে এবং বিদ্যুৎ নেটওয়ার্ক ডাটা ডিজিটাইজেশনে সহায়তা করা।",
+          exp_t2:
+            "একটি ডিজিটাল রিপোর্টিং ফরম্যাট তৈরি যা ম্যানুয়াল ডাটা এন্ট্রি ভুল প্রায় ১৫% কমিয়েছে।",
+          exp_t3:
+            "ফিল্ড ইনস্পেকশনে ত্রুটিপূর্ণ ট্রানস্ফর্মার সময়মতো শনাক্তকরণ, যা ঊর্ধ্বতন কর্মকর্তাদের দ্বারা প্রশংসিত।",
+
+          achieve_eyebrow: "স্বীকৃতি ও সম্মাননা",
+          achieve_title: "অর্জন ও প্রতিযোগিতাসমূহ",
+          achieve_ssc_title: "একাডেমিক সাফল্য: এসএসসি ",
+          achieve_ssc_desc:
+            "মেশিন টুলস অপারেশনে জিপিএ ৫.০০ / ৫.০০ ⭐ অর্জন (২০২০ – ২০২২)।",
+
+          edu_eyebrow: "শিক্ষাগত যোগ্যতা",
+          edu_title: "শিক্ষার সময়রেখা",
+          edu_4_date: "২০২৩ – চলমান (শেষ বর্ষ)",
+          edu_4_degree: "ডিপ্লোমা ইন ইঞ্জিনিয়ারিং (ইলেকট্রিক্যাল)",
+          edu_4_inst: "সিলেট পলিটেকনিক ইনস্টিটিউট",
+          edu_4_cgpa_label: "সেমিস্টারভিত্তিক জিপিএ:",
+          edu_3_degree: "এসএসসি  — মেশিন টুলস অপারেশন",
+          edu_3_inst: "ব্রাহ্মণবাড়িয়া সরকারি টেকনিক্যাল স্কুল ও কলেজ",
+          edu_3_gpa: "⭐ জিপিএ ৫.০০ / ৫.০০",
+          edu_2_degree: "মাধ্যমিক পর্যায় (৬ষ্ঠ – ৮মে শ্রেণী)",
+          edu_2_inst: "ধাউতপুর সরকারি উচ্চ বিদ্যালয়",
+          edu_1_degree: "প্রাথমিক শিক্ষা",
+          edu_1_inst: "রয়েল ফ্রি ক্যাডেট স্কুল",
+          edu_5_date: "ভবিষ্যৎ লক্ষ্য",
+          edu_5_degree: "বিএসসি ইন ইঞ্জিনিয়ারিং (বিদেশে উচ্চশিক্ষা)",
+          edu_5_inst: "আন্তর্জাতিক বিশ্ববিদ্যালয়",
+
+          cert_eyebrow: "সনদপত্র",
+          cert_title: "পেশাদার সার্টিফিকেটসমূহ",
+          cert_1_title:
+            "রেফ্রিজারেশন এন্ড এয়ার কন্ডিশনিং, লেভেল-১ (৩৬০ ঘণ্টা)",
+          cert_1_issuer: "প্রদানকারী: জাতীয় দক্ষতা উন্নয়ন কর্তৃপক্ষ (NSDA)",
+          cert_1_duration: "মেয়াদ: ৪ মাসের পেশাদার কোর্স",
+
+          lang_eyebrow: "যোগাযোগ ভাষা",
+          lang_title: "ভাষার দক্ষতা",
+          lang_bn: "বাংলা (মাতৃভাষা) — পড়া ✓ | লেখা ✓ | শোনা ✓ | বলা ✓",
+          lang_en: "ইংরেজি (সাবলীল) — পড়া ✓ | লেখা ✓ | শোনা ✓ | বলা ✓",
+          lang_hi: "হিন্দি (মৌখিক) — পড়া ✗ | লেখা ✗ | শোনা ✓ | বলা ✓",
+
+          contact_eyebrow: "যোগাযোগ",
+          contact_title: "যোগাযোগ ও নতুন উদ্যোগ",
+          contact_desc:
+            "উচ্চশিক্ষা, গবেষণা বা যেকোনো কারিগরি আলোচনার জন্য নির্দ্বিধায় বার্তা পাঠান।",
+          contact_email_label: "ইমেইল ঠিকানা",
+          contact_wa_label: "হোয়াটসঅ্যাপ চ্যাট",
+          contact_wa_btn: "হোয়াটসঅ্যাপে মেসেজ দিন",
+          form_name: "আপনার নাম",
+          form_email: "আপনার ইমেইল",
+          form_subject: "বিষয়",
+          form_message: "বার্তা",
+          form_btn: "ইমেইল বার্তা পাঠান",
+
+          footer_copy: "© ২০২৬ মোঃ কামরুল ইসলাম। সর্বস্বত্ব সংরক্ষিত।",
+          footer_loc: "সিলেট, বাংলাদেশ · ব্রাহ্মণবাড়িয়া, বাংলাদেশ",
+        },
+      };
+
+      // CURRENT STATE (Default: EN, Dark Mode)
+      let currentLang = localStorage.getItem("portfolio_lang") || "en";
+      let currentTheme = localStorage.getItem("portfolio_theme") || "dark";
+
+      // INITIALIZATION
+      document.addEventListener("DOMContentLoaded", () => {
+        setTheme(currentTheme);
+        setLanguage(currentLang);
+        initIntersectionObserver();
+
+        // Event Listeners
+        document
+          .getElementById("themeToggleBtn")
+          .addEventListener("click", toggleTheme);
+        document
+          .getElementById("langToggleBtn")
+          .addEventListener("click", toggleLanguage);
+        document
+          .getElementById("hamburgerBtn")
+          .addEventListener("click", toggleMobileMenu);
+        document
+          .getElementById("navOverlay")
+          .addEventListener("click", closeMobileMenu);
+
+        // Close mobile drawer when link clicked
+        document.querySelectorAll(".nav-link").forEach((link) => {
+          link.addEventListener("click", () => {
+            closeMobileMenu();
+          });
+        });
+      });
+
+      // THEME SWITCHER LOGIC
+      function setTheme(theme) {
+        currentTheme = theme;
+        document.documentElement.setAttribute("data-theme", theme);
+        localStorage.setItem("portfolio_theme", theme);
+
+        const themeIcon = document.getElementById("themeIcon");
+        if (theme === "light") {
+          themeIcon.className = "fa-solid fa-sun";
+        } else {
+          themeIcon.className = "fa-solid fa-moon";
+        }
+      }
+
+      function toggleTheme() {
+        const newTheme = currentTheme === "dark" ? "light" : "dark";
+        setTheme(newTheme);
+      }
+
+      // LANGUAGE SWITCHER LOGIC
+      function setLanguage(lang) {
+        currentLang = lang;
+        document.documentElement.lang = lang;
+        localStorage.setItem("portfolio_lang", lang);
+
+        const langBtnText = document.getElementById("langBtnText");
+        langBtnText.textContent = lang === "en" ? "BN" : "EN";
+
+        // Update text for all elements with data-i18n
+        document.querySelectorAll("[data-i18n]").forEach((el) => {
+          const key = el.getAttribute("data-i18n");
+          if (i18n[lang] && i18n[lang][key]) {
+            el.textContent = i18n[lang][key];
+          }
+        });
+      }
+
+      function toggleLanguage() {
+        const newLang = currentLang === "en" ? "bn" : "en";
+        setLanguage(newLang);
+      }
+
+      // MOBILE MENU DRAWER LOGIC
+      function toggleMobileMenu() {
+        const navMenu = document.getElementById("navMenu");
+        const navOverlay = document.getElementById("navOverlay");
+        const hamburgerIcon = document.getElementById("hamburgerIcon");
+
+        const isActive = navMenu.classList.toggle("active");
+        navOverlay.classList.toggle("active", isActive);
+        document.body.classList.toggle("menu-open", isActive);
+
+        if (isActive) {
+          hamburgerIcon.className = "fa-solid fa-xmark";
+        } else {
+          hamburgerIcon.className = "fa-solid fa-bars";
+        }
+      }
+
+      function closeMobileMenu() {
+        const navMenu = document.getElementById("navMenu");
+        const navOverlay = document.getElementById("navOverlay");
+        const hamburgerIcon = document.getElementById("hamburgerIcon");
+
+        navMenu.classList.remove("active");
+        navOverlay.classList.remove("active");
+        document.body.classList.remove("menu-open");
+        hamburgerIcon.className = "fa-solid fa-bars";
+      }
+
+      // ACTIVE NAVIGATION HIGHLIGHTING (INTERSECTION OBSERVER)
+      function initIntersectionObserver() {
+        const sections = document.querySelectorAll("section[id]");
+        const navLinks = document.querySelectorAll(".nav-link");
+
+        const observerOptions = {
+          root: null,
+          rootMargin: "-20% 0px -70% 0px",
+          threshold: 0,
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              const id = entry.target.getAttribute("id");
+              navLinks.forEach((link) => {
+                const href = link.getAttribute("href").substring(1);
+                if (href === id) {
+                  link.classList.add("active");
+                } else {
+                  link.classList.remove("active");
+                }
+              });
+            }
+          });
+        }, observerOptions);
+
+        sections.forEach((section) => observer.observe(section));
+      }
+
+      // CONTACT FORM SUBMISSION (MAILTO TRIGGER)
+      function handleFormSubmit(event) {
+        event.preventDefault();
+        const name = document.getElementById("senderName").value;
+        const email = document.getElementById("senderEmail").value;
+        const subject = document.getElementById("emailSubject").value;
+        const body = document.getElementById("emailBody").value;
+
+        const formattedBody = `Name: ${name}%0D%0AEmail: ${email}%0D%0A%0D%0AMessage:%0D%0A${encodeURIComponent(body)}`;
+        const mailtoUrl = `mailto:mkkamrulislam2004@gmail.com?subject=${encodeURIComponent(subject)}&body=${formattedBody}`;
+
+        window.location.href = mailtoUrl;
+      }
+    </script>
+  </body>
+</html>
