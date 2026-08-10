@@ -58,7 +58,12 @@
           #8b5cf6 100%
         );
         --gradient-gold: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
-        --gradient-text: linear-gradient(135deg, #38bdf8 0%, #818cf8 50%, #c084fc 100%);
+        --gradient-text: linear-gradient(
+          135deg,
+          #38bdf8 0%,
+          #818cf8 50%,
+          #c084fc 100%
+        );
         --shadow-card: 0 12px 35px -10px rgba(0, 0, 0, 0.55);
         --shadow-glow: 0 0 30px rgba(6, 182, 212, 0.25);
         --nav-bg: rgba(7, 10, 18, 0.88);
@@ -137,7 +142,12 @@
       }
 
       /* TYPOGRAPHY & LAYOUT STABILITY */
-      h1, h2, h3, h4, h5, h6 {
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
         font-family: var(--font-heading);
         color: var(--text-primary);
         line-height: 1.3;
@@ -145,7 +155,14 @@
         overflow-wrap: break-word;
       }
 
-      body, p, span, a, li, input, textarea, button {
+      body,
+      p,
+      span,
+      a,
+      li,
+      input,
+      textarea,
+      button {
         line-height: 1.6;
       }
 
@@ -328,7 +345,9 @@
         backdrop-filter: blur(16px);
         -webkit-backdrop-filter: blur(16px);
         border-bottom: 1px solid var(--border-color);
-        transition: background var(--transition-speed) ease, border-color var(--transition-speed) ease;
+        transition:
+          background var(--transition-speed) ease,
+          border-color var(--transition-speed) ease;
       }
 
       .nav-container {
@@ -437,7 +456,9 @@
         z-index: 998;
         opacity: 0;
         visibility: hidden;
-        transition: opacity var(--transition-speed) ease, visibility var(--transition-speed) ease;
+        transition:
+          opacity var(--transition-speed) ease,
+          visibility var(--transition-speed) ease;
       }
 
       .nav-overlay.active {
@@ -686,7 +707,9 @@
         padding: 1.5rem;
         border-radius: 20px;
         text-align: center;
-        transition: transform var(--transition-speed) ease, border-color var(--transition-speed) ease;
+        transition:
+          transform var(--transition-speed) ease,
+          border-color var(--transition-speed) ease;
       }
 
       .soft-card:hover {
@@ -1088,7 +1111,9 @@
         color: var(--text-primary);
         font-family: inherit;
         font-size: var(--font-size-base);
-        transition: border-color var(--transition-speed) ease, box-shadow var(--transition-speed) ease;
+        transition:
+          border-color var(--transition-speed) ease,
+          box-shadow var(--transition-speed) ease;
       }
 
       .form-input:focus,
@@ -1313,9 +1338,15 @@
               class="meta-chip location-chip-link"
               title="View Sylhet Division on Google Maps"
             >
-              <i class="fa-solid fa-map-location-dot" style="color: var(--accent-cyan)"></i>
+              <i
+                class="fa-solid fa-map-location-dot"
+                style="color: var(--accent-cyan)"
+              ></i>
               <span data-i18n="hero_loc">Sylhet, Bangladesh</span>
-              <i class="fa-solid fa-arrow-up-right-from-square" style="font-size: 0.75em; opacity: 0.7;"></i>
+              <i
+                class="fa-solid fa-arrow-up-right-from-square"
+                style="font-size: 0.75em; opacity: 0.7"
+              ></i>
             </a>
             <div class="meta-chip">
               <i class="fa-solid fa-flag"></i>
@@ -1431,7 +1462,9 @@
           <!-- Professional Summary -->
           <div class="glass-card">
             <h3 class="about-box-title">
-              <div class="card-icon-badge"><i class="fa-solid fa-user-gear"></i></div>
+              <div class="card-icon-badge">
+                <i class="fa-solid fa-user-gear"></i>
+              </div>
               <span data-i18n="about_summary_title">Professional Summary</span>
             </h3>
             <p data-i18n="about_summary_text">
@@ -1471,7 +1504,9 @@
           <!-- Career Objective -->
           <div class="glass-card">
             <h3 class="about-box-title">
-              <div class="card-icon-badge"><i class="fa-solid fa-bullseye"></i></div>
+              <div class="card-icon-badge">
+                <i class="fa-solid fa-bullseye"></i>
+              </div>
               <span data-i18n="about_obj_title">Career Objective</span>
             </h3>
             <p data-i18n="about_obj_text">
@@ -1567,7 +1602,10 @@
                 Open Source & OS Preference
               </h4>
               <p
-                style="font-size: var(--font-size-sm); color: var(--text-secondary)"
+                style="
+                  font-size: var(--font-size-sm);
+                  color: var(--text-secondary);
+                "
                 data-i18n="about_foss_desc"
               >
                 Strong advocate for Free & Open Source Software (FOSS). Primary
@@ -1657,7 +1695,7 @@
               <div class="timeline-dot"></div>
               <div class="timeline-date">2020 – 2022</div>
               <h3 class="timeline-role" data-i18n="edu_3_degree">
-                SSC  — Machine Tools Operation
+                SSC — Machine Tools Operation
               </h3>
               <div class="timeline-org" data-i18n="edu_3_inst">
                 <i class="fa-solid fa-school"></i> Brahmanbaria Govt Technical
@@ -1743,7 +1781,16 @@
         <!-- High Level Skills -->
         <div class="skills-category">
           <div class="category-label" style="color: #10b981">
-            <div class="card-icon-badge" style="width: 36px; height: 36px; font-size: 1rem; color: #10b981; background: rgba(16,185,129,0.12);">
+            <div
+              class="card-icon-badge"
+              style="
+                width: 36px;
+                height: 36px;
+                font-size: 1rem;
+                color: #10b981;
+                background: rgba(16, 185, 129, 0.12);
+              "
+            >
               <i class="fa-solid fa-circle-check"></i>
             </div>
             <span data-i18n="skills_high">High Proficiency</span>
@@ -1783,7 +1830,16 @@
         <!-- Medium Level Skills -->
         <div class="skills-category">
           <div class="category-label" style="color: #3b82f6">
-            <div class="card-icon-badge" style="width: 36px; height: 36px; font-size: 1rem; color: #3b82f6; background: rgba(59,130,246,0.12);">
+            <div
+              class="card-icon-badge"
+              style="
+                width: 36px;
+                height: 36px;
+                font-size: 1rem;
+                color: #3b82f6;
+                background: rgba(59, 130, 246, 0.12);
+              "
+            >
               <i class="fa-solid fa-sliders"></i>
             </div>
             <span data-i18n="skills_medium">Intermediate Proficiency</span>
@@ -1808,7 +1864,16 @@
         <!-- Basic Level Skills -->
         <div class="skills-category">
           <div class="category-label" style="color: #f59e0b">
-            <div class="card-icon-badge" style="width: 36px; height: 36px; font-size: 1rem; color: #f59e0b; background: rgba(245,158,11,0.12);">
+            <div
+              class="card-icon-badge"
+              style="
+                width: 36px;
+                height: 36px;
+                font-size: 1rem;
+                color: #f59e0b;
+                background: rgba(245, 158, 11, 0.12);
+              "
+            >
               <i class="fa-solid fa-seedling"></i>
             </div>
             <span data-i18n="skills_basic">Foundational Knowledge</span>
@@ -1841,7 +1906,7 @@
         </h3>
         <div class="soft-skills-grid">
           <div class="soft-card">
-            <div class="card-icon-badge" style="margin: 0 auto 0.85rem auto;">
+            <div class="card-icon-badge" style="margin: 0 auto 0.85rem auto">
               <i class="fa-solid fa-puzzle-piece"></i>
             </div>
             <h4
@@ -1851,14 +1916,17 @@
               Problem Solving
             </h4>
             <p
-              style="font-size: var(--font-size-xs); color: var(--text-secondary)"
+              style="
+                font-size: var(--font-size-xs);
+                color: var(--text-secondary);
+              "
               data-i18n="soft_1_desc"
             >
               Troubleshooting hardware & circuit logic efficiently
             </p>
           </div>
           <div class="soft-card">
-            <div class="card-icon-badge" style="margin: 0 auto 0.85rem auto;">
+            <div class="card-icon-badge" style="margin: 0 auto 0.85rem auto">
               <i class="fa-solid fa-book-open-reader"></i>
             </div>
             <h4
@@ -1868,14 +1936,17 @@
               Self-Learning
             </h4>
             <p
-              style="font-size: var(--font-size-xs); color: var(--text-secondary)"
+              style="
+                font-size: var(--font-size-xs);
+                color: var(--text-secondary);
+              "
               data-i18n="soft_2_desc"
             >
               Learning on your own from online resources
             </p>
           </div>
           <div class="soft-card">
-            <div class="card-icon-badge" style="margin: 0 auto 0.85rem auto;">
+            <div class="card-icon-badge" style="margin: 0 auto 0.85rem auto">
               <i class="fa-solid fa-people-group"></i>
             </div>
             <h4
@@ -1885,14 +1956,17 @@
               Teamwork & Leadership
             </h4>
             <p
-              style="font-size: var(--font-size-xs); color: var(--text-secondary)"
+              style="
+                font-size: var(--font-size-xs);
+                color: var(--text-secondary);
+              "
               data-i18n="soft_3_desc"
             >
               Collaborating seamlessly and leading engineering teams
             </p>
           </div>
           <div class="soft-card">
-            <div class="card-icon-badge" style="margin: 0 auto 0.85rem auto;">
+            <div class="card-icon-badge" style="margin: 0 auto 0.85rem auto">
               <i class="fa-solid fa-comments"></i>
             </div>
             <h4
@@ -1902,14 +1976,17 @@
               Communication
             </h4>
             <p
-              style="font-size: var(--font-size-xs); color: var(--text-secondary)"
+              style="
+                font-size: var(--font-size-xs);
+                color: var(--text-secondary);
+              "
               data-i18n="soft_4_desc"
             >
               Delivering clear project demos and seminar talks
             </p>
           </div>
           <div class="soft-card">
-            <div class="card-icon-badge" style="margin: 0 auto 0.85rem auto;">
+            <div class="card-icon-badge" style="margin: 0 auto 0.85rem auto">
               <i class="fa-solid fa-clock"></i>
             </div>
             <h4
@@ -1919,7 +1996,10 @@
               Time Management
             </h4>
             <p
-              style="font-size: var(--font-size-xs); color: var(--text-secondary)"
+              style="
+                font-size: var(--font-size-xs);
+                color: var(--text-secondary);
+              "
               data-i18n="soft_5_desc"
             >
               Balancing studies, DIY projects & competitions
@@ -1950,7 +2030,10 @@
               <span class="project-cat" data-i18n="p1_cat"
                 >IoT / Home Automation</span
               >
-              <div class="card-icon-badge" style="width: 38px; height: 38px; font-size: 1.1rem;">
+              <div
+                class="card-icon-badge"
+                style="width: 38px; height: 38px; font-size: 1.1rem"
+              >
                 <i class="fa-solid fa-house-signal"></i>
               </div>
             </div>
@@ -1973,12 +2056,16 @@
             </div>
             <div class="project-footer">
               <span
-                style="font-size: var(--font-size-xs); color: #10b981; font-weight: 600"
+                style="
+                  font-size: var(--font-size-xs);
+                  color: #10b981;
+                  font-weight: 600;
+                "
                 data-i18n="p1_result"
                 >✓ Smooth real-time device control</span
               >
               <a
-                href="https://kamrul.bd"
+                href="https://she.kamrul.bd"
                 target="_blank"
                 rel="noopener noreferrer"
                 class="btn btn-secondary btn-sm"
@@ -1995,7 +2082,10 @@
               <span class="project-cat" data-i18n="p2_cat"
                 >Electronics / Hardware</span
               >
-              <div class="card-icon-badge" style="width: 38px; height: 38px; font-size: 1.1rem;">
+              <div
+                class="card-icon-badge"
+                style="width: 38px; height: 38px; font-size: 1.1rem"
+              >
                 <i class="fa-solid fa-car-battery"></i>
               </div>
             </div>
@@ -2016,7 +2106,11 @@
             </div>
             <div class="project-footer">
               <span
-                style="font-size: var(--font-size-xs); color: #10b981; font-weight: 600"
+                style="
+                  font-size: var(--font-size-xs);
+                  color: #10b981;
+                  font-weight: 600;
+                "
                 data-i18n="p2_result"
                 >✓ Stable 12V low-ripple output</span
               >
@@ -2038,7 +2132,10 @@
               <span class="project-cat" data-i18n="p3_cat"
                 >Renewable Energy / Embedded</span
               >
-              <div class="card-icon-badge" style="width: 38px; height: 38px; font-size: 1.1rem;">
+              <div
+                class="card-icon-badge"
+                style="width: 38px; height: 38px; font-size: 1.1rem"
+              >
                 <i class="fa-solid fa-solar-panel"></i>
               </div>
             </div>
@@ -2059,7 +2156,11 @@
             </div>
             <div class="project-footer">
               <span
-                style="font-size: var(--font-size-xs); color: #10b981; font-weight: 600"
+                style="
+                  font-size: var(--font-size-xs);
+                  color: #10b981;
+                  font-weight: 600;
+                "
                 data-i18n="p3_result"
                 >✓ Improved panel efficiency</span
               >
@@ -2137,9 +2238,12 @@
         </h2>
 
         <!-- Hidden elements preserving i18n text binding for ssc items to maintain full dictionary capability -->
-        <div style="display: none;">
+        <div style="display: none">
           <span data-i18n="achieve_ssc_title">Academic Excellence: SSC </span>
-          <span data-i18n="achieve_ssc_desc">Secured Perfect GPA 5.00 / 5.00 ⭐ in Machine Tools Operation (2020 – 2022).</span>
+          <span data-i18n="achieve_ssc_desc"
+            >Secured Perfect GPA 5.00 / 5.00 ⭐ in Machine Tools Operation (2020
+            – 2022).</span
+          >
         </div>
 
         <!-- Competitions Grid (5 Clean Unique Cards) -->
@@ -2148,10 +2252,17 @@
             <span class="achieve-badge" style="background: #3b82f6"
               >4th Place</span
             >
-            <h4 style="font-size: var(--font-size-base); margin-bottom: 0.45rem">
+            <h4
+              style="font-size: var(--font-size-base); margin-bottom: 0.45rem"
+            >
               Inter-Department Innovation & Skill Competition 2024
             </h4>
-            <p style="font-size: var(--font-size-xs); color: var(--text-secondary)">
+            <p
+              style="
+                font-size: var(--font-size-xs);
+                color: var(--text-secondary);
+              "
+            >
               <i class="fa-regular fa-calendar"></i> 25 Sep 2024
             </p>
           </div>
@@ -2163,10 +2274,17 @@
             <span class="achieve-badge" style="background: #10b981"
               >🏆 1st Place Champion</span
             >
-            <h4 style="font-size: var(--font-size-base); margin-bottom: 0.45rem">
+            <h4
+              style="font-size: var(--font-size-base); margin-bottom: 0.45rem"
+            >
               Skill Competition 2025
             </h4>
-            <p style="font-size: var(--font-size-xs); color: var(--text-secondary)">
+            <p
+              style="
+                font-size: var(--font-size-xs);
+                color: var(--text-secondary);
+              "
+            >
               <i class="fa-regular fa-calendar"></i> 27 Feb 2025
             </p>
           </div>
@@ -2175,10 +2293,17 @@
             <span class="achieve-badge" style="background: #8b5cf6"
               >🥈 2nd Place</span
             >
-            <h4 style="font-size: var(--font-size-base); margin-bottom: 0.45rem">
+            <h4
+              style="font-size: var(--font-size-base); margin-bottom: 0.45rem"
+            >
               Skill & Innovation Competition 2025
             </h4>
-            <p style="font-size: var(--font-size-xs); color: var(--text-secondary)">
+            <p
+              style="
+                font-size: var(--font-size-xs);
+                color: var(--text-secondary);
+              "
+            >
               <i class="fa-regular fa-calendar"></i> 27 Sep 2025
             </p>
           </div>
@@ -2190,7 +2315,9 @@
             <span class="achieve-badge" style="background: #06b6d4"
               >🥇 1st Place (Sylhet Division)</span
             >
-            <h4 style="font-size: var(--font-size-base); margin-bottom: 0.45rem">
+            <h4
+              style="font-size: var(--font-size-base); margin-bottom: 0.45rem"
+            >
               Regional Level Skill & Innovation Competition 2026
             </h4>
             <p
@@ -2221,10 +2348,17 @@
             <span class="achieve-badge" style="background: #ec4899"
               >🚀 Aspiring Champion</span
             >
-            <h4 style="font-size: var(--font-size-base); margin-bottom: 0.45rem">
+            <h4
+              style="font-size: var(--font-size-base); margin-bottom: 0.45rem"
+            >
               National Level Skill & Innovation Competition
             </h4>
-            <p style="font-size: var(--font-size-xs); color: var(--text-secondary)">
+            <p
+              style="
+                font-size: var(--font-size-xs);
+                color: var(--text-secondary);
+              "
+            >
               <i class="fa-regular fa-clock"></i> Upcoming Event
             </p>
           </div>
@@ -2252,7 +2386,11 @@
           </div>
 
           <h3
-            style="font-size: var(--font-size-xl); margin-bottom: 0.65rem; color: var(--text-primary)"
+            style="
+              font-size: var(--font-size-xl);
+              margin-bottom: 0.65rem;
+              color: var(--text-primary);
+            "
             data-i18n="cert_1_title"
           >
             Refrigeration and Air Conditioning, Level-1 (360 Hours)
@@ -2267,37 +2405,71 @@
             "
             data-i18n="cert_1_issuer"
           >
-            <strong>Issuer:</strong> National Skills Development Authority (NSDA)
+            <strong>Issuer:</strong> National Skills Development Authority
+            (NSDA)
           </p>
 
           <div class="cert-details-grid">
             <div class="cert-detail-item">
               <i class="fa-regular fa-clock"></i>
               <div>
-                <div style="font-size: var(--font-size-xs); color: var(--text-muted);">Duration</div>
-                <div style="font-size: var(--font-size-sm); font-weight: 600;">4 Months Course</div>
+                <div
+                  style="
+                    font-size: var(--font-size-xs);
+                    color: var(--text-muted);
+                  "
+                >
+                  Duration
+                </div>
+                <div style="font-size: var(--font-size-sm); font-weight: 600">
+                  4 Months Course
+                </div>
               </div>
             </div>
 
             <div class="cert-detail-item">
               <i class="fa-solid fa-hourglass-half"></i>
               <div>
-                <div style="font-size: var(--font-size-xs); color: var(--text-muted);">Total Hours</div>
-                <div style="font-size: var(--font-size-sm); font-weight: 600;">360 Hours Practical</div>
+                <div
+                  style="
+                    font-size: var(--font-size-xs);
+                    color: var(--text-muted);
+                  "
+                >
+                  Total Hours
+                </div>
+                <div style="font-size: var(--font-size-sm); font-weight: 600">
+                  360 Hours Practical
+                </div>
               </div>
             </div>
 
             <div class="cert-detail-item">
-              <i class="fa-solid fa-circle-check" style="color: #10b981;"></i>
+              <i class="fa-solid fa-circle-check" style="color: #10b981"></i>
               <div>
-                <div style="font-size: var(--font-size-xs); color: var(--text-muted);">Skill Qualification</div>
-                <div style="font-size: var(--font-size-sm); font-weight: 600; color: #10b981;">Level-1 Certified</div>
+                <div
+                  style="
+                    font-size: var(--font-size-xs);
+                    color: var(--text-muted);
+                  "
+                >
+                  Skill Qualification
+                </div>
+                <div
+                  style="
+                    font-size: var(--font-size-sm);
+                    font-weight: 600;
+                    color: #10b981;
+                  "
+                >
+                  Level-1 Certified
+                </div>
               </div>
             </div>
           </div>
 
           <!-- Hidden paragraph to preserve exact i18n text element binding for cert_1_duration -->
-          <p data-i18n="cert_1_duration" style="display: none;"></p>
+          <p data-i18n="cert_1_duration" style="display: none"></p>
         </div>
       </div>
     </section>
@@ -2322,24 +2494,58 @@
                 <div class="card-icon-badge">
                   <i class="fa-solid fa-language"></i>
                 </div>
-                <span class="lang-badge-pill" style="background: rgba(16, 185, 129, 0.15); color: #10b981; border-color: rgba(16, 185, 129, 0.3);">
+                <span
+                  class="lang-badge-pill"
+                  style="
+                    background: rgba(16, 185, 129, 0.15);
+                    color: #10b981;
+                    border-color: rgba(16, 185, 129, 0.3);
+                  "
+                >
                   Native / 100%
                 </span>
               </div>
-              <h3 style="font-size: var(--font-size-lg); margin-bottom: 0.5rem;">Bangla</h3>
-              <p style="font-size: var(--font-size-xs); color: var(--text-secondary);" data-i18n="lang_bn">
-                Bangla (Native) — Reading ✓ | Writing ✓ | Listening ✓ | Speaking ✓
+              <h3 style="font-size: var(--font-size-lg); margin-bottom: 0.5rem">
+                Bangla
+              </h3>
+              <p
+                style="
+                  font-size: var(--font-size-xs);
+                  color: var(--text-secondary);
+                "
+                data-i18n="lang_bn"
+              >
+                Bangla (Native) — Reading ✓ | Writing ✓ | Listening ✓ | Speaking
+                ✓
               </p>
             </div>
             <div class="lang-progress-visual">
               <div class="lang-bar-track">
-                <div class="lang-bar-fill" style="width: 100%; background: linear-gradient(90deg, #10b981, #06b6d4);"></div>
+                <div
+                  class="lang-bar-fill"
+                  style="
+                    width: 100%;
+                    background: linear-gradient(90deg, #10b981, #06b6d4);
+                  "
+                ></div>
               </div>
               <div class="lang-skills-matrix">
-                <span class="lang-skill-pill"><i class="fa-solid fa-check" style="color: #10b981"></i> Read</span>
-                <span class="lang-skill-pill"><i class="fa-solid fa-check" style="color: #10b981"></i> Write</span>
-                <span class="lang-skill-pill"><i class="fa-solid fa-check" style="color: #10b981"></i> Listen</span>
-                <span class="lang-skill-pill"><i class="fa-solid fa-check" style="color: #10b981"></i> Speak</span>
+                <span class="lang-skill-pill"
+                  ><i class="fa-solid fa-check" style="color: #10b981"></i>
+                  Read</span
+                >
+                <span class="lang-skill-pill"
+                  ><i class="fa-solid fa-check" style="color: #10b981"></i>
+                  Write</span
+                >
+                <span class="lang-skill-pill"
+                  ><i class="fa-solid fa-check" style="color: #10b981"></i>
+                  Listen</span
+                >
+                <span class="lang-skill-pill"
+                  ><i class="fa-solid fa-check" style="color: #10b981"></i>
+                  Speak</span
+                >
               </div>
             </div>
           </div>
@@ -2351,24 +2557,58 @@
                 <div class="card-icon-badge">
                   <i class="fa-solid fa-globe"></i>
                 </div>
-                <span class="lang-badge-pill" style="background: rgba(56, 189, 248, 0.15); color: #38bdf8; border-color: rgba(56, 189, 248, 0.3);">
+                <span
+                  class="lang-badge-pill"
+                  style="
+                    background: rgba(56, 189, 248, 0.15);
+                    color: #38bdf8;
+                    border-color: rgba(56, 189, 248, 0.3);
+                  "
+                >
                   Fluent / 90%
                 </span>
               </div>
-              <h3 style="font-size: var(--font-size-lg); margin-bottom: 0.5rem;">English</h3>
-              <p style="font-size: var(--font-size-xs); color: var(--text-secondary);" data-i18n="lang_en">
-                English (Fluent) — Reading ✓ | Writing ✓ | Listening ✓ | Speaking ✓
+              <h3 style="font-size: var(--font-size-lg); margin-bottom: 0.5rem">
+                English
+              </h3>
+              <p
+                style="
+                  font-size: var(--font-size-xs);
+                  color: var(--text-secondary);
+                "
+                data-i18n="lang_en"
+              >
+                English (Fluent) — Reading ✓ | Writing ✓ | Listening ✓ |
+                Speaking ✓
               </p>
             </div>
             <div class="lang-progress-visual">
               <div class="lang-bar-track">
-                <div class="lang-bar-fill" style="width: 90%; background: linear-gradient(90deg, #38bdf8, #818cf8);"></div>
+                <div
+                  class="lang-bar-fill"
+                  style="
+                    width: 90%;
+                    background: linear-gradient(90deg, #38bdf8, #818cf8);
+                  "
+                ></div>
               </div>
               <div class="lang-skills-matrix">
-                <span class="lang-skill-pill"><i class="fa-solid fa-check" style="color: #38bdf8"></i> Read</span>
-                <span class="lang-skill-pill"><i class="fa-solid fa-check" style="color: #38bdf8"></i> Write</span>
-                <span class="lang-skill-pill"><i class="fa-solid fa-check" style="color: #38bdf8"></i> Listen</span>
-                <span class="lang-skill-pill"><i class="fa-solid fa-check" style="color: #38bdf8"></i> Speak</span>
+                <span class="lang-skill-pill"
+                  ><i class="fa-solid fa-check" style="color: #38bdf8"></i>
+                  Read</span
+                >
+                <span class="lang-skill-pill"
+                  ><i class="fa-solid fa-check" style="color: #38bdf8"></i>
+                  Write</span
+                >
+                <span class="lang-skill-pill"
+                  ><i class="fa-solid fa-check" style="color: #38bdf8"></i>
+                  Listen</span
+                >
+                <span class="lang-skill-pill"
+                  ><i class="fa-solid fa-check" style="color: #38bdf8"></i>
+                  Speak</span
+                >
               </div>
             </div>
           </div>
@@ -2380,24 +2620,58 @@
                 <div class="card-icon-badge">
                   <i class="fa-solid fa-comments"></i>
                 </div>
-                <span class="lang-badge-pill" style="background: rgba(245, 158, 11, 0.15); color: #f59e0b; border-color: rgba(245, 158, 11, 0.3);">
+                <span
+                  class="lang-badge-pill"
+                  style="
+                    background: rgba(245, 158, 11, 0.15);
+                    color: #f59e0b;
+                    border-color: rgba(245, 158, 11, 0.3);
+                  "
+                >
                   Spoken / 60%
                 </span>
               </div>
-              <h3 style="font-size: var(--font-size-lg); margin-bottom: 0.5rem;">Hindi</h3>
-              <p style="font-size: var(--font-size-xs); color: var(--text-secondary);" data-i18n="lang_hi">
-                Hindi (Spoken) — Reading ✗ | Writing ✗ | Listening ✓ | Speaking ✓
+              <h3 style="font-size: var(--font-size-lg); margin-bottom: 0.5rem">
+                Hindi
+              </h3>
+              <p
+                style="
+                  font-size: var(--font-size-xs);
+                  color: var(--text-secondary);
+                "
+                data-i18n="lang_hi"
+              >
+                Hindi (Spoken) — Reading ✗ | Writing ✗ | Listening ✓ | Speaking
+                ✓
               </p>
             </div>
             <div class="lang-progress-visual">
               <div class="lang-bar-track">
-                <div class="lang-bar-fill" style="width: 60%; background: linear-gradient(90deg, #f59e0b, #ec4899);"></div>
+                <div
+                  class="lang-bar-fill"
+                  style="
+                    width: 60%;
+                    background: linear-gradient(90deg, #f59e0b, #ec4899);
+                  "
+                ></div>
               </div>
               <div class="lang-skills-matrix">
-                <span class="lang-skill-pill" style="opacity: 0.6;"><i class="fa-solid fa-xmark" style="color: #ef4444"></i> Read</span>
-                <span class="lang-skill-pill" style="opacity: 0.6;"><i class="fa-solid fa-xmark" style="color: #ef4444"></i> Write</span>
-                <span class="lang-skill-pill"><i class="fa-solid fa-check" style="color: #f59e0b"></i> Listen</span>
-                <span class="lang-skill-pill"><i class="fa-solid fa-check" style="color: #f59e0b"></i> Speak</span>
+                <span class="lang-skill-pill" style="opacity: 0.6"
+                  ><i class="fa-solid fa-xmark" style="color: #ef4444"></i>
+                  Read</span
+                >
+                <span class="lang-skill-pill" style="opacity: 0.6"
+                  ><i class="fa-solid fa-xmark" style="color: #ef4444"></i>
+                  Write</span
+                >
+                <span class="lang-skill-pill"
+                  ><i class="fa-solid fa-check" style="color: #f59e0b"></i>
+                  Listen</span
+                >
+                <span class="lang-skill-pill"
+                  ><i class="fa-solid fa-check" style="color: #f59e0b"></i>
+                  Speak</span
+                >
               </div>
             </div>
           </div>
@@ -2417,7 +2691,11 @@
           <!-- Contact Info -->
           <div>
             <p
-              style="color: var(--text-secondary); margin-bottom: 1.5rem; font-size: var(--font-size-base)"
+              style="
+                color: var(--text-secondary);
+                margin-bottom: 1.5rem;
+                font-size: var(--font-size-base);
+              "
               data-i18n="contact_desc"
             >
               Feel free to reach out for research opportunities, university
@@ -2432,7 +2710,10 @@
                 </div>
                 <div>
                   <div
-                    style="font-size: var(--font-size-xs); color: var(--text-muted)"
+                    style="
+                      font-size: var(--font-size-xs);
+                      color: var(--text-muted);
+                    "
                     data-i18n="contact_email_label"
                   >
                     Email Address
@@ -2449,13 +2730,20 @@
               <div class="contact-item">
                 <div
                   class="card-icon-badge"
-                  style="background: rgba(37, 211, 102, 0.15); color: #25d366; border-color: rgba(37,211,102,0.3);"
+                  style="
+                    background: rgba(37, 211, 102, 0.15);
+                    color: #25d366;
+                    border-color: rgba(37, 211, 102, 0.3);
+                  "
                 >
                   <i class="fa-brands fa-whatsapp"></i>
                 </div>
                 <div>
                   <div
-                    style="font-size: var(--font-size-xs); color: var(--text-muted)"
+                    style="
+                      font-size: var(--font-size-xs);
+                      color: var(--text-muted);
+                    "
                     data-i18n="contact_wa_label"
                   >
                     WhatsApp Chat
@@ -2478,8 +2766,20 @@
                 <div class="card-icon-badge">
                   <i class="fa-solid fa-map-location-dot"></i>
                 </div>
-                <div style="display: flex; flex-direction: column; gap: 0.5rem; width: 100%;">
-                  <div style="font-size: var(--font-size-xs); color: var(--text-muted)">
+                <div
+                  style="
+                    display: flex;
+                    flex-direction: column;
+                    gap: 0.5rem;
+                    width: 100%;
+                  "
+                >
+                  <div
+                    style="
+                      font-size: var(--font-size-xs);
+                      color: var(--text-muted);
+                    "
+                  >
                     Location (Click to view Google Maps)
                   </div>
                   <!-- Present Address -> Sylhet Google Maps -->
@@ -2490,12 +2790,36 @@
                     class="location-map-link"
                     title="Open Sylhet Division on Google Maps"
                   >
-                    <i class="fa-solid fa-location-dot" style="color: var(--accent-cyan)"></i>
+                    <i
+                      class="fa-solid fa-location-dot"
+                      style="color: var(--accent-cyan)"
+                    ></i>
                     <div>
-                      <div style="font-weight: 600; font-size: var(--font-size-base)">Sylhet, Bangladesh</div>
-                      <div style="font-size: var(--font-size-xs); color: var(--text-muted)">Present Address (Click for Map)</div>
+                      <div
+                        style="
+                          font-weight: 600;
+                          font-size: var(--font-size-base);
+                        "
+                      >
+                        Sylhet, Bangladesh
+                      </div>
+                      <div
+                        style="
+                          font-size: var(--font-size-xs);
+                          color: var(--text-muted);
+                        "
+                      >
+                        Present Address (Click for Map)
+                      </div>
                     </div>
-                    <i class="fa-solid fa-arrow-up-right-from-square" style="margin-left: auto; font-size: 0.85rem; color: var(--accent-electric)"></i>
+                    <i
+                      class="fa-solid fa-arrow-up-right-from-square"
+                      style="
+                        margin-left: auto;
+                        font-size: 0.85rem;
+                        color: var(--accent-electric);
+                      "
+                    ></i>
                   </a>
 
                   <!-- Permanent Address -> Brahmanbaria Google Maps -->
@@ -2506,12 +2830,36 @@
                     class="location-map-link"
                     title="Open Brahmanbaria District on Google Maps"
                   >
-                    <i class="fa-solid fa-location-dot" style="color: var(--accent-purple)"></i>
+                    <i
+                      class="fa-solid fa-location-dot"
+                      style="color: var(--accent-purple)"
+                    ></i>
                     <div>
-                      <div style="font-weight: 600; font-size: var(--font-size-base)">Brahmanbaria, Bangladesh</div>
-                      <div style="font-size: var(--font-size-xs); color: var(--text-muted)">Permanent Address (Click for Map)</div>
+                      <div
+                        style="
+                          font-weight: 600;
+                          font-size: var(--font-size-base);
+                        "
+                      >
+                        Brahmanbaria, Bangladesh
+                      </div>
+                      <div
+                        style="
+                          font-size: var(--font-size-xs);
+                          color: var(--text-muted);
+                        "
+                      >
+                        Permanent Address (Click for Map)
+                      </div>
                     </div>
-                    <i class="fa-solid fa-arrow-up-right-from-square" style="margin-left: auto; font-size: 0.85rem; color: var(--text-muted)"></i>
+                    <i
+                      class="fa-solid fa-arrow-up-right-from-square"
+                      style="
+                        margin-left: auto;
+                        font-size: 0.85rem;
+                        color: var(--text-muted);
+                      "
+                    ></i>
                   </a>
                 </div>
               </div>
@@ -2688,11 +3036,11 @@
           about_title: "About Me & Career Objective",
           about_summary_title: "Professional Summary",
           about_summary_text:
-          "A dedicated Electrical Technology student, almost finishing a four-year diploma at Sylhet Polytechnic Institute. Has strong knowledge in electrical, electronics, computer, nuclear, and telecommunication engineering, along with math, chemistry, and physics. Deeply interested in astronomy, cosmology, and rocket science, showing a great love for the universe. Has practical experience in hardware and software, and is currently learning modern technologies like artificial intelligence. Highly motivated to combine different science and engineering skills to solve real-world problems.",
+            "A dedicated Electrical Technology student, almost finishing a four-year diploma at Sylhet Polytechnic Institute. Has strong knowledge in electrical, electronics, computer, nuclear, and telecommunication engineering, along with math, chemistry, and physics. Deeply interested in astronomy, cosmology, and rocket science, showing a great love for the universe. Has practical experience in hardware and software, and is currently learning modern technologies like artificial intelligence. Highly motivated to combine different science and engineering skills to solve real-world problems.",
           about_fav_subj: "Favorite Subjects",
           about_obj_title: "Career Objective",
           about_obj_text:
-          "My goal is to get a Bachelor's degree in Engineering from a recognized local or foreign university, using the strong basics I learned in my Electrical Technology diploma. I want to combine different science and engineering skills to create effective and lasting solutions to real-world problems. My long-term dream is to become a researcher and inventor. I want to help advance technology for the benefit of my country and the whole world.",
+            "My goal is to get a Bachelor's degree in Engineering from a recognized local or foreign university, using the strong basics I learned in my Electrical Technology diploma. I want to combine different science and engineering skills to create effective and lasting solutions to real-world problems. My long-term dream is to become a researcher and inventor. I want to help advance technology for the benefit of my country and the whole world.",
           about_interests: "Career Interests",
           about_hobbies: "Hobbies & Passions",
           about_foss: "Open Source & OS Preference",
@@ -2829,11 +3177,11 @@
           about_title: "পরিচিতি ও ক্যারিয়ার উদ্দেশ্য",
           about_summary_title: "পেশাদার সারসংক্ষেপ",
           about_summary_text:
-          "সিলেট পলিটেকনিক ইনস্টিটিউটের ইলেকট্রিক্যাল টেকনোলজির একজন উদ্যমী শিক্ষার্থী, যার চার বছর মেয়াদি ডিপ্লোমা কোর্সটি প্রায় শেষের দিকে। গণিত, রসায়ন এবং পদার্থবিজ্ঞানের পাশাপাশি ইলেকট্রিক্যাল, ইলেকট্রনিক্স, কম্পিউটার, নিউক্লিয়ার এবং টেলিকমিউনিকেশন ইঞ্জিনিয়ারিংয়ে তার ভালো জ্ঞান রয়েছে। মহাবিশ্ব নিয়ে জানার অনেক শখ থাকায়, তিনি অ্যাস্ট্রোনমি, কসমোলজি এবং রকেট সায়েন্সের প্রতি গভীর আগ্রহ রাখেন। হার্ডওয়্যার ও সফটওয়্যারে তার ব্যবহারিক (প্র্যাকটিক্যাল) অভিজ্ঞতা আছে এবং বর্তমানে তিনি আর্টিফিশিয়াল ইন্টেলিজেন্স বা কৃত্রিম বুদ্ধিমত্তার মতো নতুন প্রযুক্তি শিখছেন। তার প্রধান লক্ষ্য হলো বিজ্ঞান ও ইঞ্জিনিয়ারিংয়ের নানা জ্ঞান একসঙ্গে কাজে লাগিয়ে বাস্তব জীবনের সমস্যাগুলো সমাধান করা।",
+            "সিলেট পলিটেকনিক ইনস্টিটিউটের ইলেকট্রিক্যাল টেকনোলজির একজন উদ্যমী শিক্ষার্থী, যার চার বছর মেয়াদি ডিপ্লোমা কোর্সটি প্রায় শেষের দিকে। গণিত, রসায়ন এবং পদার্থবিজ্ঞানের পাশাপাশি ইলেকট্রিক্যাল, ইলেকট্রনিক্স, কম্পিউটার, নিউক্লিয়ার এবং টেলিকমিউনিকেশন ইঞ্জিনিয়ারিংয়ে তার ভালো জ্ঞান রয়েছে। মহাবিশ্ব নিয়ে জানার অনেক শখ থাকায়, তিনি অ্যাস্ট্রোনমি, কসমোলজি এবং রকেট সায়েন্সের প্রতি গভীর আগ্রহ রাখেন। হার্ডওয়্যার ও সফটওয়্যারে তার ব্যবহারিক (প্র্যাকটিক্যাল) অভিজ্ঞতা আছে এবং বর্তমানে তিনি আর্টিফিশিয়াল ইন্টেলিজেন্স বা কৃত্রিম বুদ্ধিমত্তার মতো নতুন প্রযুক্তি শিখছেন। তার প্রধান লক্ষ্য হলো বিজ্ঞান ও ইঞ্জিনিয়ারিংয়ের নানা জ্ঞান একসঙ্গে কাজে লাগিয়ে বাস্তব জীবনের সমস্যাগুলো সমাধান করা।",
           about_fav_subj: "পছন্দের বিষয়সমূহ",
           about_obj_title: "ক্যারিয়ার উদ্দেশ্য",
           about_obj_text:
-          "আমার লক্ষ্য হলো ইলেকট্রিক্যাল টেকনোলজি ডিপ্লোমার শিক্ষাকে কাজে লাগিয়ে দেশের অথবা বিদেশের কোনো পরিচিত বিশ্ববিদ্যালয় থেকে ইঞ্জিনিয়ারিংয়ে ব্যাচেলর (স্নাতক) ডিগ্রি অর্জন করা। আমি বিজ্ঞান ও ইঞ্জিনিয়ারিংয়ের বিভিন্ন জ্ঞানকে একসাথে মিলিয়ে বাস্তব জীবনের সমস্যাগুলোর জন্য ভালো এবং দীর্ঘস্থায়ী সমাধান তৈরি করতে চাই। ভবিষ্যতে আমি একজন গবেষক ও আবিষ্কারক হতে চাই, যাতে নতুন প্রযুক্তির মাধ্যমে আমি আমার দেশ এবং পুরো বিশ্বের মানুষের উপকারে আসতে পারি।",
+            "আমার লক্ষ্য হলো ইলেকট্রিক্যাল টেকনোলজি ডিপ্লোমার শিক্ষাকে কাজে লাগিয়ে দেশের অথবা বিদেশের কোনো পরিচিত বিশ্ববিদ্যালয় থেকে ইঞ্জিনিয়ারিংয়ে ব্যাচেলর (স্নাতক) ডিগ্রি অর্জন করা। আমি বিজ্ঞান ও ইঞ্জিনিয়ারিংয়ের বিভিন্ন জ্ঞানকে একসাথে মিলিয়ে বাস্তব জীবনের সমস্যাগুলোর জন্য ভালো এবং দীর্ঘস্থায়ী সমাধান তৈরি করতে চাই। ভবিষ্যতে আমি একজন গবেষক ও আবিষ্কারক হতে চাই, যাতে নতুন প্রযুক্তির মাধ্যমে আমি আমার দেশ এবং পুরো বিশ্বের মানুষের উপকারে আসতে পারি।",
           about_interests: "ক্যারিয়ার আগ্রহ",
           about_hobbies: "শখ ও পছন্দ",
           about_foss: "ওপেন সোর্স ও অপারেটিং সিস্টেম",
