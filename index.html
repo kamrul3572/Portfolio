@@ -179,17 +179,6 @@
         position: relative;
       }
 
-      /* Performance: defer rendering off-screen sections */
-      #about,
-      #skills,
-      #projects,
-      #journey,
-      #achievements,
-      #contact {
-        content-visibility: auto;
-        contain-intrinsic-size: auto none auto 600px;
-      }
-
       /* ═══════════════════════════════════════════
          SECTION TITLES
          ═══════════════════════════════════════════ */
@@ -259,10 +248,6 @@
         align-items: center;
         gap: 2rem;
         list-style: none;
-      }
-
-      .mobile-nav-header {
-        display: none;
       }
 
       .nav-link {
@@ -337,7 +322,7 @@
       .nav-overlay {
         position: fixed;
         inset: 0;
-        background: rgba(0, 0, 0, 0.6);
+        background: rgba(0, 0, 0, 0.5);
         backdrop-filter: blur(6px);
         -webkit-backdrop-filter: blur(6px);
         z-index: 998;
@@ -1353,14 +1338,15 @@
       }
 
       /* ═══════════════════════════════════════════
-         SCROLL REVEAL
+         FAST SCROLL REVEAL
          ═══════════════════════════════════════════ */
       .reveal {
         opacity: 0;
-        transform: translateY(30px);
+        transform: translateY(15px);
         transition:
-          opacity 0.6s ease,
-          transform 0.6s ease;
+          opacity 0.25s cubic-bezier(0.16, 1, 0.3, 1),
+          transform 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+        will-change: opacity, transform;
       }
 
       .reveal.visible {
@@ -1434,63 +1420,34 @@
           padding: 4.5rem 0;
         }
 
-        /* Modern Glassmorphic Floating Mobile Drawer */
+        /* Ultra-Transparent Glassmorphic Mobile Drawer */
         .nav-menu {
           position: fixed;
           top: 0;
           right: -320px;
           width: 290px;
           height: 100vh;
-          background: rgba(12, 12, 12, 0.88);
-          backdrop-filter: blur(30px);
-          -webkit-backdrop-filter: blur(30px);
+          background: rgba(10, 10, 10, 0.55);
+          backdrop-filter: blur(24px);
+          -webkit-backdrop-filter: blur(24px);
           flex-direction: column;
-          justify-content: flex-start;
+          justify-content: center;
           align-items: stretch;
-          gap: 0.5rem;
-          transition: right 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+          gap: 0.75rem;
+          transition: right 0.35s cubic-bezier(0.16, 1, 0.3, 1);
           z-index: 999;
-          border-left: 1px solid var(--border-hover);
-          padding: 1.5rem 1.25rem;
-          box-shadow: -15px 0 50px rgba(0, 0, 0, 0.7);
+          border-left: 1px solid rgba(255, 255, 255, 0.12);
+          padding: 5rem 1.5rem 2rem 1.5rem;
+          box-shadow: -15px 0 50px rgba(0, 0, 0, 0.5);
         }
 
         [data-theme="light"] .nav-menu {
-          background: rgba(250, 250, 250, 0.92);
+          background: rgba(255, 255, 255, 0.65);
+          border-left: 1px solid rgba(0, 0, 0, 0.1);
         }
 
         .nav-menu.active {
           right: 0;
-        }
-
-        .mobile-nav-header {
-          display: flex;
-          align-items: center;
-          justify-content: space-between;
-          padding-bottom: 1rem;
-          margin-bottom: 1rem;
-          border-bottom: 1px solid var(--border-color);
-        }
-
-        .mobile-nav-close {
-          background: transparent;
-          border: 1px solid var(--border-color);
-          color: var(--text-secondary);
-          width: 36px;
-          height: 36px;
-          border-radius: 10px;
-          cursor: pointer;
-          display: inline-flex;
-          align-items: center;
-          justify-content: center;
-          font-size: 1rem;
-          transition: all var(--transition);
-        }
-
-        .mobile-nav-close:hover {
-          border-color: var(--accent);
-          color: var(--accent);
-          background: var(--accent-glow);
         }
 
         .nav-link {
@@ -1638,16 +1595,6 @@
         <a href="#" class="nav-logo" data-i18n="nav_logo">KAMRUL</a>
 
         <ul class="nav-menu" id="navMenu">
-          <div class="mobile-nav-header">
-            <span class="nav-logo" data-i18n="nav_logo">KAMRUL</span>
-            <button
-              class="mobile-nav-close"
-              id="mobileCloseBtn"
-              aria-label="Close Menu"
-            >
-              <i class="fa-solid fa-xmark"></i>
-            </button>
-          </div>
           <li>
             <a href="#about" class="nav-link">
               <i class="fa-solid fa-user-gear"></i>
@@ -2403,7 +2350,7 @@
                 class="text-muted"
                 style="font-size: 0.78rem; margin-bottom: 0.35rem"
                 data-i18n="edu_4_cgpa_label"
-                >Semester CGPA Progression:</div
+                >Semester CGPA Progression (Out of 4.00):</div
               >
               <div class="cgpa-row">
                 <span class="cgpa-tag">S1: 3.57</span>
@@ -2948,7 +2895,7 @@
           edu_4_date: "2023 – Near Completion",
           edu_4_degree: "Diploma in Engineering (Electrical)",
           edu_4_inst: "Sylhet Polytechnic Institute",
-          edu_4_cgpa_label: "Semester CGPA Progression:",
+          edu_4_cgpa_label: "Semester CGPA Progression (Out of 4.00):",
           edu_3_degree: "SSC — Machine Tools Operation",
           edu_3_inst: "Brahmanbaria Govt Technical School & College",
           edu_3_gpa: "⭐ GPA 5.00 / 5.00",
@@ -3003,7 +2950,7 @@
           about_heading: "আমি কে",
           about_summary_title: "পেশাদার সারসংক্ষেপ",
           about_summary_text:
-            "সিলেট পলিটেকনিক ইনস্টিটিউটের ইলেকট্রিক্যাল টেকনোলজির একজন উদ্যমী শিক্ষার্থী, যার চার বছর মেয়াদি ডিপ্লোমা কোর্সটি প্রায় শেষের দিকে। গণিত, রসায়ন এবং পদার্থবিজ্ঞানের পাশাপাশি ইলেকট্রিক্যাল, ইলেকট্রনিক্স, কম্পিউটার, নিউক্লিয়ার এবং টেলিকমিউনিকেশন ইঞ্জিনিয়ারিংয়ে তার ভালো জ্ঞান রয়েছে। মহাবিশ্ব নিয়ে জানার অনেক শখ থাকায়, তিনি অ্যাস্ট্রোনমি, কসমোলজি এবং রকেট সায়েন্সের প্রতি গভীর আগ্রহ রাখেন। হার্ডওয়্যার ও সফটওয়্যারে তার ব্যবহারিক অভিজ্ঞতা আছে এবং বর্তমানে তিনি কৃত্রিম বুদ্ধিমত্তার মতো নতুন প্রযুক্তি শিখছেন। তার প্রধান লক্ষ্য হলো বিজ্ঞান ও ইঞ্জিনিয়ারিংয়ের নানা জ্ঞান একসঙ্গে কাজে লাগিয়ে বাস্তব জীবনের সমস্যাগুলো সমাধান করা।",
+            "সিলেট পলিটেকনিক ইনস্টিটিউটের ইলেকট্রিক্যাল টেকনোলজির একজন উদ্যমী শিক্ষার্থী, যার চার বছর মেয়াদি ডিপ্লোমা কোর্সটি প্রায় শেষের দিকে। গণিত, রসায়ন এবং পদার্থবিজ্ঞানের পাশাপাশি ইলেকট্রিক্যাল, ইলেকট্রনিক্স, কম্পিউটার, নিউক্লিয়ার এবং টেলিকমিউনেকেশন ইঞ্জিনিয়ারিংয়ে তার ভালো জ্ঞান রয়েছে। মহাবিশ্ব নিয়ে জানার অনেক শখ থাকায়, তিনি অ্যাস্ট্রোনমি, কসমোলজি এবং রকেট সায়েন্সের প্রতি গভীর আগ্রহ রাখেন। হার্ডওয়্যার ও সফটওয়্যারে তার ব্যবহারিক অভিজ্ঞতা আছে এবং বর্তমানে তিনি কৃত্রিম বুদ্ধিমত্তার মতো নতুন প্রযুক্তি শিখছেন। তার প্রধান লক্ষ্য হলো বিজ্ঞান ও ইঞ্জিনিয়ারিংয়ের নানা জ্ঞান একসঙ্গে কাজে লাগিয়ে বাস্তব জীবনের সমস্যাগুলো সমাধান করা।",
           about_fav_subj: "পছন্দের বিষয়সমূহ",
           about_obj_title: "ক্যারিয়ার উদ্দেশ্য",
           about_obj_text:
@@ -3012,7 +2959,7 @@
           about_hobbies: "শখ ও পছন্দ",
           about_foss: "ওপেন সোর্স ও ওএস",
           about_foss_desc:
-            "ফ্রি অ্যান্ড ওপেন সোর্স সফটওয়্যারের (FOSS) দৃঢ় সমর্থক। প্রধান ওএস: উবুন্টু (২৫.১০)।",
+            "ফ্রি অ্যান্ড ওপেন সোর্স সফটওয়্যারের (FOSS) দৃঢ় সমর্থক। প্রধান ওএস: উবুন্টু (25.10)।",
           skills_eyebrow: "কারিগরি ও সফট স্কিল",
           skills_heading: "আমার দক্ষতা",
           skills_high: "উচ্চ দক্ষতা",
@@ -3032,13 +2979,13 @@
           lang_section_title: "ভাষাগত দক্ষতা",
           lang_section_desc:
             "পড়া, লেখা, শোনা এবং বলায় যোগাযোগের সক্ষমতা।",
-          lang_1_rank: "১ম ভাষা",
+          lang_1_rank: "1st Language",
           lang_1_name: "বাংলা",
           lang_1_badge: "মাতৃভাষা",
-          lang_2_rank: "২য় ভাষা",
+          lang_2_rank: "2nd Language",
           lang_2_name: "ইংরেজি",
           lang_2_badge: "সাবলীল",
-          lang_3_rank: "৩য় ভাষা",
+          lang_3_rank: "3rd Language",
           lang_3_name: "হিন্দি",
           lang_3_badge: "মৌখিক",
           sk_read: "পড়া",
@@ -3055,8 +3002,8 @@
           p2_cat: "ইলেকট্রনিক্স / হার্ডওয়্যার",
           p2_title: "রেগুলেটেড ডিসি পাওয়ার সাপ্লাই পিসিবি",
           p2_desc:
-            "শর্ট সার্কিট প্রটেকশন ও ন্যূনতম রিপল সহ একটি স্থিতিশীল ১২ ভোল্ট ডিসি রেগুলেটেড পাওয়ার সাপ্লাই পিসিবি ডিজাইন ও টেস্টিং।",
-          p2_result: "✓ স্থিতিশীল ১২ ভোল্ট আউটপুট",
+            "শর্ট সার্কিট প্রটেকশন ও ন্যূনতম রিপল সহ একটি স্থিতিশীল 12V DC রেগুলেটেড পাওয়ার সাপ্লাই পিসিবি ডিজাইন ও টেস্টিং।",
+          p2_result: "✓ স্থিতিশীল 12V low-ripple আউটপুট",
           p3_cat: "নবায়নযোগ্য শক্তি / এমবেডেড",
           p3_title: "সোলার প্যানেল কুলিং সিস্টেম",
           p3_desc:
@@ -3065,34 +3012,34 @@
           btn_visit: "ভিজিট",
           journey_eyebrow: "আমার যাত্রা",
           journey_heading: "অভিজ্ঞতা ও শিক্ষা",
-          exp_duration: "জানুয়ারি – মার্চ ২০২৬ (৩ মাস)",
+          exp_duration: "Jan – Mar 2026 (3 Months)",
           exp_role: "ইলেকট্রিক্যাল ইঞ্জিনিয়ারিং ইন্টার্ন",
           exp_org: "বাংলাদেশ পল্লী বিদ্যুতায়ন বোর্ড (BREB)",
           exp_t1:
             "সিনিয়র প্রকৌশলীদের লোড ফ্লো অ্যানালাইসিস, ফিল্ড সার্ভে এবং ডাটা ডিজিটাইজেশনে সহায়তা।",
           exp_t2:
-            "একটি ডিজিটাল রিপোর্টিং ফরম্যাট তৈরি যা ম্যানুয়াল ভুল প্রায় ১৫% কমিয়েছে।",
+            "একটি ডিজিটাল রিপোর্টিং ফরম্যাট তৈরি যা ম্যানুয়াল ভুল প্রায় 15% কমিয়েছে।",
           exp_t3: "ফিল্ড ইনস্পেকশনে ত্রুটিপূর্ণ ট্রানস্ফর্মার সময়মতো শনাক্তকরণ।",
-          edu_4_date: "২০২৩ – চলমান",
+          edu_4_date: "2023 – Near Completion",
           edu_4_degree: "ডিপ্লোমা ইন ইঞ্জিনিয়ারিং (ইলেকট্রিক্যাল)",
           edu_4_inst: "সিলেট পলিটেকনিক ইনস্টিটিউট",
-          edu_4_cgpa_label: "সেমিস্টারভিত্তিক জিপিএ:",
+          edu_4_cgpa_label: "সেমিস্টারভিত্তিক CGPA (Out of 4.00):",
           edu_3_degree: "এসএসসি — মেশিন টুলস অপারেশন",
           edu_3_inst: "ব্রাহ্মণবাড়িয়া সরকারি টেকনিক্যাল স্কুল ও কলেজ",
-          edu_3_gpa: "⭐ জিপিএ ৫.০০ / ৫.০০",
-          edu_2_degree: "মাধ্যমিক পর্যায় (৬ষ্ঠ – ৮ম)",
+          edu_3_gpa: "⭐ GPA 5.00 / 5.00",
+          edu_2_degree: "Secondary Schooling (Classes 6–8)",
           edu_2_inst: "ধাউতপুর সরকারি উচ্চ বিদ্যালয়",
-          edu_1_degree: "প্রাথমিক শিক্ষা",
+          edu_1_degree: "Primary Education",
           edu_1_inst: "রয়েল ফ্রি ক্যাডেট স্কুল",
           edu_5_date: "ভবিষ্যৎ লক্ষ্য",
           edu_5_degree: "বিএসসি ইন ইঞ্জিনিয়ারিং ",
           edu_5_inst: "দেশি ও বিদেশী বিশ্ববিদ্যালয়ে আবেদনকারী",
           achieve_eyebrow: "স্বীকৃতি ও সম্মাননা",
           achieve_heading: "অর্জন ও সনদপত্র",
-          achieve_reg_date: "১৭ এপ্রিল ২০২৬",
+          achieve_reg_date: "17 Apr 2026",
           cert_1_title: "রেফ্রিজারেশন এন্ড এয়ার কন্ডিশনিং",
           cert_1_issuer: "প্রদানকারী: জাতীয় দক্ষতা উন্নয়ন কর্তৃপক্ষ (NSDA)",
-          cert_1_duration: "মেয়াদ: ৪ মাসের পেশাদার কোর্স",
+          cert_1_duration: "Duration: 4 Months Professional Course",
           contact_eyebrow: "যোগাযোগ",
           contact_heading: "যোগাযোগ করুন",
           contact_desc:
@@ -3105,8 +3052,8 @@
           form_subject: "বিষয়",
           form_message: "বার্তা",
           form_btn: "ইমেইল পাঠান",
-          footer_copy: "© ২০২৬ মোঃ কামরুল ইসলাম। সর্বস্বত্ব সংরক্ষিত।",
-          footer_loc: "সিলেট, বাংলাদেশ · ব্রাহ্মণবাড়িয়া, বাংলাদেশ",
+          footer_copy: "© 2026 MD Kamrul Islam. All rights reserved.",
+          footer_loc: "Sylhet, Bangladesh · Brahmanbaria, Bangladesh",
         },
       };
 
@@ -3130,9 +3077,6 @@
         document
           .getElementById("hamburgerBtn")
           .addEventListener("click", toggleMobileMenu);
-        document
-          .getElementById("mobileCloseBtn")
-          .addEventListener("click", closeMobileMenu);
         document
           .getElementById("navOverlay")
           .addEventListener("click", closeMobileMenu);
@@ -3195,7 +3139,7 @@
           "fa-solid fa-bars";
       }
 
-      /* ── SCROLL REVEAL ── */
+      /* ── FAST SCROLL REVEAL ── */
       function initScrollReveal() {
         const reveals = document.querySelectorAll(".reveal");
         if (!reveals.length) return;
@@ -3209,7 +3153,7 @@
               }
             });
           },
-          { threshold: 0.1, rootMargin: "0px 0px -50px 0px" }
+          { threshold: 0.01, rootMargin: "150px 0px 150px 0px" }
         );
 
         reveals.forEach((el) => observer.observe(el));
