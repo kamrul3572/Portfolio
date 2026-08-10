@@ -220,7 +220,7 @@
       }
 
       /* ═══════════════════════════════════════════
-         NAVBAR
+         NAVBAR & MOBILE DRAWER
          ═══════════════════════════════════════════ */
       .navbar {
         position: fixed;
@@ -261,6 +261,10 @@
         list-style: none;
       }
 
+      .mobile-nav-header {
+        display: none;
+      }
+
       .nav-link {
         color: var(--text-secondary);
         font-size: 0.85rem;
@@ -268,6 +272,9 @@
         transition: color var(--transition);
         position: relative;
         text-decoration: none;
+        display: inline-flex;
+        align-items: center;
+        gap: 0.4rem;
       }
 
       .nav-link:hover,
@@ -330,8 +337,9 @@
       .nav-overlay {
         position: fixed;
         inset: 0;
-        background: rgba(0, 0, 0, 0.5);
-        backdrop-filter: blur(4px);
+        background: rgba(0, 0, 0, 0.6);
+        backdrop-filter: blur(6px);
+        -webkit-backdrop-filter: blur(6px);
         z-index: 998;
         opacity: 0;
         visibility: hidden;
@@ -1426,26 +1434,95 @@
           padding: 4.5rem 0;
         }
 
+        /* Modern Glassmorphic Floating Mobile Drawer */
         .nav-menu {
           position: fixed;
           top: 0;
-          right: -300px;
-          width: 280px;
+          right: -320px;
+          width: 290px;
           height: 100vh;
-          background: var(--nav-bg);
+          background: rgba(12, 12, 12, 0.88);
           backdrop-filter: blur(30px);
           -webkit-backdrop-filter: blur(30px);
           flex-direction: column;
-          justify-content: center;
-          gap: 2rem;
-          transition: right 0.3s ease;
+          justify-content: flex-start;
+          align-items: stretch;
+          gap: 0.5rem;
+          transition: right 0.4s cubic-bezier(0.16, 1, 0.3, 1);
           z-index: 999;
-          border-left: 1px solid var(--border-color);
-          padding: 2rem;
+          border-left: 1px solid var(--border-hover);
+          padding: 1.5rem 1.25rem;
+          box-shadow: -15px 0 50px rgba(0, 0, 0, 0.7);
+        }
+
+        [data-theme="light"] .nav-menu {
+          background: rgba(250, 250, 250, 0.92);
         }
 
         .nav-menu.active {
           right: 0;
+        }
+
+        .mobile-nav-header {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding-bottom: 1rem;
+          margin-bottom: 1rem;
+          border-bottom: 1px solid var(--border-color);
+        }
+
+        .mobile-nav-close {
+          background: transparent;
+          border: 1px solid var(--border-color);
+          color: var(--text-secondary);
+          width: 36px;
+          height: 36px;
+          border-radius: 10px;
+          cursor: pointer;
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 1rem;
+          transition: all var(--transition);
+        }
+
+        .mobile-nav-close:hover {
+          border-color: var(--accent);
+          color: var(--accent);
+          background: var(--accent-glow);
+        }
+
+        .nav-link {
+          display: flex;
+          align-items: center;
+          gap: 0.85rem;
+          padding: 0.85rem 1.1rem;
+          border-radius: 12px;
+          font-size: 0.95rem;
+          font-weight: 600;
+          color: var(--text-secondary);
+          transition: all var(--transition);
+          border: 1px solid transparent;
+        }
+
+        .nav-link i {
+          font-size: 1.1rem;
+          color: var(--accent);
+          transition: transform var(--transition);
+          width: 22px;
+          text-align: center;
+        }
+
+        .nav-link:hover,
+        .nav-link.active {
+          color: var(--text-primary);
+          background: var(--accent-glow);
+          border-color: rgba(232, 168, 56, 0.25);
+        }
+
+        .nav-link.active i {
+          transform: scale(1.15);
         }
 
         .hamburger {
@@ -1476,7 +1553,7 @@
           text-align: justify;
           text-justify: inter-word;
           font-size: 0.9rem;
-          line-height: 1.8;
+          line-height: 1.85;
         }
 
         .tag-group {
@@ -1561,34 +1638,51 @@
         <a href="#" class="nav-logo" data-i18n="nav_logo">KAMRUL</a>
 
         <ul class="nav-menu" id="navMenu">
-          <li>
-            <a href="#about" class="nav-link" data-i18n="nav_about">About</a>
-          </li>
-          <li>
-            <a href="#skills" class="nav-link" data-i18n="nav_skills">Skills</a>
-          </li>
-          <li>
-            <a href="#projects" class="nav-link" data-i18n="nav_projects"
-              >Projects</a
+          <div class="mobile-nav-header">
+            <span class="nav-logo" data-i18n="nav_logo">KAMRUL</span>
+            <button
+              class="mobile-nav-close"
+              id="mobileCloseBtn"
+              aria-label="Close Menu"
             >
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+          </div>
+          <li>
+            <a href="#about" class="nav-link">
+              <i class="fa-solid fa-user-gear"></i>
+              <span data-i18n="nav_about">About</span>
+            </a>
           </li>
           <li>
-            <a href="#journey" class="nav-link" data-i18n="nav_journey"
-              >Journey</a
-            >
+            <a href="#skills" class="nav-link">
+              <i class="fa-solid fa-bolt"></i>
+              <span data-i18n="nav_skills">Skills</span>
+            </a>
           </li>
           <li>
-            <a
-              href="#achievements"
-              class="nav-link"
-              data-i18n="nav_achievements"
-              >Awards</a
-            >
+            <a href="#projects" class="nav-link">
+              <i class="fa-solid fa-diagram-project"></i>
+              <span data-i18n="nav_projects">Projects</span>
+            </a>
           </li>
           <li>
-            <a href="#contact" class="nav-link" data-i18n="nav_contact"
-              >Contact</a
-            >
+            <a href="#journey" class="nav-link">
+              <i class="fa-solid fa-route"></i>
+              <span data-i18n="nav_journey">Journey</span>
+            </a>
+          </li>
+          <li>
+            <a href="#achievements" class="nav-link">
+              <i class="fa-solid fa-trophy"></i>
+              <span data-i18n="nav_achievements">Awards</span>
+            </a>
+          </li>
+          <li>
+            <a href="#contact" class="nav-link">
+              <i class="fa-solid fa-paper-plane"></i>
+              <span data-i18n="nav_contact">Contact</span>
+            </a>
           </li>
         </ul>
 
@@ -2380,7 +2474,7 @@
                 >Future Aspirations</div
               >
               <div class="timeline-title" data-i18n="edu_5_degree"
-                >Bachelor's Degree in Engineering (Local & Abroad)</div
+                >Bachelor's Degree in Engineering</div
               >
               <div class="timeline-org">
                 <i class="fa-solid fa-globe"></i>
@@ -2436,17 +2530,16 @@
 
           <div class="card achieve-card reveal">
             <span class="achieve-badge badge-gold"
-              >🥇 1st Place (Sylhet Division)</span
+              >🥇 1st Place Champion (Sylhet Division)</span
             >
             <h4>Regional Level Skill & Innovation Competition 2026</h4>
-            <p class="date text-accent" style="font-weight: 600"
-              ><i class="fa-solid fa-paper-plane"></i> Qualified for National Level
-              — 17 Apr 2026</p
+            <p class="date"
+              ><i class="fa-regular fa-calendar"></i> <span data-i18n="achieve_reg_date">17 Apr 2026</span></p
             >
           </div>
 
           <div class="card achieve-card reveal">
-            <span class="achieve-badge badge-muted">🚀 Aspiring Champion</span>
+            <span class="achieve-badge badge-muted">🚀 Qualified National Level</span>
             <h4>National Level Skill & Innovation Competition</h4>
             <p class="date"
               ><i class="fa-regular fa-clock"></i> Upcoming Event</p
@@ -2461,7 +2554,7 @@
             VERIFIED NATIONAL CREDENTIAL
           </div>
           <h3 class="cert-title" data-i18n="cert_1_title"
-            >Refrigeration and Air Conditioning, Level-1 (360 Hours)</h3
+            >Refrigeration and Air Conditioning</h3
           >
           <p class="cert-issuer" data-i18n="cert_1_issuer"
             ><strong>Issuer:</strong> National Skills Development Authority
@@ -2864,12 +2957,12 @@
           edu_1_degree: "Primary Education",
           edu_1_inst: "Royal Free Cadet School",
           edu_5_date: "Future Aspirations",
-          edu_5_degree: "Bachelor's Degree in Engineering (Local & Abroad)",
+          edu_5_degree: "Bachelor's Degree in Engineering",
           edu_5_inst: "Local & International University Candidate",
           achieve_eyebrow: "Recognition & Awards",
           achieve_heading: "Achievements & Certifications",
-          cert_1_title:
-            "Refrigeration and Air Conditioning, Level-1 (360 Hours)",
+          achieve_reg_date: "17 Apr 2026",
+          cert_1_title: "Refrigeration and Air Conditioning",
           cert_1_issuer:
             "Issuer: National Skills Development Authority (NSDA)",
           cert_1_duration: "Duration: 4 Months Professional Course",
@@ -2992,12 +3085,12 @@
           edu_1_degree: "প্রাথমিক শিক্ষা",
           edu_1_inst: "রয়েল ফ্রি ক্যাডেট স্কুল",
           edu_5_date: "ভবিষ্যৎ লক্ষ্য",
-          edu_5_degree: "বিএসসি ইন ইঞ্জিনিয়ারিং (দেশ ও বিদেশে)",
+          edu_5_degree: "বিএসসি ইন ইঞ্জিনিয়ারিং ",
           edu_5_inst: "দেশি ও বিদেশী বিশ্ববিদ্যালয়ে আবেদনকারী",
           achieve_eyebrow: "স্বীকৃতি ও সম্মাননা",
           achieve_heading: "অর্জন ও সনদপত্র",
-          cert_1_title:
-            "রেফ্রিজারেশন এন্ড এয়ার কন্ডিশনিং, লেভেল-১ (৩৬০ ঘণ্টা)",
+          achieve_reg_date: "১৭ এপ্রিল ২০২৬",
+          cert_1_title: "রেফ্রিজারেশন এন্ড এয়ার কন্ডিশনিং",
           cert_1_issuer: "প্রদানকারী: জাতীয় দক্ষতা উন্নয়ন কর্তৃপক্ষ (NSDA)",
           cert_1_duration: "মেয়াদ: ৪ মাসের পেশাদার কোর্স",
           contact_eyebrow: "যোগাযোগ",
@@ -3037,6 +3130,9 @@
         document
           .getElementById("hamburgerBtn")
           .addEventListener("click", toggleMobileMenu);
+        document
+          .getElementById("mobileCloseBtn")
+          .addEventListener("click", closeMobileMenu);
         document
           .getElementById("navOverlay")
           .addEventListener("click", closeMobileMenu);
